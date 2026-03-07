@@ -1,0 +1,806 @@
+{
+  "wordList": [
+    {
+      "word": "adekvat",
+      "correct": "passande",
+      "distractors": ["otålig", "tillfällig", "avvikande"],
+      "difficulty": 1
+    },
+    {
+      "word": "ambivalent",
+      "correct": "kluven",
+      "distractors": ["övertygad", "likgiltig", "långsint"],
+      "difficulty": 2
+    },
+    {
+      "word": "arbiträr",
+      "correct": "godtycklig",
+      "distractors": ["noggrann", "rättvis", "eftertänksam"],
+      "difficulty": 3
+    },
+    {
+      "word": "autonom",
+      "correct": "självständig",
+      "distractors": ["beroende", "tillfällig", "undergiven"],
+      "difficulty": 2
+    },
+    {
+      "word": "beständig",
+      "correct": "varaktig",
+      "distractors": ["skör", "plötslig", "ytlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "betänklig",
+      "correct": "tveksam",
+      "distractors": ["trygg", "uppenbar", "skonsam"],
+      "difficulty": 2
+    },
+    {
+      "word": "bisarr",
+      "correct": "underlig",
+      "distractors": ["vardaglig", "försiktig", "högtidlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "bräcklig",
+      "correct": "skör",
+      "distractors": ["stadig", "riklig", "envis"],
+      "difficulty": 1
+    },
+    {
+      "word": "cynisk",
+      "correct": "hånfull",
+      "distractors": ["godtrogen", "hövisk", "sorglös"],
+      "difficulty": 2
+    },
+    {
+      "word": "dekadent",
+      "correct": "förfallen",
+      "distractors": ["upphöjd", "sparsam", "stram"],
+      "difficulty": 3
+    },
+    {
+      "word": "delikat",
+      "correct": "känslig",
+      "distractors": ["robust", "häftig", "sluten"],
+      "difficulty": 2
+    },
+    {
+      "word": "destruktiv",
+      "correct": "nedbrytande",
+      "distractors": ["uppbygglig", "försiktig", "långsam"],
+      "difficulty": 1
+    },
+    {
+      "word": "diffus",
+      "correct": "otydlig",
+      "distractors": ["skarp", "enkel", "envis"],
+      "difficulty": 1
+    },
+    {
+      "word": "diskret",
+      "correct": "återhållsam",
+      "distractors": ["högljudd", "påstridig", "svävande"],
+      "difficulty": 2
+    },
+    {
+      "word": "dogmatisk",
+      "correct": "tvärsäker",
+      "distractors": ["nyfiken", "prövande", "flexibel"],
+      "difficulty": 3
+    },
+    {
+      "word": "effektiv",
+      "correct": "verkningsfull",
+      "distractors": ["omständig", "tveksam", "slarvig"],
+      "difficulty": 1
+    },
+    {
+      "word": "egensinnig",
+      "correct": "envis",
+      "distractors": ["foglig", "vänlig", "tveksam"],
+      "difficulty": 2
+    },
+    {
+      "word": "elastisk",
+      "correct": "töjbar",
+      "distractors": ["skör", "sträv", "fyrkantig"],
+      "difficulty": 1
+    },
+    {
+      "word": "emfatisk",
+      "correct": "eftertrycklig",
+      "distractors": ["avmätt", "svävande", "diskret"],
+      "difficulty": 3
+    },
+    {
+      "word": "enigmatisk",
+      "correct": "gåtfull",
+      "distractors": ["tydlig", "vardaglig", "öppenhjärtig"],
+      "difficulty": 2
+    },
+    {
+      "word": "episk",
+      "correct": "storslagen",
+      "distractors": ["kortfattad", "vardaglig", "försagd"],
+      "difficulty": 2
+    },
+    {
+      "word": "eroderad",
+      "correct": "nedsliten",
+      "distractors": ["förstärkt", "nygjord", "tät"],
+      "difficulty": 2
+    },
+    {
+      "word": "esoterisk",
+      "correct": "för invigda",
+      "distractors": ["folklig", "tydlig", "allmängiltig"],
+      "difficulty": 4
+    },
+    {
+      "word": "etisk",
+      "correct": "moralisk",
+      "distractors": ["teknisk", "slumpmässig", "högröstad"],
+      "difficulty": 1
+    },
+    {
+      "word": "euforisk",
+      "correct": "upprymd",
+      "distractors": ["dämpad", "tvivlande", "butter"],
+      "difficulty": 2
+    },
+    {
+      "word": "exakt",
+      "correct": "precis",
+      "distractors": ["ungefärlig", "yvig", "stapplande"],
+      "difficulty": 1
+    },
+    {
+      "word": "excentrisk",
+      "correct": "udda",
+      "distractors": ["anspråkslös", "ordnad", "försiktig"],
+      "difficulty": 2
+    },
+    {
+      "word": "expansiv",
+      "correct": "utåtriktad",
+      "distractors": ["tillbakadragen", "kylig", "återhållsam"],
+      "difficulty": 2
+    },
+    {
+      "word": "fatal",
+      "correct": "ödesdiger",
+      "distractors": ["lycklig", "övergående", "obetydlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "fundamental",
+      "correct": "grundläggande",
+      "distractors": ["tillfällig", "utsmyckad", "senkommen"],
+      "difficulty": 1
+    },
+    {
+      "word": "generös",
+      "correct": "frikostig",
+      "distractors": ["missunnsam", "stel", "karg"],
+      "difficulty": 1
+    },
+    {
+      "word": "graciös",
+      "correct": "elegant",
+      "distractors": ["klumpig", "sträv", "dyster"],
+      "difficulty": 2
+    },
+    {
+      "word": "grandios",
+      "correct": "storslagen",
+      "distractors": ["oansenlig", "vardaglig", "dämpad"],
+      "difficulty": 2
+    },
+    {
+      "word": "harmonisk",
+      "correct": "välavvägd",
+      "distractors": ["splittrad", "skrikig", "misslynt"],
+      "difficulty": 1
+    },
+    {
+      "word": "heterogen",
+      "correct": "blandad",
+      "distractors": ["enhetlig", "bestämd", "lodrät"],
+      "difficulty": 3
+    },
+    {
+      "word": "homogen",
+      "correct": "enhetlig",
+      "distractors": ["brokig", "ojämn", "kantig"],
+      "difficulty": 2
+    },
+    {
+      "word": "hypotetisk",
+      "correct": "antagen",
+      "distractors": ["bevisad", "praktisk", "slutgiltig"],
+      "difficulty": 2
+    },
+    {
+      "word": "idealisk",
+      "correct": "bäst lämpad",
+      "distractors": ["undermålig", "tillfällig", "ensidig"],
+      "difficulty": 1
+    },
+    {
+      "word": "identisk",
+      "correct": "likadan",
+      "distractors": ["närliggande", "möjlig", "skiftande"],
+      "difficulty": 1
+    },
+    {
+      "word": "illusorisk",
+      "correct": "skenbar",
+      "distractors": ["påtaglig", "gedigen", "beständig"],
+      "difficulty": 3
+    },
+    {
+      "word": "immanent",
+      "correct": "inneboende",
+      "distractors": ["yttre", "flyktig", "tillfällig"],
+      "difficulty": 4
+    },
+    {
+      "word": "impulsiv",
+      "correct": "förhastad",
+      "distractors": ["sansad", "långsint", "metodisk"],
+      "difficulty": 1
+    },
+    {
+      "word": "inadekvat",
+      "correct": "olämplig",
+      "distractors": ["träffsäker", "fullständig", "varsam"],
+      "difficulty": 2
+    },
+    {
+      "word": "indifferent",
+      "correct": "likgiltig",
+      "distractors": ["engagerad", "sårbar", "generös"],
+      "difficulty": 2
+    },
+    {
+      "word": "indirekt",
+      "correct": "underförstådd",
+      "distractors": ["tydlig", "rak", "omedelbar"],
+      "difficulty": 1
+    },
+    {
+      "word": "individuell",
+      "correct": "personlig",
+      "distractors": ["gemensam", "likformig", "officiell"],
+      "difficulty": 1
+    },
+    {
+      "word": "ineffektiv",
+      "correct": "verkningslös",
+      "distractors": ["snabb", "systematisk", "kraftfull"],
+      "difficulty": 1
+    },
+    {
+      "word": "infam",
+      "correct": "skändlig",
+      "distractors": ["ädel", "varsam", "beskedlig"],
+      "difficulty": 3
+    },
+    {
+      "word": "informell",
+      "correct": "ledig",
+      "distractors": ["högtidlig", "stram", "juridisk"],
+      "difficulty": 1
+    },
+    {
+      "word": "inhuman",
+      "correct": "omänsklig",
+      "distractors": ["medmänsklig", "varsam", "mild"],
+      "difficulty": 2
+    },
+    {
+      "word": "initial",
+      "correct": "inledande",
+      "distractors": ["avslutande", "tillfällig", "sidoställd"],
+      "difficulty": 1
+    },
+    {
+      "word": "inskränkt",
+      "correct": "trångsynt",
+      "distractors": ["vidsynt", "noggrann", "öppen"],
+      "difficulty": 2
+    },
+    {
+      "word": "instabil",
+      "correct": "vacklande",
+      "distractors": ["stadig", "lojal", "rundlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "integrerad",
+      "correct": "införlivad",
+      "distractors": ["avskild", "tillfällig", "överordnad"],
+      "difficulty": 2
+    },
+    {
+      "word": "intensiv",
+      "correct": "stark",
+      "distractors": ["svag", "stillsam", "ytlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "intuitiv",
+      "correct": "instinktiv",
+      "distractors": ["inlärd", "omständlig", "bokstavlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "ironisk",
+      "correct": "sarkastisk",
+      "distractors": ["högtidlig", "bokstavlig", "oskuldsfull"],
+      "difficulty": 2
+    },
+    {
+      "word": "irrelevant",
+      "correct": "oväsentlig",
+      "distractors": ["avgörande", "användbar", "noggrann"],
+      "difficulty": 1
+    },
+    {
+      "word": "isolerad",
+      "correct": "avskild",
+      "distractors": ["central", "livlig", "sammanbunden"],
+      "difficulty": 1
+    },
+    {
+      "word": "kapabel",
+      "correct": "duglig",
+      "distractors": ["orkeslös", "osäker", "bristfällig"],
+      "difficulty": 1
+    },
+    {
+      "word": "karaktäristisk",
+      "correct": "typisk",
+      "distractors": ["ovanlig", "tveksam", "föränderlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "kategorisk",
+      "correct": "bestämd",
+      "distractors": ["försiktig", "svävande", "undvikande"],
+      "difficulty": 2
+    },
+    {
+      "word": "kausal",
+      "correct": "orsaksmässig",
+      "distractors": ["tillfällig", "parallell", "estetisk"],
+      "difficulty": 3
+    },
+    {
+      "word": "kollektiv",
+      "correct": "gemensam",
+      "distractors": ["privat", "enskild", "splittrad"],
+      "difficulty": 1
+    },
+    {
+      "word": "koncis",
+      "correct": "kortfattad",
+      "distractors": ["svulstig", "omständig", "trevande"],
+      "difficulty": 2
+    },
+    {
+      "word": "konkret",
+      "correct": "påtaglig",
+      "distractors": ["abstrakt", "svävande", "osäker"],
+      "difficulty": 1
+    },
+    {
+      "word": "konsekvent",
+      "correct": "följdriktig",
+      "distractors": ["motsägelsefull", "nyckfull", "trevande"],
+      "difficulty": 1
+    },
+    {
+      "word": "konservativ",
+      "correct": "bevarande",
+      "distractors": ["nyskapande", "vårdslös", "yvig"],
+      "difficulty": 1
+    },
+    {
+      "word": "kontroversiell",
+      "correct": "omstridd",
+      "distractors": ["självklar", "lågmäld", "enig"],
+      "difficulty": 2
+    },
+    {
+      "word": "konventionell",
+      "correct": "traditionell",
+      "distractors": ["originell", "vågad", "udda"],
+      "difficulty": 2
+    },
+    {
+      "word": "korrekt",
+      "correct": "riktig",
+      "distractors": ["missvisande", "slarvig", "lösryckt"],
+      "difficulty": 1
+    },
+    {
+      "word": "kreativ",
+      "correct": "nyskapande",
+      "distractors": ["fyrkantig", "efterapande", "passiv"],
+      "difficulty": 1
+    },
+    {
+      "word": "kritisk",
+      "correct": "granskande",
+      "distractors": ["godtrogen", "eftergiven", "hövisk"],
+      "difficulty": 2
+    },
+    {
+      "word": "kronisk",
+      "correct": "långvarig",
+      "distractors": ["hastig", "tillfällig", "kortvarig"],
+      "difficulty": 1
+    },
+    {
+      "word": "kulturell",
+      "correct": "som rör kultur",
+      "distractors": ["som rör natur", "som rör ekonomi", "som rör teknik"],
+      "difficulty": 1
+    },
+    {
+      "word": "legitim",
+      "correct": "berättigad",
+      "distractors": ["tveksam", "förbjuden", "opassande"],
+      "difficulty": 2
+    },
+    {
+      "word": "lojal",
+      "correct": "trogen",
+      "distractors": ["svekfull", "nyckfull", "självisk"],
+      "difficulty": 1
+    },
+    {
+      "word": "lågmäld",
+      "correct": "stillsam",
+      "distractors": ["högröstad", "tvär", "pompös"],
+      "difficulty": 1
+    },
+    {
+      "word": "manifest",
+      "correct": "uppenbar",
+      "distractors": ["dold", "obestämd", "tillkrånglad"],
+      "difficulty": 3
+    },
+    {
+      "word": "marginal",
+      "correct": "obetydlig",
+      "distractors": ["central", "avgörande", "omfångsrik"],
+      "difficulty": 3
+    }
+  ],
+  "wordDetails": {
+    "adekvat": {
+      "explanation": "\"adekvat\" betyder ungefär \"passande\".",
+      "example": "Svaret var adekvat men inte särskilt utvecklat."
+    },
+    "ambivalent": {
+      "explanation": "\"ambivalent\" betyder ungefär \"kluven\".",
+      "example": "Hon var ambivalent inför att byta jobb."
+    },
+    "arbiträr": {
+      "explanation": "\"arbiträr\" betyder ungefär \"godtycklig\".",
+      "example": "Urvalet kändes arbiträrt och svårt att förstå."
+    },
+    "autonom": {
+      "explanation": "\"autonom\" betyder ungefär \"självständig\".",
+      "example": "Regionen fick större autonom ställning efter reformen."
+    },
+    "beständig": {
+      "explanation": "\"beständig\" betyder ungefär \"varaktig\".",
+      "example": "De hoppas på en beständig fred."
+    },
+    "betänklig": {
+      "explanation": "\"betänklig\" betyder ungefär \"tveksam\".",
+      "example": "Det vore betänkligt att skriva under utan att läsa."
+    },
+    "bisarr": {
+      "explanation": "\"bisarr\" betyder ungefär \"underlig\".",
+      "example": "Han berättade en bisarr historia vid middagen."
+    },
+    "bräcklig": {
+      "explanation": "\"bräcklig\" betyder ungefär \"skör\".",
+      "example": "Freden var fortfarande bräcklig."
+    },
+    "cynisk": {
+      "explanation": "\"cynisk\" betyder ungefär \"hånfull\".",
+      "example": "Hennes cyniska kommentar tystade rummet."
+    },
+    "dekadent": {
+      "explanation": "\"dekadent\" betyder ungefär \"förfallen\".",
+      "example": "Romanen skildrar ett dekadent societetsliv."
+    },
+    "delikat": {
+      "explanation": "\"delikat\" betyder ungefär \"känslig\".",
+      "example": "Frågan är för delikat för att tas upp nu."
+    },
+    "destruktiv": {
+      "explanation": "\"destruktiv\" betyder ungefär \"nedbrytande\".",
+      "example": "Hans destruktiva beteende skadade gruppen."
+    },
+    "diffus": {
+      "explanation": "\"diffus\" betyder ungefär \"otydlig\".",
+      "example": "Hon gav bara ett diffust besked."
+    },
+    "diskret": {
+      "explanation": "\"diskret\" betyder ungefär \"återhållsam\".",
+      "example": "Han gav en diskret vink från dörren."
+    },
+    "dogmatisk": {
+      "explanation": "\"dogmatisk\" betyder ungefär \"tvärsäker\".",
+      "example": "Läraren ville undvika ett alltför dogmatiskt synsätt."
+    },
+    "effektiv": {
+      "explanation": "\"effektiv\" betyder ungefär \"verkningsfull\".",
+      "example": "Det var en enkel men effektiv lösning."
+    },
+    "egensinnig": {
+      "explanation": "\"egensinnig\" betyder ungefär \"envis\".",
+      "example": "Barnet var egensinnigt och ville göra allt själv."
+    },
+    "elastisk": {
+      "explanation": "\"elastisk\" betyder ungefär \"töjbar\".",
+      "example": "Tyget är elastiskt och sitter bra."
+    },
+    "emfatisk": {
+      "explanation": "\"emfatisk\" betyder ungefär \"eftertrycklig\".",
+      "example": "Hon svarade emfatiskt på frågan."
+    },
+    "enigmatisk": {
+      "explanation": "\"enigmatisk\" betyder ungefär \"gåtfull\".",
+      "example": "Hans leende var lika enigmatiskt som vanligt."
+    },
+    "episk": {
+      "explanation": "\"episk\" betyder ungefär \"storslagen\".",
+      "example": "Finalen blev en episk upplevelse."
+    },
+    "eroderad": {
+      "explanation": "\"eroderad\" betyder ungefär \"nedsliten\".",
+      "example": "Kusten är starkt eroderad av havet."
+    },
+    "esoterisk": {
+      "explanation": "\"esoterisk\" betyder ungefär \"för invigda\".",
+      "example": "Texten är så esoterisk att få orkar läsa den."
+    },
+    "etisk": {
+      "explanation": "\"etisk\" betyder ungefär \"moralisk\".",
+      "example": "Det väckte en etisk diskussion på redaktionen."
+    },
+    "euforisk": {
+      "explanation": "\"euforisk\" betyder ungefär \"upprymd\".",
+      "example": "Publiken blev euforisk efter segern."
+    },
+    "exakt": {
+      "explanation": "\"exakt\" betyder ungefär \"precis\".",
+      "example": "Hon gav ett exakt mått på millimetern."
+    },
+    "excentrisk": {
+      "explanation": "\"excentrisk\" betyder ungefär \"udda\".",
+      "example": "Grannen är excentrisk men vänlig."
+    },
+    "expansiv": {
+      "explanation": "\"expansiv\" betyder ungefär \"utåtriktad\".",
+      "example": "Han var ovanligt expansiv under festen."
+    },
+    "fatal": {
+      "explanation": "\"fatal\" betyder ungefär \"ödesdiger\".",
+      "example": "Ett fatalt misstag avgjorde matchen."
+    },
+    "fundamental": {
+      "explanation": "\"fundamental\" betyder ungefär \"grundläggande\".",
+      "example": "Det är en fundamental skillnad mellan förslagen."
+    },
+    "generös": {
+      "explanation": "\"generös\" betyder ungefär \"frikostig\".",
+      "example": "Hon gav ett generöst bidrag till insamlingen."
+    },
+    "graciös": {
+      "explanation": "\"graciös\" betyder ungefär \"elegant\".",
+      "example": "Dansaren rörde sig graciöst över scenen."
+    },
+    "grandios": {
+      "explanation": "\"grandios\" betyder ungefär \"storslagen\".",
+      "example": "Planen lät grandios men dyr."
+    },
+    "harmonisk": {
+      "explanation": "\"harmonisk\" betyder ungefär \"välavvägd\".",
+      "example": "Rummet fick en harmonisk helhet."
+    },
+    "heterogen": {
+      "explanation": "\"heterogen\" betyder ungefär \"blandad\".",
+      "example": "Gruppen var heterogen både i ålder och bakgrund."
+    },
+    "homogen": {
+      "explanation": "\"homogen\" betyder ungefär \"enhetlig\".",
+      "example": "Smeten ska bli helt homogen."
+    },
+    "hypotetisk": {
+      "explanation": "\"hypotetisk\" betyder ungefär \"antagen\".",
+      "example": "Det var ännu bara en hypotetisk risk."
+    },
+    "idealisk": {
+      "explanation": "\"idealisk\" betyder ungefär \"bäst lämpad\".",
+      "example": "Tidpunkten var idealisk för ett möte."
+    },
+    "identisk": {
+      "explanation": "\"identisk\" betyder ungefär \"likadan\".",
+      "example": "De två nycklarna såg identiska ut."
+    },
+    "illusorisk": {
+      "explanation": "\"illusorisk\" betyder ungefär \"skenbar\".",
+      "example": "Tryggheten visade sig vara illusorisk."
+    },
+    "immanent": {
+      "explanation": "\"immanent\" betyder ungefär \"inneboende\".",
+      "example": "Konflikten är immanent i systemet."
+    },
+    "impulsiv": {
+      "explanation": "\"impulsiv\" betyder ungefär \"förhastad\".",
+      "example": "Det var ett impulsivt köp."
+    },
+    "inadekvat": {
+      "explanation": "\"inadekvat\" betyder ungefär \"olämplig\".",
+      "example": "Kommentaren var inadekvat i situationen."
+    },
+    "indifferent": {
+      "explanation": "\"indifferent\" betyder ungefär \"likgiltig\".",
+      "example": "Han verkade helt indifferent inför kritiken."
+    },
+    "indirekt": {
+      "explanation": "\"indirekt\" betyder ungefär \"underförstådd\".",
+      "example": "Det var en indirekt uppmaning att gå."
+    },
+    "individuell": {
+      "explanation": "\"individuell\" betyder ungefär \"personlig\".",
+      "example": "Varje elev får individuell återkoppling."
+    },
+    "ineffektiv": {
+      "explanation": "\"ineffektiv\" betyder ungefär \"verkningslös\".",
+      "example": "Metoden var dyr och ineffektiv."
+    },
+    "infam": {
+      "explanation": "\"infam\" betyder ungefär \"skändlig\".",
+      "example": "Det var ett infamt övergrepp."
+    },
+    "informell": {
+      "explanation": "\"informell\" betyder ungefär \"ledig\".",
+      "example": "Samtalet hade en informell ton."
+    },
+    "inhuman": {
+      "explanation": "\"inhuman\" betyder ungefär \"omänsklig\".",
+      "example": "Fångarna behandlades på ett inhumant sätt."
+    },
+    "initial": {
+      "explanation": "\"initial\" betyder ungefär \"inledande\".",
+      "example": "Den initiala reaktionen var stark."
+    },
+    "inskränkt": {
+      "explanation": "\"inskränkt\" betyder ungefär \"trångsynt\".",
+      "example": "Hans inskränkta syn på ämnet mötte motstånd."
+    },
+    "instabil": {
+      "explanation": "\"instabil\" betyder ungefär \"vacklande\".",
+      "example": "Bron stängdes eftersom marken var instabil."
+    },
+    "integrerad": {
+      "explanation": "\"integrerad\" betyder ungefär \"införlivad\".",
+      "example": "Funktionen är integrerad i systemet."
+    },
+    "intensiv": {
+      "explanation": "\"intensiv\" betyder ungefär \"stark\".",
+      "example": "Det blev en intensiv arbetsvecka."
+    },
+    "intuitiv": {
+      "explanation": "\"intuitiv\" betyder ungefär \"instinktiv\".",
+      "example": "Appen är så intuitiv att den knappt behöver förklaras."
+    },
+    "ironisk": {
+      "explanation": "\"ironisk\" betyder ungefär \"sarkastisk\".",
+      "example": "Hon svarade med ironisk ton."
+    },
+    "irrelevant": {
+      "explanation": "\"irrelevant\" betyder ungefär \"oväsentlig\".",
+      "example": "Den uppgiften är irrelevant för beslutet."
+    },
+    "isolerad": {
+      "explanation": "\"isolerad\" betyder ungefär \"avskild\".",
+      "example": "Huset låg isolerat vid skogsbrynet."
+    },
+    "kapabel": {
+      "explanation": "\"kapabel\" betyder ungefär \"duglig\".",
+      "example": "Hon är fullt kapabel att leda projektet."
+    },
+    "karaktäristisk": {
+      "explanation": "\"karaktäristisk\" betyder ungefär \"typisk\".",
+      "example": "Det är ett karaktäristiskt drag i hans stil."
+    },
+    "kategorisk": {
+      "explanation": "\"kategorisk\" betyder ungefär \"bestämd\".",
+      "example": "Hon var kategorisk i sitt nej."
+    },
+    "kausal": {
+      "explanation": "\"kausal\" betyder ungefär \"orsaksmässig\".",
+      "example": "Studien visar inget kausalt samband."
+    },
+    "kollektiv": {
+      "explanation": "\"kollektiv\" betyder ungefär \"gemensam\".",
+      "example": "Det var ett kollektivt beslut."
+    },
+    "koncis": {
+      "explanation": "\"koncis\" betyder ungefär \"kortfattad\".",
+      "example": "Rapporten är koncis och lätt att följa."
+    },
+    "konkret": {
+      "explanation": "\"konkret\" betyder ungefär \"påtaglig\".",
+      "example": "Vi behöver ett mer konkret förslag."
+    },
+    "konsekvent": {
+      "explanation": "\"konsekvent\" betyder ungefär \"följdriktig\".",
+      "example": "Hon har varit konsekvent i sin hållning."
+    },
+    "konservativ": {
+      "explanation": "\"konservativ\" betyder ungefär \"bevarande\".",
+      "example": "Han hade en konservativ syn på skolpolitik."
+    },
+    "kontroversiell": {
+      "explanation": "\"kontroversiell\" betyder ungefär \"omstridd\".",
+      "example": "Beslutet blev snabbt kontroversiellt."
+    },
+    "konventionell": {
+      "explanation": "\"konventionell\" betyder ungefär \"traditionell\".",
+      "example": "Hon valde en mer konventionell lösning."
+    },
+    "korrekt": {
+      "explanation": "\"korrekt\" betyder ungefär \"riktig\".",
+      "example": "Svaret var korrekt från början."
+    },
+    "kreativ": {
+      "explanation": "\"kreativ\" betyder ungefär \"nyskapande\".",
+      "example": "Teamet kom med flera kreativa idéer."
+    },
+    "kritisk": {
+      "explanation": "\"kritisk\" betyder ungefär \"granskande\".",
+      "example": "Hon läste texten med kritisk blick."
+    },
+    "kronisk": {
+      "explanation": "\"kronisk\" betyder ungefär \"långvarig\".",
+      "example": "Han lever med kronisk värk."
+    },
+    "kulturell": {
+      "explanation": "\"kulturell\" betyder ungefär \"som rör kultur\".",
+      "example": "Staden har ett rikt kulturellt liv."
+    },
+    "legitim": {
+      "explanation": "\"legitim\" betyder ungefär \"berättigad\".",
+      "example": "Kritiken var helt legitim."
+    },
+    "lojal": {
+      "explanation": "\"lojal\" betyder ungefär \"trogen\".",
+      "example": "Hon har varit lojal mot laget i många år."
+    },
+    "lågmäld": {
+      "explanation": "\"lågmäld\" betyder ungefär \"stillsam\".",
+      "example": "Han gjorde en lågmäld men stark insats."
+    },
+    "manifest": {
+      "explanation": "\"manifest\" betyder ungefär \"uppenbar\".",
+      "example": "Det fanns en manifest oro i gruppen."
+    },
+    "marginal": {
+      "explanation": "\"marginal\" betyder ungefär \"obetydlig\".",
+      "example": "Skillnaden var marginal och knappt märkbar."
+    }
+  }
+}

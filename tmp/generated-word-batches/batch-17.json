@@ -1,0 +1,1126 @@
+{
+  "wordList": [
+    {
+      "word": "penetrant",
+      "correct": "skarp",
+      "distractors": [
+        "dämpad",
+        "trevande",
+        "ytlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "perfekt",
+      "correct": "fulländad",
+      "distractors": [
+        "bristfällig",
+        "halvfärdig",
+        "slumpmässig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "pervers",
+      "correct": "förvriden",
+      "distractors": [
+        "oskuldsfull",
+        "måttfull",
+        "uppriktig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "pittoresk",
+      "correct": "idyllisk",
+      "distractors": [
+        "enformig",
+        "storskalig",
+        "sliten"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "plågad",
+      "correct": "hårt ansatt",
+      "distractors": [
+        "välmående",
+        "oberörd",
+        "avslappnad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "poetisk",
+      "correct": "bildrik",
+      "distractors": [
+        "torr",
+        "kantig",
+        "fyrkantig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "polerad",
+      "correct": "förfinad",
+      "distractors": [
+        "burdus",
+        "råbarkad",
+        "oborstad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "populär",
+      "correct": "omtyckt",
+      "distractors": [
+        "ifrågasatt",
+        "undanskymd",
+        "avvisad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "portionerad",
+      "correct": "uppdelad",
+      "distractors": [
+        "sammanblandad",
+        "överfylld",
+        "osorterad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "pratglad",
+      "correct": "talför",
+      "distractors": [
+        "fåordig",
+        "vresig",
+        "hemlighetsfull"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "prestationstyngd",
+      "correct": "pressad av krav",
+      "distractors": [
+        "fri från ansvar",
+        "lättsam",
+        "utan ambitioner"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "pretentionslös",
+      "correct": "anspråkslös",
+      "distractors": [
+        "självhävdande",
+        "svulstig",
+        "högdragen"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "pricksäker",
+      "correct": "träffsäker",
+      "distractors": [
+        "svävande",
+        "vacklande",
+        "fladdrig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "privilegierad",
+      "correct": "gynnad",
+      "distractors": [
+        "förbisedd",
+        "förtryckt",
+        "vanlottad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "profanerad",
+      "correct": "vanhelgad",
+      "distractors": [
+        "välsignad",
+        "upphöjd",
+        "förskönad"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "professionell",
+      "correct": "yrkesmässig",
+      "distractors": [
+        "amatörmässig",
+        "slumpvis",
+        "kamratlig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "profylaktisk",
+      "correct": "förebyggande",
+      "distractors": [
+        "botande",
+        "smärtstillande",
+        "renande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "prognostisk",
+      "correct": "förutsägande",
+      "distractors": [
+        "beskrivande",
+        "sammanfattande",
+        "bekräftande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "prominent",
+      "correct": "framstående",
+      "distractors": [
+        "obetydlig",
+        "tillbakadragen",
+        "utbytbar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "proper",
+      "correct": "välvårdad",
+      "distractors": [
+        "slarvig",
+        "fläckig",
+        "stökig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "prosaisk",
+      "correct": "vardaglig",
+      "distractors": [
+        "drömsk",
+        "svulstig",
+        "högtidlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "protektiv",
+      "correct": "beskyddande",
+      "distractors": [
+        "avvaktande",
+        "pådrivande",
+        "avståndstagande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "protestantisk",
+      "correct": "som hör till protestantismen",
+      "distractors": [
+        "som hör till katolicismen",
+        "som hör till islam",
+        "som hör till judendomen"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "prydlig",
+      "correct": "välordnad",
+      "distractors": [
+        "rörig",
+        "slarvig",
+        "smutsig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "prövbar",
+      "correct": "möjlig att testa",
+      "distractors": [
+        "svår att förstå",
+        "omöjlig att påverka",
+        "redan bevisad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "påhittig",
+      "correct": "uppfinningsrik",
+      "distractors": [
+        "trögtänkt",
+        "regelbunden",
+        "obrydd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "påklistrad",
+      "correct": "konstlad",
+      "distractors": [
+        "spontan",
+        "uppriktig",
+        "vardaglig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "påträngande",
+      "correct": "närgången",
+      "distractors": [
+        "diskret",
+        "försynt",
+        "reserverad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "rabiat",
+      "correct": "fanatisk",
+      "distractors": [
+        "sansad",
+        "försonlig",
+        "eftertänksam"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "raffinerad",
+      "correct": "förfinad",
+      "distractors": [
+        "grov",
+        "torftig",
+        "hafsig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "rak",
+      "correct": "uppriktig",
+      "distractors": [
+        "undvikande",
+        "krånglig",
+        "tvehågsen"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "rank",
+      "correct": "slank",
+      "distractors": [
+        "bredaxlad",
+        "hopkrupen",
+        "tung"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "rastlös",
+      "correct": "orolig",
+      "distractors": [
+        "harmonisk",
+        "stillsam",
+        "likgiltig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "rationerad",
+      "correct": "begränsad",
+      "distractors": [
+        "obegränsad",
+        "överflödig",
+        "slumpmässig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "realistisk",
+      "correct": "verklighetsnära",
+      "distractors": [
+        "naiv",
+        "överdriven",
+        "fantastisk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "reducerad",
+      "correct": "minskad",
+      "distractors": [
+        "utökad",
+        "fördubblad",
+        "fullständig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "reflexiv",
+      "correct": "återvändande",
+      "distractors": [
+        "framåtriktad",
+        "avslutande",
+        "jämförande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "reformvänlig",
+      "correct": "positiv till förändring",
+      "distractors": [
+        "fientlig mot nyheter",
+        "helt opolitisk",
+        "styrd av tradition"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "regelstridig",
+      "correct": "otillåten",
+      "distractors": [
+        "föreskriven",
+        "välkänd",
+        "omstridd"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "reguljär",
+      "correct": "regelbunden",
+      "distractors": [
+        "tillfällig",
+        "splittrad",
+        "oregelbunden"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "renhårig",
+      "correct": "hederlig",
+      "distractors": [
+        "falsk",
+        "slug",
+        "vacklande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "renodlad",
+      "correct": "tydligt avgränsad",
+      "distractors": [
+        "sammansatt",
+        "halvfärdig",
+        "vardaglig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "reslig",
+      "correct": "ståtlig",
+      "distractors": [
+        "hopkrupen",
+        "spenslig",
+        "anspråkslös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "resursstark",
+      "correct": "välutrustad",
+      "distractors": [
+        "utblottad",
+        "osjälvständig",
+        "underbemannad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "retfull",
+      "correct": "retsam",
+      "distractors": [
+        "foglig",
+        "upprymd",
+        "varsam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "revolutionär",
+      "correct": "omvälvande",
+      "distractors": [
+        "föråldrad",
+        "försiktig",
+        "vardaglig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "riktad",
+      "correct": "inriktad",
+      "distractors": [
+        "spridd",
+        "bakvänd",
+        "tillplattad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "riklig",
+      "correct": "ymnig",
+      "distractors": [
+        "knapp",
+        "blygsam",
+        "tillfällig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "riskabel",
+      "correct": "våghalsig",
+      "distractors": [
+        "ofarlig",
+        "genomtänkt",
+        "varsam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "romersk",
+      "correct": "som rör Rom",
+      "distractors": [
+        "som rör Norden",
+        "som rör Grekland",
+        "som rör Asien"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "rosig",
+      "correct": "blomstrande",
+      "distractors": [
+        "glåmig",
+        "blek",
+        "tynande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "rotfast",
+      "correct": "djupt förankrad",
+      "distractors": [
+        "snabbt föränderlig",
+        "ytlig",
+        "tillfällig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ruggig",
+      "correct": "kuslig",
+      "distractors": [
+        "munter",
+        "solig",
+        "lindrig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "rundhänt",
+      "correct": "generös",
+      "distractors": [
+        "snål",
+        "misstänksam",
+        "sträng"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "rättfram",
+      "correct": "frank",
+      "distractors": [
+        "förställd",
+        "undanglidande",
+        "krystad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "rådig",
+      "correct": "handlingskraftig",
+      "distractors": [
+        "förvirrad",
+        "tvärsäker",
+        "slö"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "rådlös",
+      "correct": "villrådig",
+      "distractors": [
+        "målmedveten",
+        "kallsinnig",
+        "självgående"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "rått",
+      "correct": "obearbetat",
+      "distractors": [
+        "tillagat",
+        "förädlat",
+        "finputsat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "saknad",
+      "correct": "efterlängtad",
+      "distractors": [
+        "ovälkommen",
+        "likgiltig",
+        "bortglömd"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "samlad",
+      "correct": "behärskad",
+      "distractors": [
+        "splittrad",
+        "uppjagad",
+        "osammanhängande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sammanhållen",
+      "correct": "enhetlig",
+      "distractors": [
+        "spretig",
+        "lösryckt",
+        "brokig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sammanträffande",
+      "correct": "slumpmässig",
+      "distractors": [
+        "planerad",
+        "avgörande",
+        "oundviklig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "samhällelig",
+      "correct": "som rör samhället",
+      "distractors": [
+        "som rör familjen",
+        "som rör naturen",
+        "som rör privatlivet"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "samvetsgrann",
+      "correct": "noggrann",
+      "distractors": [
+        "vårdslös",
+        "hafsig",
+        "liknöjd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sanningsenlig",
+      "correct": "trovärdig",
+      "distractors": [
+        "påhittad",
+        "motsägande",
+        "överdriven"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "satirisk",
+      "correct": "ironiskt kritisk",
+      "distractors": [
+        "högtidligt hyllande",
+        "känsligt privat",
+        "neutralt beskrivande"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "schablonartad",
+      "correct": "stereotyp",
+      "distractors": [
+        "nyskapande",
+        "personlig",
+        "mångtydig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "seglivad",
+      "correct": "svår att utrota",
+      "distractors": [
+        "kortvarig",
+        "lätt att avfärda",
+        "snabbt bortglömd"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "seg",
+      "correct": "trög",
+      "distractors": [
+        "spänstig",
+        "snabbfotad",
+        "alert"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "senil",
+      "correct": "åldersglömsk",
+      "distractors": [
+        "barnslig",
+        "kortväxt",
+        "överkänslig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sentimental",
+      "correct": "lättrörd",
+      "distractors": [
+        "känslokall",
+        "saklig",
+        "reserverad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "separerad",
+      "correct": "åtskild",
+      "distractors": [
+        "förenad",
+        "sammankopplad",
+        "hopblandad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "seriös",
+      "correct": "allvarlig",
+      "distractors": [
+        "skämtsam",
+        "slarvig",
+        "lättsinnig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sinnesnärvarande",
+      "correct": "klar i huvudet",
+      "distractors": [
+        "frånvarande",
+        "förvirrad",
+        "slumrande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "sirlig",
+      "correct": "fint utformad",
+      "distractors": [
+        "grovhuggen",
+        "hafsig",
+        "kantstött"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "sjutusan",
+      "correct": "väldig",
+      "distractors": [
+        "obetydlig",
+        "försiktig",
+        "måttlig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "skadlig",
+      "correct": "farlig",
+      "distractors": [
+        "nyttig",
+        "oförarglig",
+        "lindrande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "skamlig",
+      "correct": "vanärande",
+      "distractors": [
+        "hedervärd",
+        "ursäktlig",
+        "hyllad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "skarpsinnig",
+      "correct": "klok",
+      "distractors": [
+        "trögtänkt",
+        "godtrogen",
+        "virrig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "skenhelig",
+      "correct": "hycklande",
+      "distractors": [
+        "uppriktig",
+        "jordnära",
+        "förtrolig"
+      ],
+      "difficulty": 2
+    }
+  ],
+  "wordDetails": {
+    "penetrant": {
+      "explanation": "\"penetrant\" betyder skarp och genomträngande, till exempel om lukt, blick eller analys.",
+      "example": "Hon ställde en så penetrant fråga att ingen kunde ducka för svaret."
+    },
+    "perfekt": {
+      "explanation": "\"perfekt\" betyder fulländad eller helt utan brister.",
+      "example": "Efter flera försök fick hon till en perfekt landning."
+    },
+    "pervers": {
+      "explanation": "\"pervers\" betyder förvriden eller moraliskt osund på ett obehagligt sätt.",
+      "example": "Romanen skildrar en pervers maktleken mellan huvudpersonerna."
+    },
+    "pittoresk": {
+      "explanation": "\"pittoresk\" betyder idyllisk och charmigt egenartad.",
+      "example": "De hyrde ett litet hus i en pittoresk kustby."
+    },
+    "plågad": {
+      "explanation": "\"plågad\" betyder hårt ansatt av smärta, oro eller bekymmer.",
+      "example": "Han såg plågad ut efter ännu en sömnlös natt."
+    },
+    "poetisk": {
+      "explanation": "\"poetisk\" betyder bildrik, stämningsfull eller uttryckt med särskild skönhet.",
+      "example": "Hennes språk blev nästan poetiskt när hon beskrev havet."
+    },
+    "polerad": {
+      "explanation": "\"polerad\" betyder förfinad och välputsad i stil eller uppträdande.",
+      "example": "Han gav ett polerat intryck redan vid första mötet."
+    },
+    "populär": {
+      "explanation": "\"populär\" betyder omtyckt av många.",
+      "example": "Den nya läraren blev snabbt populär bland eleverna."
+    },
+    "portionerad": {
+      "explanation": "\"portionerad\" betyder uppdelad i bestämda mängder eller delar.",
+      "example": "Maten var redan portionerad när gästerna kom."
+    },
+    "pratglad": {
+      "explanation": "\"pratglad\" betyder att man gärna pratar mycket.",
+      "example": "Hon blev extra pratglad så fort ämnet kom in på resor."
+    },
+    "prestationstyngd": {
+      "explanation": "\"prestationstyngd\" betyder pressad av krav på att lyckas eller prestera väl.",
+      "example": "Miljön på skolan upplevdes som alltmer prestationstyngd."
+    },
+    "pretentionslös": {
+      "explanation": "\"pretentionslös\" betyder anspråkslös och fri från behov av att verka märkvärdig.",
+      "example": "Restaurangen är liten och pretentionslös men maten är utmärkt."
+    },
+    "pricksäker": {
+      "explanation": "\"pricksäker\" betyder mycket träffsäker, både bokstavligt och bildligt.",
+      "example": "Recensenten gjorde en pricksäker analys av filmen."
+    },
+    "privilegierad": {
+      "explanation": "\"privilegierad\" betyder särskilt gynnad i förhållande till andra.",
+      "example": "Hon är medveten om att hon haft en privilegierad uppväxt."
+    },
+    "profanerad": {
+      "explanation": "\"profanerad\" betyder vanhelgad eller behandlad utan respekt för det heliga.",
+      "example": "Kyrkorummet kändes profanerat efter skadegörelsen."
+    },
+    "professionell": {
+      "explanation": "\"professionell\" betyder yrkesmässig och skicklig i sin roll.",
+      "example": "Hon hanterade den svåra situationen på ett professionellt sätt."
+    },
+    "profylaktisk": {
+      "explanation": "\"profylaktisk\" betyder förebyggande, särskilt inom medicin eller hälsovård.",
+      "example": "Vaccinationen har en profylaktisk effekt mot sjukdomen."
+    },
+    "prognostisk": {
+      "explanation": "\"prognostisk\" betyder förutsägande eller användbar för att bedöma framtida utveckling.",
+      "example": "Testet har prognostisk betydelse för hur sjukdomen utvecklas."
+    },
+    "prominent": {
+      "explanation": "\"prominent\" betyder framstående, välkänd eller högt ansedd.",
+      "example": "Flera prominenta forskare deltog i konferensen."
+    },
+    "proper": {
+      "explanation": "\"proper\" betyder välvårdad, ordentlig och snygg.",
+      "example": "Han kom i en proper kostym trots att tillställningen var enkel."
+    },
+    "prosaisk": {
+      "explanation": "\"prosaisk\" betyder vardaglig, torr eller utan poetisk glans.",
+      "example": "Förklaringen var mer prosaisk än dramatisk."
+    },
+    "protektiv": {
+      "explanation": "\"protektiv\" betyder beskyddande eller skyddande.",
+      "example": "Hennes protektiva hållning märktes tydligt när barnen blev oroliga."
+    },
+    "protestantisk": {
+      "explanation": "\"protestantisk\" betyder att något hör till protestantismen.",
+      "example": "Byggnaden präglas av en enkel protestantisk kyrkointeriör."
+    },
+    "prydlig": {
+      "explanation": "\"prydlig\" betyder välordnad, snygg och vårdad.",
+      "example": "Hon förde prydliga anteckningar i ett svart block."
+    },
+    "prövbar": {
+      "explanation": "\"prövbar\" betyder möjlig att undersöka eller testa.",
+      "example": "En vetenskaplig teori måste vara prövbar."
+    },
+    "påhittig": {
+      "explanation": "\"påhittig\" betyder uppfinningsrik och bra på att hitta lösningar.",
+      "example": "Barnen var påhittiga och byggde en koja av filtar och stolar."
+    },
+    "påklistrad": {
+      "explanation": "\"påklistrad\" betyder konstlad och inte riktigt äkta.",
+      "example": "Hans leende såg påklistrat ut under intervjun."
+    },
+    "påträngande": {
+      "explanation": "\"påträngande\" betyder närgången och svår att värja sig mot.",
+      "example": "Försäljaren var så påträngande att vi gick därifrån."
+    },
+    "rabiat": {
+      "explanation": "\"rabiat\" betyder fanatisk, våldsam eller oresonligt aggressiv.",
+      "example": "Debatten blev rabiat när ingen längre lyssnade på motargument."
+    },
+    "raffinerad": {
+      "explanation": "\"raffinerad\" betyder mycket förfinad eller sinnrikt utarbetad.",
+      "example": "Hon serverade en raffinerad dessert med oväntade smaker."
+    },
+    "rak": {
+      "explanation": "\"rak\" betyder här uppriktig och utan omsvep.",
+      "example": "Han var rak nog att säga vad han egentligen tyckte."
+    },
+    "rank": {
+      "explanation": "\"rank\" betyder lång, slank och upprätt.",
+      "example": "Den ranka björken syntes långt över buskarna."
+    },
+    "rastlös": {
+      "explanation": "\"rastlös\" betyder orolig och oförmögen att vara stilla.",
+      "example": "Hon blev rastlös av att sitta inne hela dagen."
+    },
+    "rationerad": {
+      "explanation": "\"rationerad\" betyder begränsad och utdelad i bestämda mängder.",
+      "example": "Under kriget var kaffe en rationerad vara."
+    },
+    "realistisk": {
+      "explanation": "\"realistisk\" betyder verklighetsnära och rimlig.",
+      "example": "Vi behöver en realistisk tidsplan för projektet."
+    },
+    "reducerad": {
+      "explanation": "\"reducerad\" betyder minskad eller nedskuren.",
+      "example": "Butiken sålde ut varorna till reducerat pris."
+    },
+    "reflexiv": {
+      "explanation": "\"reflexiv\" betyder återvändande, ofta om ord eller handlingar som syftar tillbaka på subjektet.",
+      "example": "I meningen \"hon tvättade sig\" är \"sig\" reflexivt."
+    },
+    "reformvänlig": {
+      "explanation": "\"reformvänlig\" betyder positiv till förändringar och nya lösningar.",
+      "example": "Ministern beskrevs som ovanligt reformvänlig för sin tid."
+    },
+    "regelstridig": {
+      "explanation": "\"regelstridig\" betyder att något bryter mot reglerna.",
+      "example": "Beslutet ansågs vara regelstridigt och drogs tillbaka."
+    },
+    "reguljär": {
+      "explanation": "\"reguljär\" betyder regelbunden eller ordinarie.",
+      "example": "Bussen går i reguljär trafik även på helgerna."
+    },
+    "renhårig": {
+      "explanation": "\"renhårig\" betyder hederlig och utan dolda avsikter.",
+      "example": "Hon uppfattades som en renhårig förhandlare."
+    },
+    "renodlad": {
+      "explanation": "\"renodlad\" betyder tydligt avgränsad och fri från blandformer.",
+      "example": "Det här är inte en renodlad komedi utan också ett drama."
+    },
+    "reslig": {
+      "explanation": "\"reslig\" betyder hög och ståtlig till växten.",
+      "example": "Den reslige mannen syntes direkt i folkmassan."
+    },
+    "resursstark": {
+      "explanation": "\"resursstark\" betyder att ha gott om medel, kompetens eller möjligheter.",
+      "example": "Kommunen är mer resursstark än många mindre orter."
+    },
+    "retfull": {
+      "explanation": "\"retfull\" betyder retsam eller smått irriterande.",
+      "example": "Han svarade med en retfull min när frågan blev obekväm."
+    },
+    "revolutionär": {
+      "explanation": "\"revolutionär\" betyder omvälvande och radikalt nyskapande.",
+      "example": "Upptäckten fick en revolutionär betydelse för forskningen."
+    },
+    "riktad": {
+      "explanation": "\"riktad\" betyder inriktad mot någon eller något särskilt.",
+      "example": "Kampanjen var riktad till unga väljare."
+    },
+    "riklig": {
+      "explanation": "\"riklig\" betyder stor i mängd eller omfattning.",
+      "example": "Det kom rikligt med snö under natten."
+    },
+    "riskabel": {
+      "explanation": "\"riskabel\" betyder att något innebär tydlig fara eller osäkerhet.",
+      "example": "Det vore riskabelt att köra så fort på halt väglag."
+    },
+    "romersk": {
+      "explanation": "\"romersk\" betyder att något hör till Rom eller det romerska riket.",
+      "example": "Museet visar flera romerska mynt och kärl."
+    },
+    "rosig": {
+      "explanation": "\"rosig\" betyder frisk och blomstrande i färg eller intryck.",
+      "example": "Efter promenaden var hon rosig om kinderna."
+    },
+    "rotfast": {
+      "explanation": "\"rotfast\" betyder djupt förankrad och svår att förändra.",
+      "example": "Misstron mellan grupperna var rotfast sedan länge."
+    },
+    "ruggig": {
+      "explanation": "\"ruggig\" betyder kuslig, obehaglig eller smått skrämmande.",
+      "example": "Det låg en ruggig stämning över det övergivna huset."
+    },
+    "rundhänt": {
+      "explanation": "\"rundhänt\" betyder generös och frikostig.",
+      "example": "Hon var rundhänt med beröm när någon gjort ett bra jobb."
+    },
+    "rättfram": {
+      "explanation": "\"rättfram\" betyder frank och utan krångel eller förställning.",
+      "example": "Hans rättframma stil uppskattades inte av alla."
+    },
+    "rådig": {
+      "explanation": "\"rådig\" betyder handlingskraftig och snabb att agera klokt.",
+      "example": "Tack vare hennes rådiga ingripande undveks en olycka."
+    },
+    "rådlös": {
+      "explanation": "\"rådlös\" betyder villrådig och osäker på vad man ska göra.",
+      "example": "Han stod rådlös när datorn plötsligt slutade fungera."
+    },
+    "rått": {
+      "explanation": "\"rått\" betyder obearbetat eller otillagat.",
+      "example": "Kocken ville inte servera rått kött till den gästen."
+    },
+    "saknad": {
+      "explanation": "\"saknad\" betyder efterlängtad eller någon som man har längtat efter.",
+      "example": "Efter flera månader hemma igen var hon varmt saknad på jobbet."
+    },
+    "samlad": {
+      "explanation": "\"samlad\" betyder behärskad och mentalt fokuserad.",
+      "example": "Trots pressen verkade hon lugn och samlad."
+    },
+    "sammanhållen": {
+      "explanation": "\"sammanhållen\" betyder enhetlig och tydligt hopfogad till en helhet.",
+      "example": "Boken känns sammanhållen trots att den består av korta kapitel."
+    },
+    "sammanträffande": {
+      "explanation": "\"sammanträffande\" betyder att något beror på slumpen snarare än planering.",
+      "example": "Det var bara ett sammanträffande att de möttes där."
+    },
+    "samhällelig": {
+      "explanation": "\"samhällelig\" betyder att något rör samhället i stort.",
+      "example": "Frågan har både ekonomisk och samhällelig betydelse."
+    },
+    "samvetsgrann": {
+      "explanation": "\"samvetsgrann\" betyder mycket noggrann och ansvarstagande.",
+      "example": "Hon är samvetsgrann och lämnar inget åt slumpen."
+    },
+    "sanningsenlig": {
+      "explanation": "\"sanningsenlig\" betyder trovärdig och i överensstämmelse med verkligheten.",
+      "example": "Skildringen känns sanningsenlig utan att vara överdriven."
+    },
+    "satirisk": {
+      "explanation": "\"satirisk\" betyder ironiskt kritisk, ofta med humor som vapen.",
+      "example": "Krönikan hade en satirisk ton som gick hem hos läsarna."
+    },
+    "schablonartad": {
+      "explanation": "\"schablonartad\" betyder stereotyp och förenklad på ett förutsägbart sätt.",
+      "example": "Personerna i filmen blev för schablonartade för att kännas levande."
+    },
+    "seglivad": {
+      "explanation": "\"seglivad\" betyder svår att bli av med eller få att försvinna.",
+      "example": "Det är en seglivad myt som fortfarande upprepas."
+    },
+    "seg": {
+      "explanation": "\"seg\" betyder trög, långsam eller motvillig att komma igång.",
+      "example": "Jag kände mig seg hela morgonen efter den sena kvällen."
+    },
+    "senil": {
+      "explanation": "\"senil\" betyder åldersglömsk eller mentalt försvagad på äldre dar.",
+      "example": "Den gamle mannen blev alltmer senil med åren."
+    },
+    "sentimental": {
+      "explanation": "\"sentimental\" betyder lättrörd och starkt styrd av känslor.",
+      "example": "Hon blev sentimental när hon hörde sin gamla skollåt."
+    },
+    "separerad": {
+      "explanation": "\"separerad\" betyder åtskild eller inte längre tillsammans.",
+      "example": "De har varit separerade i nästan ett år nu."
+    },
+    "seriös": {
+      "explanation": "\"seriös\" betyder allvarlig, pålitlig och inte skämtsam.",
+      "example": "Vi behöver en seriös diskussion om budgeten."
+    },
+    "sinnesnärvarande": {
+      "explanation": "\"sinnesnärvarande\" betyder klar i huvudet och snabbt redo att reagera.",
+      "example": "Hon var så sinnesnärvarande att hon fångade glaset innan det föll."
+    },
+    "sirlig": {
+      "explanation": "\"sirlig\" betyder fint utformad, nätt och omsorgsfull.",
+      "example": "Hon skrev med en sirlig handstil som var lätt att känna igen."
+    },
+    "sjutusan": {
+      "explanation": "\"sjutusan\" används ofta för att förstärka och betyder ungefär väldig eller kraftig.",
+      "example": "Det blev en sjutusan till smäll när dörren slog igen."
+    },
+    "skadlig": {
+      "explanation": "\"skadlig\" betyder farlig eller negativ för hälsa, miljö eller utveckling.",
+      "example": "För mycket sol kan vara skadligt för huden."
+    },
+    "skamlig": {
+      "explanation": "\"skamlig\" betyder vanärande och något man borde skämmas för.",
+      "example": "Det var en skamlig behandling av de anställda."
+    },
+    "skarpsinnig": {
+      "explanation": "\"skarpsinnig\" betyder klok, snabb i tanken och god på att förstå sammanhang.",
+      "example": "Hennes skarpsinniga kommentar ändrade hela diskussionen."
+    },
+    "skenhelig": {
+      "explanation": "\"skenhelig\" betyder hycklande och falskt from eller god.",
+      "example": "Hans skenheliga ton irriterade resten av gruppen."
+    }
+  }
+}

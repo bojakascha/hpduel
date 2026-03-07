@@ -1,0 +1,1126 @@
+{
+  "wordList": [
+    {
+      "word": "mödosamt",
+      "correct": "arbetsamt",
+      "distractors": [
+        "smidigt",
+        "lättsamt",
+        "motvilligt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "nakterhus",
+      "correct": "skydd för fartygskompass",
+      "distractors": [
+        "hytt för nattvakt",
+        "signalmast",
+        "lastutrymme"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "nattsvart",
+      "correct": "mycket mörk",
+      "distractors": [
+        "gryningsljus",
+        "fläckvis ljus",
+        "blåskimrande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "naturnära",
+      "correct": "nära naturen",
+      "distractors": [
+        "centralt belägen",
+        "konstgjord",
+        "storstadsmässig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "nederlagsdömd",
+      "correct": "chanslös",
+      "distractors": [
+        "segerviss",
+        "hoppfull",
+        "jämnstark"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "nedtyngd",
+      "correct": "belastad",
+      "distractors": [
+        "upplyft",
+        "frigjord",
+        "upprymd"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "neurotisk",
+      "correct": "ängsligt nervös",
+      "distractors": [
+        "sorglöst lugn",
+        "målmedvetet disciplinerad",
+        "socialt utåtriktad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "nitisk",
+      "correct": "överdrivet ivrig",
+      "distractors": [
+        "likgiltig",
+        "slarvig",
+        "avvaktande"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "nogsam",
+      "correct": "anspråkslös",
+      "distractors": [
+        "krävande",
+        "lyxig",
+        "påträngande"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "nostalgisk",
+      "correct": "längtande tillbaka",
+      "distractors": [
+        "framtidsinriktad",
+        "kallsinnig",
+        "rastlös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "notabel",
+      "correct": "anmärkningsvärd",
+      "distractors": [
+        "obetydlig",
+        "okänd",
+        "vardaglig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "nöjd",
+      "correct": "tillfreds",
+      "distractors": [
+        "missnöjd",
+        "orolig",
+        "tveksam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "nödställd",
+      "correct": "i svår nöd",
+      "distractors": [
+        "välmående",
+        "självständig",
+        "obetänksam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "obefintlig",
+      "correct": "som inte finns",
+      "distractors": [
+        "mycket liten",
+        "tillfällig",
+        "undanskymd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "obehörig",
+      "correct": "utan tillstånd",
+      "distractors": [
+        "oerfaren",
+        "ovillig",
+        "utan stöd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "obekant",
+      "correct": "okänd",
+      "distractors": [
+        "välkänd",
+        "särskild",
+        "pålitlig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "obelastad",
+      "correct": "utan anmärkningar",
+      "distractors": [
+        "tungt skuldsatt",
+        "överfull",
+        "hårt prövad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "oberäknelig",
+      "correct": "svår att förutse",
+      "distractors": [
+        "pålitlig",
+        "regelbunden",
+        "genomtänkt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "obestridlig",
+      "correct": "omöjlig att förneka",
+      "distractors": [
+        "tvivelaktig",
+        "omstridd",
+        "svårtolkad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "obetydlig",
+      "correct": "oviktig",
+      "distractors": [
+        "avgörande",
+        "märkvärdig",
+        "omfattande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "oblandad",
+      "correct": "ren",
+      "distractors": [
+        "utspädd",
+        "tveksam",
+        "varierad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "obligatorisk",
+      "correct": "tvingande",
+      "distractors": [
+        "frivillig",
+        "provisorisk",
+        "otillåten"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "obunden",
+      "correct": "fri från bindning",
+      "distractors": [
+        "låst",
+        "beroende",
+        "reglerad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oböjlig",
+      "correct": "orubblig",
+      "distractors": [
+        "eftergiven",
+        "osäker",
+        "tillfällig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "odelad",
+      "correct": "fullständig",
+      "distractors": [
+        "splittrad",
+        "halvdan",
+        "begränsad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "odiskutabel",
+      "correct": "självklar",
+      "distractors": [
+        "oklar",
+        "omtvistad",
+        "osäker"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oemotståndlig",
+      "correct": "mycket lockande",
+      "distractors": [
+        "motbjudande",
+        "likgiltig",
+        "obetydlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oetisk",
+      "correct": "moraliskt felaktig",
+      "distractors": [
+        "lagstadgad",
+        "välvillig",
+        "ansvarsfull"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ofantlig",
+      "correct": "enorm",
+      "distractors": [
+        "obetydlig",
+        "måttlig",
+        "nätt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "offervillig",
+      "correct": "redo att försaka",
+      "distractors": [
+        "självisk",
+        "bekväm",
+        "snarstucken"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "oförargad",
+      "correct": "inte upprörd",
+      "distractors": [
+        "förnärmad",
+        "ursinnig",
+        "orolig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "oförenlig",
+      "correct": "som inte går ihop",
+      "distractors": [
+        "samstämmig",
+        "likvärdig",
+        "utbytbar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oförställd",
+      "correct": "uppriktig",
+      "distractors": [
+        "tillgjord",
+        "reserverad",
+        "påhittad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ofullkomlig",
+      "correct": "bristfällig",
+      "distractors": [
+        "felfri",
+        "slutgiltig",
+        "påkostad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ofrånkomlig",
+      "correct": "oundviklig",
+      "distractors": [
+        "frivillig",
+        "oväntad",
+        "möjlig att slippa"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ogrundad",
+      "correct": "utan stöd",
+      "distractors": [
+        "välunderbyggd",
+        "rimlig",
+        "efterlängtad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ohållbar",
+      "correct": "omöjlig att upprätthålla",
+      "distractors": [
+        "stabil",
+        "genomförbar",
+        "hållfast"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ohyfsad",
+      "correct": "otrevlig",
+      "distractors": [
+        "artig",
+        "varsam",
+        "hjälpsam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ointaglig",
+      "correct": "omöjlig att erövra",
+      "distractors": [
+        "öppen",
+        "sårbar",
+        "gästvänlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ointresserad",
+      "correct": "likgiltig",
+      "distractors": [
+        "nyfiken",
+        "engagerad",
+        "mottaglig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ojämn",
+      "correct": "inte slät eller jämn",
+      "distractors": [
+        "likformig",
+        "balanserad",
+        "regelbunden"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "okalibrerad",
+      "correct": "inte justerad",
+      "distractors": [
+        "fullt fungerande",
+        "väl rengjord",
+        "förseglad"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "okomplicerad",
+      "correct": "enkel",
+      "distractors": [
+        "invecklad",
+        "riskabel",
+        "krävande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "okoncentrerad",
+      "correct": "splittrad i tanken",
+      "distractors": [
+        "fokuserad",
+        "beslutsam",
+        "vaksam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "olärd",
+      "correct": "obildad",
+      "distractors": [
+        "beläst",
+        "skicklig",
+        "berest"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ombonad",
+      "correct": "hemtrevlig",
+      "distractors": [
+        "kal",
+        "stökig",
+        "tillfällig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "omedveten",
+      "correct": "utan vetskap",
+      "distractors": [
+        "väl insatt",
+        "avsiktlig",
+        "förberedd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "omfångsrik",
+      "correct": "mycket omfattande",
+      "distractors": [
+        "kortfattad",
+        "ytlig",
+        "ensidig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "omisskännlig",
+      "correct": "lätt att känna igen",
+      "distractors": [
+        "svårtydd",
+        "föränderlig",
+        "obetydlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "omodern",
+      "correct": "otidsenlig",
+      "distractors": [
+        "trendig",
+        "tidlös",
+        "praktisk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "omotiverad",
+      "correct": "utan rimlig grund",
+      "distractors": [
+        "välgrundad",
+        "nödvändig",
+        "förklarlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "omöjlig",
+      "correct": "kan inte genomföras",
+      "distractors": [
+        "krävande",
+        "ovanlig",
+        "tidsödande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ond",
+      "correct": "elak",
+      "distractors": [
+        "mild",
+        "sårbar",
+        "foglig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "oneklig",
+      "correct": "som inte kan förnekas",
+      "distractors": [
+        "tveksam",
+        "oklar",
+        "undanglidande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "onyanserad",
+      "correct": "alltför förenklad",
+      "distractors": [
+        "genomtänkt",
+        "detaljerad",
+        "försiktig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "opassande",
+      "correct": "olämplig",
+      "distractors": [
+        "träffande",
+        "naturlig",
+        "nödvändig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "operativ",
+      "correct": "verkställande",
+      "distractors": [
+        "teoretisk",
+        "ceremoniell",
+        "tveksam"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "oplockad",
+      "correct": "inte skördad",
+      "distractors": [
+        "omogen",
+        "rutten",
+        "sorterad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "opåverkad",
+      "correct": "oberörd",
+      "distractors": [
+        "stressad",
+        "övertalad",
+        "förändrad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ordknapp",
+      "correct": "fåordig",
+      "distractors": [
+        "vältalig",
+        "skrytsam",
+        "upprörd"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oreglerad",
+      "correct": "utan fasta regler",
+      "distractors": [
+        "övervakad",
+        "avgränsad",
+        "tillåten"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "oregerlig",
+      "correct": "svår att styra",
+      "distractors": [
+        "foglig",
+        "balanserad",
+        "lätthanterlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "orubblig",
+      "correct": "fast och stadig",
+      "distractors": [
+        "vacklande",
+        "mjuk",
+        "föränderlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ostörd",
+      "correct": "i fred",
+      "distractors": [
+        "trakasserad",
+        "orolig",
+        "upptagen"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ostrukturerad",
+      "correct": "utan tydlig ordning",
+      "distractors": [
+        "systematisk",
+        "koncentrerad",
+        "välplanerad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "otrolig",
+      "correct": "svår att tro på",
+      "distractors": [
+        "självklar",
+        "rimlig",
+        "vardaglig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "otuktig",
+      "correct": "sexuellt omoralisk",
+      "distractors": [
+        "blyg",
+        "laglydig",
+        "ärbar"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "oväntad",
+      "correct": "överraskande",
+      "distractors": [
+        "förutsedd",
+        "regelbunden",
+        "planerad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ovan",
+      "correct": "inte van",
+      "distractors": [
+        "erfaren",
+        "rutinerad",
+        "förtrogen"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "oviktad",
+      "correct": "utan viktning",
+      "distractors": [
+        "noggrant uträknad",
+        "jämnt fördelad",
+        "dubblerad"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "överarbetad",
+      "correct": "sliten av för mycket arbete",
+      "distractors": [
+        "väl förberedd",
+        "nyanställd",
+        "lättad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "överdriven",
+      "correct": "alltför stor",
+      "distractors": [
+        "måttlig",
+        "återhållsam",
+        "välavvägd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "överjordisk",
+      "correct": "övernaturlig",
+      "distractors": [
+        "jordnära",
+        "vardaglig",
+        "påtaglig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "övermodig",
+      "correct": "för självsäker",
+      "distractors": [
+        "ödmjuk",
+        "räddhågsen",
+        "betänksam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "övernitisk",
+      "correct": "alltför nitisk",
+      "distractors": [
+        "likgiltig",
+        "slapphänt",
+        "förstående"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "överskådlig",
+      "correct": "lätt att överblicka",
+      "distractors": [
+        "snårig",
+        "hemlig",
+        "ofullständig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "pampig",
+      "correct": "ståtlig",
+      "distractors": [
+        "anspråkslös",
+        "slarvig",
+        "dämpad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "parasitär",
+      "correct": "snyltande",
+      "distractors": [
+        "självförsörjande",
+        "välgörande",
+        "ömsesidig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "partiell",
+      "correct": "delvis",
+      "distractors": [
+        "fullständig",
+        "slumpmässig",
+        "ensidig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "passionerad",
+      "correct": "lidelsefull",
+      "distractors": [
+        "likgiltig",
+        "behärskad",
+        "reserverad"
+      ],
+      "difficulty": 2
+    }
+  ],
+  "wordDetails": {
+    "mödosamt": {
+      "explanation": "\"mödosamt\" betyder ungefär \"arbetsamt\" eller att något kräver mycket ansträngning.",
+      "example": "Arbetet gick mödosamt framåt i den djupa snön."
+    },
+    "nakterhus": {
+      "explanation": "\"nakterhus\" är ett skyddande hus eller skåp för kompassen på ett fartyg.",
+      "example": "Styrmannen kontrollerade kompassen i nakterhuset före avfärd."
+    },
+    "nattsvart": {
+      "explanation": "\"nattsvart\" betyder ungefär \"mycket mörk\", som natten.",
+      "example": "Himlen var nattsvart när strömmen gick."
+    },
+    "naturnära": {
+      "explanation": "\"naturnära\" betyder att något ligger nära naturen eller har tydlig naturprägel.",
+      "example": "De flyttade till ett naturnära område nära skogen."
+    },
+    "nederlagsdömd": {
+      "explanation": "\"nederlagsdömd\" betyder att någon eller något verkar dömt att förlora.",
+      "example": "Laget såg nederlagsdömt ut redan före paus."
+    },
+    "nedtyngd": {
+      "explanation": "\"nedtyngd\" betyder ungefär \"belastad\" eller tyngd av något svårt.",
+      "example": "Han gick hem nedtyngd av sorg."
+    },
+    "neurotisk": {
+      "explanation": "\"neurotisk\" betyder ungefär att någon är överdrivet ängslig, nervös eller psykiskt spänd.",
+      "example": "Hon blev nästan neurotisk av all osäkerhet inför beskedet."
+    },
+    "nitisk": {
+      "explanation": "\"nitisk\" betyder ungefär \"överdrivet ivrig\" eller alltför plikttrogen.",
+      "example": "Den nitiske revisorn granskade varje kvitto."
+    },
+    "nogsam": {
+      "explanation": "\"nogsam\" betyder ungefär \"anspråkslös\" eller nöjd med lite.",
+      "example": "Hon var nogsam i sina vanor och nöjde sig med det enkla."
+    },
+    "nostalgisk": {
+      "explanation": "\"nostalgisk\" betyder att man med vemod eller värme längtar tillbaka till det förflutna.",
+      "example": "Han blev nostalgisk när han hörde den gamla signaturmelodin."
+    },
+    "notabel": {
+      "explanation": "\"notabel\" betyder ungefär \"anmärkningsvärd\" eller särskilt värd att lägga märke till.",
+      "example": "Resultatet var notabelt med tanke på de svåra förutsättningarna."
+    },
+    "nöjd": {
+      "explanation": "\"nöjd\" betyder ungefär \"tillfreds\".",
+      "example": "Hon såg nöjd ut efter att ha lämnat in provet."
+    },
+    "nödställd": {
+      "explanation": "\"nödställd\" betyder att någon befinner sig i svår nöd och behöver hjälp.",
+      "example": "Föreningen samlade in kläder till nödställda familjer."
+    },
+    "obefintlig": {
+      "explanation": "\"obefintlig\" betyder att något helt saknas eller inte finns alls.",
+      "example": "Intresset för förslaget var nästan obefintligt."
+    },
+    "obehörig": {
+      "explanation": "\"obehörig\" betyder att någon saknar rätt eller tillstånd att göra något.",
+      "example": "Obehöriga personer får inte komma in i lokalen."
+    },
+    "obekant": {
+      "explanation": "\"obekant\" betyder ungefär \"okänd\" eller inte väl bekant.",
+      "example": "Staden var helt obekant för honom."
+    },
+    "obelastad": {
+      "explanation": "\"obelastad\" betyder här ungefär \"utan anmärkningar\" eller fri från belastning.",
+      "example": "Sökanden var obelastad i polisens register."
+    },
+    "oberäknelig": {
+      "explanation": "\"oberäknelig\" betyder att något eller någon är svår att förutsäga.",
+      "example": "Vädret i fjällen kan vara oberäkneligt."
+    },
+    "obestridlig": {
+      "explanation": "\"obestridlig\" betyder att något är så tydligt att det inte går att förneka.",
+      "example": "Hon hade obestridliga bevis för sitt påstående."
+    },
+    "obetydlig": {
+      "explanation": "\"obetydlig\" betyder ungefär \"oviktig\" eller av liten betydelse.",
+      "example": "Felet var så obetydligt att ingen märkte det."
+    },
+    "oblandad": {
+      "explanation": "\"oblandad\" betyder ungefär \"ren\", utan inslag av något annat.",
+      "example": "Beskedet togs emot med oblandad glädje."
+    },
+    "obligatorisk": {
+      "explanation": "\"obligatorisk\" betyder att något är tvingande och måste göras.",
+      "example": "Kursen har ett obligatoriskt seminarium."
+    },
+    "obunden": {
+      "explanation": "\"obunden\" betyder att något eller någon inte är bunden eller styrd av något särskilt.",
+      "example": "Som obunden skribent kunde hon skriva fritt."
+    },
+    "oböjlig": {
+      "explanation": "\"oböjlig\" betyder ungefär \"orubblig\" och ovillig att ge efter.",
+      "example": "Han var oböjlig i frågan om budgeten."
+    },
+    "odelad": {
+      "explanation": "\"odelad\" betyder ungefär \"fullständig\" eller hel, utan uppdelning.",
+      "example": "Publiken gav henne sin odelade uppmärksamhet."
+    },
+    "odiskutabel": {
+      "explanation": "\"odiskutabel\" betyder att något är så tydligt att det knappast kan diskuteras.",
+      "example": "Det är en odiskutabel fördel att bo nära jobbet."
+    },
+    "oemotståndlig": {
+      "explanation": "\"oemotståndlig\" betyder att något är så lockande att det är svårt att stå emot.",
+      "example": "Doften från bageriet var oemotståndlig."
+    },
+    "oetisk": {
+      "explanation": "\"oetisk\" betyder att något strider mot moral eller goda principer.",
+      "example": "Det vore oetiskt att dölja resultaten för deltagarna."
+    },
+    "ofantlig": {
+      "explanation": "\"ofantlig\" betyder ungefär \"enorm\" eller mycket stor.",
+      "example": "Projektet krävde en ofantlig mängd tid."
+    },
+    "offervillig": {
+      "explanation": "\"offervillig\" betyder att man är beredd att avstå något för andras skull eller för en sak.",
+      "example": "Den offervilliga grannen hjälpte alla i kvarteret."
+    },
+    "oförargad": {
+      "explanation": "\"oförargad\" betyder att någon inte är arg, irriterad eller upprörd.",
+      "example": "Hon förblev oförargad trots den spydiga kommentaren."
+    },
+    "oförenlig": {
+      "explanation": "\"oförenlig\" betyder att två saker inte passar ihop eller inte kan kombineras.",
+      "example": "De två rollerna är oförenliga i samma process."
+    },
+    "oförställd": {
+      "explanation": "\"oförställd\" betyder ungefär \"uppriktig\" och inte tillgjord.",
+      "example": "Hans skratt var helt oförställt."
+    },
+    "ofullkomlig": {
+      "explanation": "\"ofullkomlig\" betyder att något inte är fulländat utan har brister.",
+      "example": "Modellen är ofullkomlig men ändå användbar."
+    },
+    "ofrånkomlig": {
+      "explanation": "\"ofrånkomlig\" betyder ungefär \"oundviklig\".",
+      "example": "En viss osäkerhet är ofrånkomlig i all forskning."
+    },
+    "ogrundad": {
+      "explanation": "\"ogrundad\" betyder att något saknar grund eller stöd i fakta.",
+      "example": "Ryktena visade sig vara ogrundade."
+    },
+    "ohållbar": {
+      "explanation": "\"ohållbar\" betyder att något inte fungerar i längden eller inte går att försvara.",
+      "example": "Situationen blev ekonomiskt ohållbar."
+    },
+    "ohyfsad": {
+      "explanation": "\"ohyfsad\" betyder ungefär \"otrevlig\" eller dåligt uppfostrad.",
+      "example": "Det var ohyfsat att avbryta henne mitt i meningen."
+    },
+    "ointaglig": {
+      "explanation": "\"ointaglig\" betyder att något inte går att inta eller erövra.",
+      "example": "Borgen ansågs länge ointaglig."
+    },
+    "ointresserad": {
+      "explanation": "\"ointresserad\" betyder ungefär \"likgiltig\".",
+      "example": "Hon verkade helt ointresserad av erbjudandet."
+    },
+    "ojämn": {
+      "explanation": "\"ojämn\" betyder att något inte är jämnt, slätt eller stabilt.",
+      "example": "Underlaget var ojämnt och svårt att gå på."
+    },
+    "okalibrerad": {
+      "explanation": "\"okalibrerad\" betyder att ett instrument inte har ställts in korrekt.",
+      "example": "Mätinstrumentet gav fel värden eftersom det var okalibrerat."
+    },
+    "okomplicerad": {
+      "explanation": "\"okomplicerad\" betyder ungefär \"enkel\" och lätt att hantera.",
+      "example": "Det var en okomplicerad operation med snabb återhämtning."
+    },
+    "okoncentrerad": {
+      "explanation": "\"okoncentrerad\" betyder att man har svårt att hålla tankarna samlade.",
+      "example": "Eleverna var okoncentrerade efter lunchen."
+    },
+    "olärd": {
+      "explanation": "\"olärd\" betyder ungefär \"obildad\" eller utan större utbildning.",
+      "example": "Han var olärd men klok och erfaren."
+    },
+    "ombonad": {
+      "explanation": "\"ombonad\" betyder att något känns varmt, skyddat och hemtrevligt.",
+      "example": "Rummet kändes varmt och ombonat."
+    },
+    "omedveten": {
+      "explanation": "\"omedveten\" betyder att någon inte känner till eller tänker på något.",
+      "example": "Han var helt omedveten om felet i rapporten."
+    },
+    "omfångsrik": {
+      "explanation": "\"omfångsrik\" betyder att något är stort till sitt innehåll eller sin omfattning.",
+      "example": "Rapporten var så omfångsrik att få hann läsa allt."
+    },
+    "omisskännlig": {
+      "explanation": "\"omisskännlig\" betyder att något är så tydligt att det genast känns igen.",
+      "example": "Dialekten var omisskännlig."
+    },
+    "omodern": {
+      "explanation": "\"omodern\" betyder ungefär \"otidsenlig\".",
+      "example": "Synsättet känns omodernt i dag."
+    },
+    "omotiverad": {
+      "explanation": "\"omotiverad\" betyder att något saknar tydlig eller rimlig grund.",
+      "example": "Reaktionen verkade helt omotiverad."
+    },
+    "omöjlig": {
+      "explanation": "\"omöjlig\" betyder att något inte går att göra.",
+      "example": "Uppgiften verkade nästan omöjlig först."
+    },
+    "ond": {
+      "explanation": "\"ond\" betyder ungefär \"elak\" eller fylld av illvilja.",
+      "example": "Sagan handlar om en ond drottning."
+    },
+    "oneklig": {
+      "explanation": "\"oneklig\" betyder att något är så tydligt att det inte går att förneka.",
+      "example": "Det finns en oneklig charm i det gamla huset."
+    },
+    "onyanserad": {
+      "explanation": "\"onyanserad\" betyder att något framställs alltför förenklat utan viktiga skillnader.",
+      "example": "Debatten blev onyanserad och svartvit."
+    },
+    "opassande": {
+      "explanation": "\"opassande\" betyder ungefär \"olämplig\".",
+      "example": "Skämtet var opassande på begravningen."
+    },
+    "operativ": {
+      "explanation": "\"operativ\" betyder här ungefär \"verkställande\" eller inriktad på praktiskt genomförande.",
+      "example": "Den operativa ledningen tog över arbetet under krisen."
+    },
+    "oplockad": {
+      "explanation": "\"oplockad\" betyder att något ännu inte har plockats.",
+      "example": "Äpplena låg fortfarande oplockade under trädet."
+    },
+    "opåverkad": {
+      "explanation": "\"opåverkad\" betyder ungefär \"oberörd\" eller inte ändrad av något.",
+      "example": "Trots kritiken verkade hon helt opåverkad."
+    },
+    "ordknapp": {
+      "explanation": "\"ordknapp\" betyder att någon säger lite och uttrycker sig kortfattat.",
+      "example": "Han är ordknapp men säger ofta viktiga saker."
+    },
+    "oreglerad": {
+      "explanation": "\"oreglerad\" betyder att något saknar tydliga regler eller styrning.",
+      "example": "Marknaden var länge oreglerad."
+    },
+    "oregerlig": {
+      "explanation": "\"oregerlig\" betyder att något eller någon är svår att kontrollera eller styra.",
+      "example": "Den oregerliga hästen stegrade sig plötsligt."
+    },
+    "orubblig": {
+      "explanation": "\"orubblig\" betyder att någon står fast och inte låter sig rubbas.",
+      "example": "Hon stod orubblig vid sitt beslut."
+    },
+    "ostörd": {
+      "explanation": "\"ostörd\" betyder att något får vara i fred utan avbrott.",
+      "example": "Barnet sov ostört hela natten."
+    },
+    "ostrukturerad": {
+      "explanation": "\"ostrukturerad\" betyder att något saknar tydlig uppbyggnad eller ordning.",
+      "example": "Texten var ostrukturerad och svår att följa."
+    },
+    "otrolig": {
+      "explanation": "\"otrolig\" betyder här ungefär \"svår att tro på\".",
+      "example": "Det lät som en otrolig historia."
+    },
+    "otuktig": {
+      "explanation": "\"otuktig\" är ett äldre ord för något som anses sexuellt omoraliskt.",
+      "example": "I äldre lagar straffades otuktigt leverne hårt."
+    },
+    "oväntad": {
+      "explanation": "\"oväntad\" betyder ungefär \"överraskande\".",
+      "example": "Frågan kom helt oväntat."
+    },
+    "ovan": {
+      "explanation": "\"ovan\" betyder att någon inte är van vid något.",
+      "example": "Han var ovan vid storstadslivet."
+    },
+    "oviktad": {
+      "explanation": "\"oviktad\" betyder att något inte har justerats efter olika vikter eller betydelser.",
+      "example": "Medelvärdet var oviktat och tog inte hänsyn till gruppstorlek."
+    },
+    "överarbetad": {
+      "explanation": "\"överarbetad\" betyder att någon är utmattad efter att ha arbetat för mycket.",
+      "example": "Hon såg överarbetad ut efter veckans möten."
+    },
+    "överdriven": {
+      "explanation": "\"överdriven\" betyder att något går längre än vad som är rimligt.",
+      "example": "Rädslan var överdriven i förhållande till risken."
+    },
+    "överjordisk": {
+      "explanation": "\"överjordisk\" betyder något som verkar komma från en högre eller övernaturlig värld.",
+      "example": "Ljuset gav platsen en nästan överjordisk stämning."
+    },
+    "övermodig": {
+      "explanation": "\"övermodig\" betyder att någon är alltför självsäker och tar för stora risker.",
+      "example": "Han blev övermodig efter den första segern."
+    },
+    "övernitisk": {
+      "explanation": "\"övernitisk\" betyder att någon är alltför ivrig eller petig i sin pliktkänsla.",
+      "example": "Den övernitiske vakten kontrollerade allas legitimation flera gånger."
+    },
+    "överskådlig": {
+      "explanation": "\"överskådlig\" betyder att något är lätt att få överblick över.",
+      "example": "Tabellen gör materialet mer överskådligt."
+    },
+    "pampig": {
+      "explanation": "\"pampig\" betyder ungefär \"ståtlig\" och imponerande till det yttre.",
+      "example": "Byggnaden har en pampig entré."
+    },
+    "parasitär": {
+      "explanation": "\"parasitär\" betyder att något lever på eller utnyttjar något annat utan att ge tillbaka.",
+      "example": "Relationen beskrevs som parasitär och ensidigt utnyttjande."
+    },
+    "partiell": {
+      "explanation": "\"partiell\" betyder att något bara gäller en del och inte helheten.",
+      "example": "Skadan var partiell snarare än total."
+    },
+    "passionerad": {
+      "explanation": "\"passionerad\" betyder att någon känner stark glöd eller starkt engagemang.",
+      "example": "Han höll ett passionerat tal om klimatfrågan."
+    }
+  }
+}

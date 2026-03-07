@@ -1,0 +1,1126 @@
+{
+  "wordList": [
+    {
+      "word": "tärande",
+      "correct": "påfrestande",
+      "distractors": [
+        "uppiggande",
+        "lindrande",
+        "obetydlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uddlös",
+      "correct": "trubbig",
+      "distractors": [
+        "skarp",
+        "träffsäker",
+        "bitsk"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "underfundig",
+      "correct": "finurlig",
+      "distractors": [
+        "burdus",
+        "högdragen",
+        "enfaldig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "underkuvad",
+      "correct": "kuvad",
+      "distractors": [
+        "självständig",
+        "stursk",
+        "frigjord"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "undfallande",
+      "correct": "foglig",
+      "distractors": [
+        "upprorisk",
+        "enveten",
+        "stridbar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "undflyende",
+      "correct": "undvikande",
+      "distractors": [
+        "öppen",
+        "rättfram",
+        "bestämd"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "undermålig",
+      "correct": "dålig",
+      "distractors": [
+        "utmärkt",
+        "gedigen",
+        "pålitlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "undfallig",
+      "correct": "eftergiven",
+      "distractors": [
+        "hårdför",
+        "oböjlig",
+        "kylig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "undgänglig",
+      "correct": "möjlig att undvika",
+      "distractors": [
+        "oundviklig",
+        "nödvändig",
+        "önskvärd"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "undflyktig",
+      "correct": "smitande",
+      "distractors": [
+        "utförlig",
+        "uppriktig",
+        "medgörlig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "undrande",
+      "correct": "frågande",
+      "distractors": [
+        "tvärsäker",
+        "likgiltig",
+        "föraktfull"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ungdomlig",
+      "correct": "ung till sättet",
+      "distractors": [
+        "ålderstigen",
+        "stram",
+        "högtidlig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "uppblåst",
+      "correct": "högfärdig",
+      "distractors": [
+        "ödmjuk",
+        "blygsam",
+        "anspråkslös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uppgiven",
+      "correct": "modfälld",
+      "distractors": [
+        "hoppfull",
+        "stridslysten",
+        "upprymd"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "upphetsad",
+      "correct": "uppskruvad",
+      "distractors": [
+        "lugn",
+        "sansad",
+        "avslappnad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uppkäftig",
+      "correct": "fräck",
+      "distractors": [
+        "ödmjuk",
+        "finkänslig",
+        "försynt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "upplyst",
+      "correct": "bildad",
+      "distractors": [
+        "okunnig",
+        "vidskeplig",
+        "förvirrad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uppriktig",
+      "correct": "ärlig",
+      "distractors": [
+        "svekfull",
+        "inställsam",
+        "undvikande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "upprorisk",
+      "correct": "trotsig",
+      "distractors": [
+        "foglig",
+        "lydig",
+        "undfallande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uppsluppen",
+      "correct": "munter",
+      "distractors": [
+        "dyster",
+        "stel",
+        "butter"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uppstudsig",
+      "correct": "trotsig",
+      "distractors": [
+        "foglig",
+        "respektfull",
+        "underdånig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "upphöjd",
+      "correct": "förnäm",
+      "distractors": [
+        "tarvlig",
+        "vardaglig",
+        "simpel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ursinnig",
+      "correct": "rasande",
+      "distractors": [
+        "förnöjd",
+        "lågmäld",
+        "oberörd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ursprunglig",
+      "correct": "från början",
+      "distractors": [
+        "nyligen tillkommen",
+        "tillfällig",
+        "omarbetad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uthållig",
+      "correct": "seg",
+      "distractors": [
+        "lättledd",
+        "kortlivad",
+        "bräcklig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "utlevande",
+      "correct": "utsvävande",
+      "distractors": [
+        "återhållsam",
+        "tillknäppt",
+        "stram"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "utmärkt",
+      "correct": "mycket bra",
+      "distractors": [
+        "otillräcklig",
+        "medioker",
+        "bristfällig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "utpräglad",
+      "correct": "tydlig",
+      "distractors": [
+        "svag",
+        "oklar",
+        "diskret"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "utsatt",
+      "correct": "sårbar",
+      "distractors": [
+        "skyddad",
+        "trygg",
+        "oberoende"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "utslagsgivande",
+      "correct": "avgörande",
+      "distractors": [
+        "obetydlig",
+        "tveksam",
+        "tillfällig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "utsökt",
+      "correct": "mycket fin",
+      "distractors": [
+        "torftig",
+        "rå",
+        "smaklös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "uttråkad",
+      "correct": "utled",
+      "distractors": [
+        "engagerad",
+        "road",
+        "nyfiken"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "utvidgad",
+      "correct": "större",
+      "distractors": [
+        "begränsad",
+        "förkortad",
+        "minskad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "utåtriktad",
+      "correct": "social",
+      "distractors": [
+        "tillbakadragen",
+        "skygg",
+        "tystlåten"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vaksam",
+      "correct": "uppmärksam",
+      "distractors": [
+        "ouppmärksam",
+        "sömnig",
+        "naiv"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vanartig",
+      "correct": "olydig",
+      "distractors": [
+        "väluppfostrad",
+        "följsam",
+        "artig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vanebildande",
+      "correct": "beroendeframkallande",
+      "distractors": [
+        "ofarlig",
+        "kortvarig",
+        "lugnande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vanlottad",
+      "correct": "missgynnad",
+      "distractors": [
+        "gynnad",
+        "privilegierad",
+        "framgångsrik"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "vansklig",
+      "correct": "riskfylld",
+      "distractors": [
+        "ofarlig",
+        "enkel",
+        "säker"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "varmhjärtad",
+      "correct": "omtänksam",
+      "distractors": [
+        "kall",
+        "hård",
+        "likgiltig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "varsam",
+      "correct": "försiktig",
+      "distractors": [
+        "hårdhänt",
+        "hafsig",
+        "vårdslös"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vass",
+      "correct": "skarp",
+      "distractors": [
+        "slö",
+        "trubbig",
+        "mjuk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vederhäftig",
+      "correct": "tillförlitlig",
+      "distractors": [
+        "osäker",
+        "ryktesbaserad",
+        "tendentiös"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "vek",
+      "correct": "svag",
+      "distractors": [
+        "hård",
+        "kraftfull",
+        "orubblig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vemodig",
+      "correct": "melankolisk",
+      "distractors": [
+        "uppsluppen",
+        "livlig",
+        "bekymmerslös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "verkningsfull",
+      "correct": "effektiv",
+      "distractors": [
+        "tandlös",
+        "svag",
+        "omständig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vidlyftig",
+      "correct": "omständig",
+      "distractors": [
+        "kortfattad",
+        "koncis",
+        "precis"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "vilsen",
+      "correct": "desorienterad",
+      "distractors": [
+        "målmedveten",
+        "säker",
+        "hemvan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vindsnabb",
+      "correct": "mycket snabb",
+      "distractors": [
+        "långsam",
+        "trög",
+        "tungfotad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vinglig",
+      "correct": "ostadig",
+      "distractors": [
+        "stadig",
+        "fast",
+        "balanserad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "virrig",
+      "correct": "förvirrad",
+      "distractors": [
+        "samlad",
+        "klar",
+        "skärpt"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vis",
+      "correct": "klok",
+      "distractors": [
+        "naiv",
+        "oförståndig",
+        "barnslig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vittfamnande",
+      "correct": "omfattande",
+      "distractors": [
+        "snäv",
+        "begränsad",
+        "ytlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "vivör",
+      "correct": "livlighet",
+      "distractors": [
+        "trötthet",
+        "stelhet",
+        "likgiltighet"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "vresig",
+      "correct": "butter",
+      "distractors": [
+        "vänlig",
+        "hjärtlig",
+        "mild"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vårdslös",
+      "correct": "slarvig",
+      "distractors": [
+        "noggrann",
+        "samvetsgrann",
+        "varsam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "vänlig",
+      "correct": "snäll",
+      "distractors": [
+        "vresig",
+        "kall",
+        "hånfull"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "värdig",
+      "correct": "respektabel",
+      "distractors": [
+        "skamlig",
+        "futtig",
+        "ovärdig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "värnlös",
+      "correct": "försvarslös",
+      "distractors": [
+        "stridbar",
+        "rustad",
+        "motståndskraftig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "vördnadsfull",
+      "correct": "respektfull",
+      "distractors": [
+        "nedlåtande",
+        "hånfull",
+        "kamratlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "välavvägd",
+      "correct": "genomtänkt",
+      "distractors": [
+        "förhastad",
+        "obalanserad",
+        "hafsig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "välgrundad",
+      "correct": "befogad",
+      "distractors": [
+        "ogrundad",
+        "överdriven",
+        "svepande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "välmenande",
+      "correct": "välvillig",
+      "distractors": [
+        "illvillig",
+        "beräknande",
+        "hånfull"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "yvig",
+      "correct": "spretig",
+      "distractors": [
+        "stram",
+        "återhållen",
+        "ordnad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ytterst",
+      "correct": "mycket",
+      "distractors": [
+        "knappt",
+        "delvis",
+        "något"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ytlig",
+      "correct": "grund",
+      "distractors": [
+        "djupgående",
+        "ingående",
+        "seriös"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "äcklig",
+      "correct": "motbjudande",
+      "distractors": [
+        "aptitlig",
+        "fräsch",
+        "inbjudande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ädel",
+      "correct": "nobel",
+      "distractors": [
+        "tarvlig",
+        "småaktig",
+        "lågsinnad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "äregirig",
+      "correct": "ambitiös",
+      "distractors": [
+        "likgiltig",
+        "anspråkslös",
+        "slapp"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ärlig",
+      "correct": "uppriktig",
+      "distractors": [
+        "tvetungad",
+        "inställsam",
+        "skenhelig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "äventyrlig",
+      "correct": "djärv",
+      "distractors": [
+        "försiktig",
+        "räddhågsen",
+        "bekväm"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ödmjuk",
+      "correct": "anspråkslös",
+      "distractors": [
+        "uppblåst",
+        "skrytsam",
+        "självgod"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "ödesdiger",
+      "correct": "katastrofal",
+      "distractors": [
+        "obetydlig",
+        "lycklig",
+        "lindrig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "ömsint",
+      "correct": "öm",
+      "distractors": [
+        "hård",
+        "kylig",
+        "vresig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "öppenhjärtig",
+      "correct": "frank",
+      "distractors": [
+        "hemlighetsfull",
+        "sluten",
+        "undvikande"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "översinnlig",
+      "correct": "övernaturlig",
+      "distractors": [
+        "vardaglig",
+        "logisk",
+        "materiell"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "övertroisk",
+      "correct": "vidskeplig",
+      "distractors": [
+        "rationell",
+        "saklig",
+        "vetenskaplig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "abnorm",
+      "correct": "onormal",
+      "distractors": [
+        "vanlig",
+        "typisk",
+        "regelmässig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "ackurat",
+      "correct": "noggrann",
+      "distractors": [
+        "slarvig",
+        "ungefärlig",
+        "hafsig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "adaptiv",
+      "correct": "anpassningsbar",
+      "distractors": [
+        "rigid",
+        "oföränderlig",
+        "ensidig"
+      ],
+      "difficulty": 3
+    }
+  ],
+  "wordDetails": {
+    "tärande": {
+      "explanation": "\"tärande\" betyder ungefär \"påfrestande\".",
+      "example": "Den långvariga osäkerheten var tärande för hela familjen."
+    },
+    "uddlös": {
+      "explanation": "\"uddlös\" betyder ungefär \"trubbig\".",
+      "example": "Hans uddlösa kritik väckte knappt någon reaktion."
+    },
+    "underfundig": {
+      "explanation": "\"underfundig\" betyder ungefär \"finurlig\".",
+      "example": "Hon log underfundigt som om hon visste mer än de andra."
+    },
+    "underkuvad": {
+      "explanation": "\"underkuvad\" betyder ungefär \"kuvad\".",
+      "example": "Efter år av hot levde han som en underkuvad människa."
+    },
+    "undfallande": {
+      "explanation": "\"undfallande\" betyder ungefär \"foglig\".",
+      "example": "Hon blev undfallande så fort chefen höjde rösten."
+    },
+    "undflyende": {
+      "explanation": "\"undflyende\" betyder ungefär \"undvikande\".",
+      "example": "Han gav ett undflyende svar när frågan blev för känslig."
+    },
+    "undermålig": {
+      "explanation": "\"undermålig\" betyder ungefär \"dålig\".",
+      "example": "Maten på konferensen höll en undermålig kvalitet."
+    },
+    "undfallig": {
+      "explanation": "\"undfallig\" betyder ungefär \"eftergiven\".",
+      "example": "Han lät märkbart undfallig inför auktoriteter."
+    },
+    "undgänglig": {
+      "explanation": "\"undgänglig\" betyder ungefär \"möjlig att undvika\".",
+      "example": "Med bättre planering hade missen varit helt undgänglig."
+    },
+    "undflyktig": {
+      "explanation": "\"undflyktig\" betyder ungefär \"smitande\".",
+      "example": "Politikern blev undflyktig så fort journalisten krävde ett klart besked."
+    },
+    "undrande": {
+      "explanation": "\"undrande\" betyder ungefär \"frågande\".",
+      "example": "Barnet såg undrande på den märkliga apparaten."
+    },
+    "ungdomlig": {
+      "explanation": "\"ungdomlig\" betyder ungefär \"ung till sättet\".",
+      "example": "Trots sin ålder hade hon en ungdomlig energi."
+    },
+    "uppblåst": {
+      "explanation": "\"uppblåst\" betyder ungefär \"högfärdig\".",
+      "example": "Han lät uppblåst när han talade om sina framgångar."
+    },
+    "uppgiven": {
+      "explanation": "\"uppgiven\" betyder ungefär \"modfälld\".",
+      "example": "Efter ännu ett avslag kände hon sig helt uppgiven."
+    },
+    "upphetsad": {
+      "explanation": "\"upphetsad\" betyder ungefär \"uppskruvad\".",
+      "example": "Stämningen blev upphetsad när resultatet offentliggjordes."
+    },
+    "uppkäftig": {
+      "explanation": "\"uppkäftig\" betyder ungefär \"fräck\".",
+      "example": "Eleven fick en tillsägelse för sitt uppkäftiga svar."
+    },
+    "upplyst": {
+      "explanation": "\"upplyst\" betyder ungefär \"bildad\".",
+      "example": "Han var en ovanligt upplyst debattör med bred historisk kunskap."
+    },
+    "uppriktig": {
+      "explanation": "\"uppriktig\" betyder ungefär \"ärlig\".",
+      "example": "Hon gav ett uppriktigt svar trots att det var obekvämt."
+    },
+    "upprorisk": {
+      "explanation": "\"upprorisk\" betyder ungefär \"trotsig\".",
+      "example": "Tonåringen blev allt mer upprorisk mot reglerna hemma."
+    },
+    "uppsluppen": {
+      "explanation": "\"uppsluppen\" betyder ungefär \"munter\".",
+      "example": "Sällskapet var uppsluppet efter den lyckade premiären."
+    },
+    "uppstudsig": {
+      "explanation": "\"uppstudsig\" betyder ungefär \"trotsig\".",
+      "example": "Hennes uppstudsiga ton gjorde läraren irriterad."
+    },
+    "upphöjd": {
+      "explanation": "\"upphöjd\" betyder ungefär \"förnäm\".",
+      "example": "Han talade i en nästan upphöjd ton om sitt uppdrag."
+    },
+    "ursinnig": {
+      "explanation": "\"ursinnig\" betyder ungefär \"rasande\".",
+      "example": "Hon blev ursinnig när någon hade repat bilen."
+    },
+    "ursprunglig": {
+      "explanation": "\"ursprunglig\" betyder ungefär \"från början\".",
+      "example": "Planen ändrades, men den ursprungliga idén var bättre."
+    },
+    "uthållig": {
+      "explanation": "\"uthållig\" betyder ungefär \"seg\".",
+      "example": "Hon var uthållig och gav sig inte trots flera motgångar."
+    },
+    "utlevande": {
+      "explanation": "\"utlevande\" betyder ungefär \"utsvävande\".",
+      "example": "Han levde ett utlevande liv med sena nätter och ständiga fester."
+    },
+    "utmärkt": {
+      "explanation": "\"utmärkt\" betyder ungefär \"mycket bra\".",
+      "example": "Du gjorde ett utmärkt arbete med rapporten."
+    },
+    "utpräglad": {
+      "explanation": "\"utpräglad\" betyder ungefär \"tydlig\".",
+      "example": "Hon har en utpräglad känsla för färg och form."
+    },
+    "utsatt": {
+      "explanation": "\"utsatt\" betyder ungefär \"sårbar\".",
+      "example": "Små barn är särskilt utsatta i trafiken."
+    },
+    "utslagsgivande": {
+      "explanation": "\"utslagsgivande\" betyder ungefär \"avgörande\".",
+      "example": "Det sista målet blev utslagsgivande för hela matchen."
+    },
+    "utsökt": {
+      "explanation": "\"utsökt\" betyder ungefär \"mycket fin\".",
+      "example": "Restaurangen serverade en utsökt dessert med hallon och choklad."
+    },
+    "uttråkad": {
+      "explanation": "\"uttråkad\" betyder ungefär \"utled\".",
+      "example": "Han såg uttråkad ut under det långa mötet."
+    },
+    "utvidgad": {
+      "explanation": "\"utvidgad\" betyder ungefär \"större\".",
+      "example": "Kommunen presenterade en utvidgad plan för kollektivtrafiken."
+    },
+    "utåtriktad": {
+      "explanation": "\"utåtriktad\" betyder ungefär \"social\".",
+      "example": "Hon är så utåtriktad att hon pratar med alla på festen."
+    },
+    "vaksam": {
+      "explanation": "\"vaksam\" betyder ungefär \"uppmärksam\".",
+      "example": "Föraren måste vara vaksam i det hala väglaget."
+    },
+    "vanartig": {
+      "explanation": "\"vanartig\" betyder ungefär \"olydig\".",
+      "example": "Barnet blev vanartigt när ingen satte några gränser."
+    },
+    "vanebildande": {
+      "explanation": "\"vanebildande\" betyder ungefär \"beroendeframkallande\".",
+      "example": "Läkaren varnade för att medicinen kunde vara vanebildande."
+    },
+    "vanlottad": {
+      "explanation": "\"vanlottad\" betyder ungefär \"missgynnad\".",
+      "example": "Hon växte upp i ett vanlottat område med små resurser."
+    },
+    "vansklig": {
+      "explanation": "\"vansklig\" betyder ungefär \"riskfylld\".",
+      "example": "Det är vanskligt att dra slutsatser från så lite data."
+    },
+    "varmhjärtad": {
+      "explanation": "\"varmhjärtad\" betyder ungefär \"omtänksam\".",
+      "example": "Hon är en varmhjärtad granne som alltid hjälper till."
+    },
+    "varsam": {
+      "explanation": "\"varsam\" betyder ungefär \"försiktig\".",
+      "example": "Han var varsam när han lyfte den gamla vasen."
+    },
+    "vass": {
+      "explanation": "\"vass\" betyder ungefär \"skarp\".",
+      "example": "Hon gav en vass kommentar som tystade hela rummet."
+    },
+    "vederhäftig": {
+      "explanation": "\"vederhäftig\" betyder ungefär \"tillförlitlig\".",
+      "example": "Tidningen vill bara hänvisa till vederhäftiga källor."
+    },
+    "vek": {
+      "explanation": "\"vek\" betyder ungefär \"svag\".",
+      "example": "Han hade en vek röst som knappt hördes längst bak."
+    },
+    "vemodig": {
+      "explanation": "\"vemodig\" betyder ungefär \"melankolisk\".",
+      "example": "Musiken gav kvällen en vemodig stämning."
+    },
+    "verkningsfull": {
+      "explanation": "\"verkningsfull\" betyder ungefär \"effektiv\".",
+      "example": "En kort paus kan vara mer verkningsfull än en lång förklaring."
+    },
+    "vidlyftig": {
+      "explanation": "\"vidlyftig\" betyder ungefär \"omständig\".",
+      "example": "Hans vidlyftiga resonemang gjorde alla otåliga."
+    },
+    "vilsen": {
+      "explanation": "\"vilsen\" betyder ungefär \"desorienterad\".",
+      "example": "Turisten såg vilsen ut och letade efter stationen."
+    },
+    "vindsnabb": {
+      "explanation": "\"vindsnabb\" betyder ungefär \"mycket snabb\".",
+      "example": "Budet kom vindsnabbt genom den smala gränden."
+    },
+    "vinglig": {
+      "explanation": "\"vinglig\" betyder ungefär \"ostadig\".",
+      "example": "Stolen var så vinglig att ingen vågade sitta på den."
+    },
+    "virrig": {
+      "explanation": "\"virrig\" betyder ungefär \"förvirrad\".",
+      "example": "Jag blir alltid lite virrig när jag sover för lite."
+    },
+    "vis": {
+      "explanation": "\"vis\" betyder ungefär \"klok\".",
+      "example": "Den vise läraren lät eleverna tänka själva först."
+    },
+    "vittfamnande": {
+      "explanation": "\"vittfamnande\" betyder ungefär \"omfattande\".",
+      "example": "Utredningen var vittfamnande och berörde flera politikområden."
+    },
+    "vivör": {
+      "explanation": "\"vivör\" betyder ungefär \"livlighet\".",
+      "example": "Trots sin ålder hade hon en imponerande vivör."
+    },
+    "vresig": {
+      "explanation": "\"vresig\" betyder ungefär \"butter\".",
+      "example": "Han lät vresig när han blev väckt mitt i natten."
+    },
+    "vårdslös": {
+      "explanation": "\"vårdslös\" betyder ungefär \"slarvig\".",
+      "example": "En vårdslös omkörning orsakade olyckan."
+    },
+    "vänlig": {
+      "explanation": "\"vänlig\" betyder ungefär \"snäll\".",
+      "example": "Hon gav ett vänligt leende till den nye eleven."
+    },
+    "värdig": {
+      "explanation": "\"värdig\" betyder ungefär \"respektabel\".",
+      "example": "Hon tog emot priset på ett lugnt och värdigt sätt."
+    },
+    "värnlös": {
+      "explanation": "\"värnlös\" betyder ungefär \"försvarslös\".",
+      "example": "Det lilla djuret låg värnlöst på vägen."
+    },
+    "vördnadsfull": {
+      "explanation": "\"vördnadsfull\" betyder ungefär \"respektfull\".",
+      "example": "Barnen stod tysta och vördnadsfulla i kyrkan."
+    },
+    "välavvägd": {
+      "explanation": "\"välavvägd\" betyder ungefär \"genomtänkt\".",
+      "example": "Det var en välavvägd kompromiss som båda sidor kunde acceptera."
+    },
+    "välgrundad": {
+      "explanation": "\"välgrundad\" betyder ungefär \"befogad\".",
+      "example": "Kritiken var välgrundad och byggde på tydliga fakta."
+    },
+    "välmenande": {
+      "explanation": "\"välmenande\" betyder ungefär \"välvillig\".",
+      "example": "Rådet var välmenande men hjälpte inte särskilt mycket."
+    },
+    "yvig": {
+      "explanation": "\"yvig\" betyder ungefär \"spretig\".",
+      "example": "Trädgården hade en yvig grönska som nästan tog över gången."
+    },
+    "ytterst": {
+      "explanation": "\"ytterst\" betyder ungefär \"mycket\".",
+      "example": "Hon var ytterst tveksam till förslaget."
+    },
+    "ytlig": {
+      "explanation": "\"ytlig\" betyder ungefär \"grund\".",
+      "example": "Samtalet blev ganska ytligt och kom aldrig in på det viktiga."
+    },
+    "äcklig": {
+      "explanation": "\"äcklig\" betyder ungefär \"motbjudande\".",
+      "example": "Det luktade så äckligt i kylskåpet att vi fick vädra köket."
+    },
+    "ädel": {
+      "explanation": "\"ädel\" betyder ungefär \"nobel\".",
+      "example": "Det var en ädel handling att ta på sig skulden för en vän."
+    },
+    "äregirig": {
+      "explanation": "\"äregirig\" betyder ungefär \"ambitiös\".",
+      "example": "Hon var äregirig och siktade tidigt mot den högsta posten."
+    },
+    "ärlig": {
+      "explanation": "\"ärlig\" betyder ungefär \"uppriktig\".",
+      "example": "Var ärlig och säg vad du faktiskt tycker."
+    },
+    "äventyrlig": {
+      "explanation": "\"äventyrlig\" betyder ungefär \"djärv\".",
+      "example": "De valde en äventyrlig väg genom fjällen i stället för den säkra leden."
+    },
+    "ödmjuk": {
+      "explanation": "\"ödmjuk\" betyder ungefär \"anspråkslös\".",
+      "example": "Trots framgången förblev hon ödmjuk."
+    },
+    "ödesdiger": {
+      "explanation": "\"ödesdiger\" betyder ungefär \"katastrofal\".",
+      "example": "Ett ödesdigert misstag förändrade allt på några sekunder."
+    },
+    "ömsint": {
+      "explanation": "\"ömsint\" betyder ungefär \"öm\".",
+      "example": "Hon talade med en ömsint röst till barnet."
+    },
+    "öppenhjärtig": {
+      "explanation": "\"öppenhjärtig\" betyder ungefär \"frank\".",
+      "example": "I intervjun var han ovanligt öppenhjärtig om sina misslyckanden."
+    },
+    "översinnlig": {
+      "explanation": "\"översinnlig\" betyder ungefär \"övernaturlig\".",
+      "example": "Romanen kretsar kring översinnliga krafter och märkliga syner."
+    },
+    "övertroisk": {
+      "explanation": "\"övertroisk\" betyder ungefär \"vidskeplig\".",
+      "example": "Han är så övertroisk att han undviker att gå under stegar."
+    },
+    "abnorm": {
+      "explanation": "\"abnorm\" betyder ungefär \"onormal\".",
+      "example": "Läkaren noterade en abnorm förändring i provsvaret."
+    },
+    "ackurat": {
+      "explanation": "\"ackurat\" betyder ungefär \"noggrann\".",
+      "example": "Hon är så ackurat att varje detalj måste stämma."
+    },
+    "adaptiv": {
+      "explanation": "\"adaptiv\" betyder ungefär \"anpassningsbar\".",
+      "example": "Systemet är adaptivt och lär sig av användarens beteende."
+    }
+  }
+}

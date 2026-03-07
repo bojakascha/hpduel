@@ -1,0 +1,1126 @@
+{
+  "wordList": [
+    {
+      "word": "skiftbar",
+      "correct": "föränderlig",
+      "distractors": [
+        "beständig",
+        "orubblig",
+        "entydig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "skingrad",
+      "correct": "utspridd",
+      "distractors": [
+        "samlad",
+        "tät",
+        "ordnad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "skissartad",
+      "correct": "översiktlig",
+      "distractors": [
+        "detaljerad",
+        "fullständig",
+        "slutgiltig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "skralig",
+      "correct": "mager",
+      "distractors": [
+        "kraftig",
+        "blomstrande",
+        "stadig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "skrämmande",
+      "correct": "otäck",
+      "distractors": [
+        "lockande",
+        "harmlös",
+        "trivial"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "skröplig",
+      "correct": "bräcklig",
+      "distractors": [
+        "robust",
+        "frodig",
+        "obändig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "skyddad",
+      "correct": "fredad",
+      "distractors": [
+        "utsatt",
+        "övergiven",
+        "obevakad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "skyddslös",
+      "correct": "värnlös",
+      "distractors": [
+        "pansrad",
+        "säker",
+        "betryggad"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "skälig",
+      "correct": "rimlig",
+      "distractors": [
+        "överdriven",
+        "tvivelaktig",
+        "usel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "slank",
+      "correct": "smärt",
+      "distractors": [
+        "satt",
+        "grov",
+        "klumpig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "slapphänt",
+      "correct": "vårdslös",
+      "distractors": [
+        "noggrann",
+        "sträng",
+        "driftig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "slavisk",
+      "correct": "osjälvständig",
+      "distractors": [
+        "självständig",
+        "originell",
+        "fri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "slipsad",
+      "correct": "polerad",
+      "distractors": [
+        "råbarkad",
+        "tafatt",
+        "osäker"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "slitsam",
+      "correct": "påfrestande",
+      "distractors": [
+        "uppfriskande",
+        "kortvarig",
+        "lekfull"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "slutenhjärtad",
+      "correct": "oöppen",
+      "distractors": [
+        "hjärtlig",
+        "meddelsam",
+        "tillmötesgående"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "smakrik",
+      "correct": "välsmakande",
+      "distractors": [
+        "smaklös",
+        "fadd",
+        "utspädd"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "smittsam",
+      "correct": "överförbar",
+      "distractors": [
+        "ärftlig",
+        "obotlig",
+        "tillfällig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "smärtsam",
+      "correct": "plågsam",
+      "distractors": [
+        "lindrig",
+        "lustfylld",
+        "stillsam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "snabbfotad",
+      "correct": "snabb",
+      "distractors": [
+        "långsam",
+        "orörlig",
+        "klumpig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "snillrik",
+      "correct": "uppfinningsrik",
+      "distractors": [
+        "tanklös",
+        "enkelspårig",
+        "fumlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "snårig",
+      "correct": "invecklad",
+      "distractors": [
+        "rak",
+        "lättfattlig",
+        "gles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "social",
+      "correct": "utåtriktad",
+      "distractors": [
+        "enstörig",
+        "avvaktande",
+        "kylig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "solitär",
+      "correct": "ensamstående",
+      "distractors": [
+        "gemensam",
+        "mångtalig",
+        "sammanfogad"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "sorgsen",
+      "correct": "nedstämd",
+      "distractors": [
+        "munter",
+        "ivrig",
+        "kavat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sovrad",
+      "correct": "utvald",
+      "distractors": [
+        "blandad",
+        "oförädlad",
+        "överbliven"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "sparsam",
+      "correct": "återhållsam",
+      "distractors": [
+        "slösaktig",
+        "ymnig",
+        "vårdslös"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "spegelblank",
+      "correct": "helt slät",
+      "distractors": [
+        "knottrig",
+        "matt",
+        "skrovlig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "spensig",
+      "correct": "smal",
+      "distractors": [
+        "kraftig",
+        "kompakt",
+        "knotig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "spirituell",
+      "correct": "kvick",
+      "distractors": [
+        "tungrodd",
+        "fåordig",
+        "stel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "spjuveraktig",
+      "correct": "skälmaktig",
+      "distractors": [
+        "högtidlig",
+        "butter",
+        "foglig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "spretande",
+      "correct": "osammanhängande",
+      "distractors": [
+        "samlad",
+        "enhetlig",
+        "stram"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "stark",
+      "correct": "kraftig",
+      "distractors": [
+        "svag",
+        "skör",
+        "matt"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "stillsinnig",
+      "correct": "lugn",
+      "distractors": [
+        "hetsig",
+        "bullrig",
+        "obändig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "stingslig",
+      "correct": "lättretlig",
+      "distractors": [
+        "jämnmodig",
+        "gladlynt",
+        "eftergiven"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "stjälpt",
+      "correct": "omkullvält",
+      "distractors": [
+        "upprätt",
+        "fastskruvad",
+        "förstärkt"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "storvulen",
+      "correct": "högtravande",
+      "distractors": [
+        "anspråkslös",
+        "enkel",
+        "lågmäld"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "strandsatt",
+      "correct": "fastlåst",
+      "distractors": [
+        "sjösatt",
+        "välkommen",
+        "förankrad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "stridslysten",
+      "correct": "aggressiv",
+      "distractors": [
+        "fredlig",
+        "tveksam",
+        "vek"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "strikt",
+      "correct": "sträng",
+      "distractors": [
+        "tillåtande",
+        "slapp",
+        "oklar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "strimlig",
+      "correct": "randig",
+      "distractors": [
+        "enfärgad",
+        "knottrig",
+        "massiv"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "strålande",
+      "correct": "lysande",
+      "distractors": [
+        "matt",
+        "dyster",
+        "skuggig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sträv",
+      "correct": "kärv",
+      "distractors": [
+        "mjuk",
+        "len",
+        "följsam"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "stötande",
+      "correct": "kränkande",
+      "distractors": [
+        "passande",
+        "mild",
+        "oskyldig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sudden",
+      "correct": "plötslig",
+      "distractors": [
+        "utdragen",
+        "gradvis",
+        "väntad"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "suptil",
+      "correct": "finstämd",
+      "distractors": [
+        "grovkornig",
+        "tydlig",
+        "klumpig"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "surrealistisk",
+      "correct": "drömlik",
+      "distractors": [
+        "vardaglig",
+        "saklig",
+        "jordnära"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "svag",
+      "correct": "klen",
+      "distractors": [
+        "stark",
+        "seg",
+        "robust"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "svamlig",
+      "correct": "osammanhängande",
+      "distractors": [
+        "klar",
+        "koncis",
+        "träffsäker"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "svedd",
+      "correct": "bränd",
+      "distractors": [
+        "frusen",
+        "blöt",
+        "fläckig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "svettig",
+      "correct": "fuktig av svett",
+      "distractors": [
+        "torr",
+        "nedkyld",
+        "dammig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "svepande",
+      "correct": "generell",
+      "distractors": [
+        "detaljerad",
+        "exakt",
+        "försiktig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "svindyr",
+      "correct": "mycket dyr",
+      "distractors": [
+        "billig",
+        "rimlig",
+        "nedsatt"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "svårfångad",
+      "correct": "svår att gripa",
+      "distractors": [
+        "lättspårad",
+        "stillastående",
+        "tam"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "symmetrisk",
+      "correct": "likformig",
+      "distractors": [
+        "skev",
+        "ojämn",
+        "asymmetrisk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sympatisk",
+      "correct": "trevlig",
+      "distractors": [
+        "högfärdig",
+        "kall",
+        "osympatisk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "synlig",
+      "correct": "märkbar",
+      "distractors": [
+        "dold",
+        "osedd",
+        "oklar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "säkrad",
+      "correct": "tryggad",
+      "distractors": [
+        "hotad",
+        "oviss",
+        "förlorad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sällskaplig",
+      "correct": "umgängesglad",
+      "distractors": [
+        "tillbakadragen",
+        "butter",
+        "ensam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sällsynt",
+      "correct": "ovanlig",
+      "distractors": [
+        "vanlig",
+        "daglig",
+        "talrik"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "sårad",
+      "correct": "kränkt",
+      "distractors": [
+        "oberörd",
+        "road",
+        "stärkt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sötaktig",
+      "correct": "lite för söt",
+      "distractors": [
+        "besk",
+        "frisk",
+        "saltstänkt"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "sömnlös",
+      "correct": "vaken",
+      "distractors": [
+        "utvilad",
+        "dåsig",
+        "drömmande"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tabubelagd",
+      "correct": "förbjuden att tala om",
+      "distractors": [
+        "allmänt accepterad",
+        "högtidlig",
+        "välkänd"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "taklös",
+      "correct": "utan tak",
+      "distractors": [
+        "välisolerad",
+        "underjordisk",
+        "fönsterlös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "talför",
+      "correct": "vältalig",
+      "distractors": [
+        "tystlåten",
+        "stammande",
+        "osäker"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "tankelös",
+      "correct": "obetänksam",
+      "distractors": [
+        "genomtänkt",
+        "varsam",
+        "omtänksam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tappad",
+      "correct": "bortkommen",
+      "distractors": [
+        "funnen",
+        "räddad",
+        "bevarad"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "teknisk",
+      "correct": "fackmässig",
+      "distractors": [
+        "känslomässig",
+        "konstnärlig",
+        "vardaglig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tempererad",
+      "correct": "mild",
+      "distractors": [
+        "glödhet",
+        "iskall",
+        "oberäknelig"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "tennig",
+      "correct": "metallisk",
+      "distractors": [
+        "träaktig",
+        "mjuk",
+        "genomskinlig"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "termodynamisk",
+      "correct": "som rör värmeenergi",
+      "distractors": [
+        "som rör ljusbrytning",
+        "som rör ljudvågor",
+        "som rör magnetfält"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "ters",
+      "correct": "butter",
+      "distractors": [
+        "gladlynt",
+        "artig",
+        "pratsam"
+      ],
+      "difficulty": 3
+    },
+    {
+      "word": "tidsbunden",
+      "correct": "begränsad i tid",
+      "distractors": [
+        "tidlös",
+        "ständig",
+        "omedelbar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "tidstypisk",
+      "correct": "typisk för sin tid",
+      "distractors": [
+        "framtidsinriktad",
+        "personlig",
+        "tidlös"
+      ],
+      "difficulty": 2
+    },
+    {
+      "word": "tigande",
+      "correct": "tyst",
+      "distractors": [
+        "högljudd",
+        "öppenhjärtig",
+        "munvig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tillbakadragen",
+      "correct": "reserverad",
+      "distractors": [
+        "påträngande",
+        "framfusig",
+        "sällskaplig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tillgänglig",
+      "correct": "åtkomlig",
+      "distractors": [
+        "otillgänglig",
+        "dold",
+        "upptagen"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tillhårdnad",
+      "correct": "förhärdad",
+      "distractors": [
+        "känslig",
+        "vek",
+        "eftertänksam"
+      ],
+      "difficulty": 4
+    },
+    {
+      "word": "tillmötesgående",
+      "correct": "hjälpsam",
+      "distractors": [
+        "avvisande",
+        "trotsig",
+        "kylig"
+      ],
+      "difficulty": 1
+    },
+    {
+      "word": "tillräcklig",
+      "correct": "nog",
+      "distractors": [
+        "bristfällig",
+        "överflödig",
+        "osäker"
+      ],
+      "difficulty": 1
+    }
+  ],
+  "wordDetails": {
+    "skiftbar": {
+      "explanation": "\"skiftbar\" betyder att något lätt kan förändras eller växla.",
+      "example": "Hennes humör var skiftbart under den långa väntan."
+    },
+    "skingrad": {
+      "explanation": "\"skingrad\" betyder att något har splittrats och spritts åt olika håll.",
+      "example": "När dimman skingrades syntes hela dalen igen."
+    },
+    "skissartad": {
+      "explanation": "\"skissartad\" betyder att något bara är grovt utformat och inte färdigt i detalj.",
+      "example": "Rapporten var ännu skissartad men visade riktningen tydligt."
+    },
+    "skralig": {
+      "explanation": "\"skralig\" betyder klen, mager eller svagt utvecklad.",
+      "example": "Efter sjukdomen såg han ovanligt skralig ut."
+    },
+    "skrämmande": {
+      "explanation": "\"skrämmande\" betyder att något väcker rädsla eller obehag.",
+      "example": "Det var skrämmande tyst i huset efter ovädret."
+    },
+    "skröplig": {
+      "explanation": "\"skröplig\" betyder svag och skör, ofta på grund av ålder eller sjukdom.",
+      "example": "Den skröpliga stolen gick sönder direkt."
+    },
+    "skyddad": {
+      "explanation": "\"skyddad\" betyder att något är tryggat mot skada eller angrepp.",
+      "example": "Området är skyddat eftersom många hotade arter finns där."
+    },
+    "skyddslös": {
+      "explanation": "\"skyddslös\" betyder att man saknar försvar eller skydd.",
+      "example": "Barnet kände sig skyddslöst i den stora folkmassan."
+    },
+    "skälig": {
+      "explanation": "\"skälig\" betyder rättvis eller rimlig i förhållande till omständigheterna.",
+      "example": "Hon begärde en skälig ersättning för arbetet."
+    },
+    "slank": {
+      "explanation": "\"slank\" betyder lång och smal på ett smidigt sätt.",
+      "example": "Han hade en slank gestalt och rörde sig lätt över golvet."
+    },
+    "slapphänt": {
+      "explanation": "\"slapphänt\" betyder att man är för slarvig eller inte tillräckligt noga.",
+      "example": "Kontrollen var så slapphänt att flera fel passerade obemärkt."
+    },
+    "slavisk": {
+      "explanation": "\"slavisk\" betyder att något följs blint och utan eget omdöme.",
+      "example": "Hon gjorde ingen slavisk kopia utan satte sin egen prägel på texten."
+    },
+    "slipsad": {
+      "explanation": "\"slipsad\" betyder att någon uppträder vant, välputsat och lite beräknande.",
+      "example": "Han gav ett slipsat intryck redan vid första mötet."
+    },
+    "slitsam": {
+      "explanation": "\"slitsam\" betyder att något tar på krafterna och känns ansträngande.",
+      "example": "Pendlingen blev allt mer slitsam under vintern."
+    },
+    "slutenhjärtad": {
+      "explanation": "\"slutenhjärtad\" betyder att någon är reserverad och inte gärna visar sina känslor.",
+      "example": "Trots många år tillsammans förblev han märkligt slutenhjärtad."
+    },
+    "smakrik": {
+      "explanation": "\"smakrik\" betyder att något har tydlig och god smak.",
+      "example": "Soppan blev ovanligt smakrik efter att ha fått koka länge."
+    },
+    "smittsam": {
+      "explanation": "\"smittsam\" betyder att något kan föras vidare från en individ till en annan.",
+      "example": "Sjukdomen är smittsam och kräver därför isolering."
+    },
+    "smärtsam": {
+      "explanation": "\"smärtsam\" betyder att något gör ont eller känns svårt att bära.",
+      "example": "Det blev en smärtsam påminnelse om det som hade hänt."
+    },
+    "snabbfotad": {
+      "explanation": "\"snabbfotad\" betyder att någon rör sig snabbt och lätt.",
+      "example": "Den snabbfotade anfallaren hann först på nästan varje boll."
+    },
+    "snillrik": {
+      "explanation": "\"snillrik\" betyder mycket smart och kreativt uttänkt.",
+      "example": "Hon hittade en snillrik lösning på det gamla problemet."
+    },
+    "snårig": {
+      "explanation": "\"snårig\" betyder svår att överblicka eller reda ut.",
+      "example": "Regelverket var så snårigt att få förstod helheten."
+    },
+    "social": {
+      "explanation": "\"social\" betyder att någon gärna umgås och tar kontakt med andra.",
+      "example": "Hon är social och lär känna nya människor snabbt."
+    },
+    "solitär": {
+      "explanation": "\"solitär\" betyder att något står ensamt eller för sig själv.",
+      "example": "På ängen stod en solitär ek som syntes på långt håll."
+    },
+    "sorgsen": {
+      "explanation": "\"sorgsen\" betyder ledsen eller dämpad till sinnes.",
+      "example": "Hon blev sorgsen när hon hörde den gamla sången."
+    },
+    "sovrad": {
+      "explanation": "\"sovrad\" betyder utvald efter att man gallrat bort det mindre lämpliga.",
+      "example": "Antologin innehåller ett sovrat urval av hans bästa texter."
+    },
+    "sparsam": {
+      "explanation": "\"sparsam\" betyder att man hushåller med pengar eller resurser.",
+      "example": "Hon är sparsam och jämför alltid priser innan hon handlar."
+    },
+    "spegelblank": {
+      "explanation": "\"spegelblank\" betyder så blank och jämn att ytan liknar en spegel.",
+      "example": "Sjön låg spegelblank i den tidiga morgonsolen."
+    },
+    "spensig": {
+      "explanation": "\"spensig\" betyder tunn och ganska klen till utseendet.",
+      "example": "Det spensiga bordet såg fint ut men kändes ostadigt."
+    },
+    "spirituell": {
+      "explanation": "\"spirituell\" betyder att någon är snabb och elegant i tanken eller repliken.",
+      "example": "Hon är känd för sina spirituella kommentarer i panelen."
+    },
+    "spjuveraktig": {
+      "explanation": "\"spjuveraktig\" betyder charmigt busig eller skälmsk.",
+      "example": "Han log så spjuveraktigt att ingen kunde bli riktigt arg."
+    },
+    "spretande": {
+      "explanation": "\"spretande\" betyder att något drar åt olika håll och saknar tydlig enhet.",
+      "example": "Uppsatsen blev lite spretande eftersom den tog upp för många ämnen."
+    },
+    "stark": {
+      "explanation": "\"stark\" betyder att något har stor kraft eller tydlig verkan.",
+      "example": "Hon serverade starkt kaffe efter middagen."
+    },
+    "stillsinnig": {
+      "explanation": "\"stillsinnig\" betyder rofylld och lågmäld till sättet.",
+      "example": "Han var en stillsinnig person som sällan höjde rösten."
+    },
+    "stingslig": {
+      "explanation": "\"stingslig\" betyder att någon lätt blir irriterad och svarar vasst.",
+      "example": "Efter en lång dag blev hon märkbart stingslig."
+    },
+    "stjälpt": {
+      "explanation": "\"stjälpt\" betyder att något har vält omkull eller hamnat på sidan.",
+      "example": "Efter stormen låg flera cyklar stjälpta utanför stationen."
+    },
+    "storvulen": {
+      "explanation": "\"storvulen\" betyder att något är överdrivet pampigt eller självhävdande.",
+      "example": "Talet var så storvulet att publiken började skruva på sig."
+    },
+    "strandsatt": {
+      "explanation": "\"strandsatt\" betyder att någon blivit kvar utan möjlighet att ta sig vidare.",
+      "example": "Resenärerna blev strandsatta på flygplatsen efter snöstormen."
+    },
+    "stridslysten": {
+      "explanation": "\"stridslysten\" betyder att någon gärna söker konflikt eller kamp.",
+      "example": "Debattören lät ovanligt stridslysten redan från början."
+    },
+    "strikt": {
+      "explanation": "\"strikt\" betyder att något följs noggrant och utan undantag.",
+      "example": "Skolan har strikta regler för närvaro."
+    },
+    "strimlig": {
+      "explanation": "\"strimlig\" betyder att något har smala streck eller strimmor.",
+      "example": "Himlen fick ett strimligt mönster av tunna moln."
+    },
+    "strålande": {
+      "explanation": "\"strålande\" betyder att något lyser starkt eller känns mycket bra.",
+      "example": "Hon såg strålande ut när hon kom in i rummet."
+    },
+    "sträv": {
+      "explanation": "\"sträv\" betyder grov, kärv eller inte helt mjuk i yta eller ton.",
+      "example": "Tyget kändes strävt mot huden."
+    },
+    "stötande": {
+      "explanation": "\"stötande\" betyder att något upplevs som sårande eller grovt olämpligt.",
+      "example": "Kommentaren var så stötande att mötet avbröts."
+    },
+    "sudden": {
+      "explanation": "\"sudden\" används här i betydelsen plötslig eller hastigt inträffande.",
+      "example": "Beskedet kom så sudden att ingen hann förbereda sig."
+    },
+    "suptil": {
+      "explanation": "\"suptil\" är en äldre stavningsvariant av ett ord som betyder fin, diskret eller knappt märkbar.",
+      "example": "Det fanns en suptil ironi i hennes svar."
+    },
+    "surrealistisk": {
+      "explanation": "\"surrealistisk\" betyder drömlik och verklighetsfrämmande.",
+      "example": "Scenen var så surrealistisk att ingen visste om den var på riktigt."
+    },
+    "svag": {
+      "explanation": "\"svag\" betyder att något har liten kraft eller låg styrka.",
+      "example": "Signalen var för svag för att kunna tolkas säkert."
+    },
+    "svamlig": {
+      "explanation": "\"svamlig\" betyder att någon talar rörigt och utan tydlig linje.",
+      "example": "Hans förklaring blev allt mer svamlig ju längre mötet pågick."
+    },
+    "svedd": {
+      "explanation": "\"svedd\" betyder lätt bränd av värme eller eld.",
+      "example": "Brödet blev lite svedd i kanten men gick ändå att äta."
+    },
+    "svettig": {
+      "explanation": "\"svettig\" betyder att huden eller kläderna är fuktiga av svett.",
+      "example": "Efter loppet var han helt svettig och behövde vatten direkt."
+    },
+    "svepande": {
+      "explanation": "\"svepande\" betyder allmänt hållen och utan många nyanser.",
+      "example": "Hon gjorde ett svepande uttalande som flera invände mot."
+    },
+    "svindyr": {
+      "explanation": "\"svindyr\" betyder extremt dyr.",
+      "example": "Jackan var snygg men alldeles för svindyr för min budget."
+    },
+    "svårfångad": {
+      "explanation": "\"svårfångad\" betyder att något eller någon är svår att fånga eller få fast.",
+      "example": "Räven visade sig vara ovanligt svårfångad."
+    },
+    "symmetrisk": {
+      "explanation": "\"symmetrisk\" betyder att delarna motsvarar varandra på ett jämnt sätt.",
+      "example": "Byggnadens symmetriska fasad gav ett harmoniskt intryck."
+    },
+    "sympatisk": {
+      "explanation": "\"sympatisk\" betyder att någon upplevs som vänlig och tilltalande.",
+      "example": "Läraren verkade sympatisk redan vid första lektionen."
+    },
+    "synlig": {
+      "explanation": "\"synlig\" betyder att något går att se tydligt eller lägga märke till.",
+      "example": "Det var en synlig spricka i glaset."
+    },
+    "säkrad": {
+      "explanation": "\"säkrad\" betyder att något har gjorts tryggt eller skyddats mot risk.",
+      "example": "Finansieringen var säkrad innan projektet drog igång."
+    },
+    "sällskaplig": {
+      "explanation": "\"sällskaplig\" betyder att någon gärna är tillsammans med andra.",
+      "example": "Hon är så sällskaplig att hon sällan sitter tyst länge."
+    },
+    "sällsynt": {
+      "explanation": "\"sällsynt\" betyder att något förekommer mycket sällan.",
+      "example": "Det är en sällsynt fågel som bara ses här vissa år."
+    },
+    "sårad": {
+      "explanation": "\"sårad\" betyder här känslomässigt sårad eller kränkt.",
+      "example": "Hon blev sårad av hans hårda ord."
+    },
+    "sötaktig": {
+      "explanation": "\"sötaktig\" betyder att något drar åt det söta, ofta lite för mycket.",
+      "example": "Drycken var sval men något sötaktig i smaken."
+    },
+    "sömnlös": {
+      "explanation": "\"sömnlös\" betyder att man inte kan sova.",
+      "example": "Efter beskedet låg hon sömnlös hela natten."
+    },
+    "tabubelagd": {
+      "explanation": "\"tabubelagd\" betyder att något uppfattas som så känsligt att man undviker det.",
+      "example": "Ämnet var länge tabubelagt inom familjen."
+    },
+    "taklös": {
+      "explanation": "\"taklös\" betyder bokstavligen att något saknar tak.",
+      "example": "Den gamla ruinen stod taklös efter branden."
+    },
+    "talför": {
+      "explanation": "\"talför\" betyder att någon uttrycker sig lätt och obehindrat.",
+      "example": "Som barn var hon redan ovanligt talför."
+    },
+    "tankelös": {
+      "explanation": "\"tankelös\" betyder att man handlar utan att tänka efter.",
+      "example": "Det var en tankelös kommentar som sårade flera i rummet."
+    },
+    "tappad": {
+      "explanation": "\"tappad\" betyder att något har kommit bort efter att ha förlorats.",
+      "example": "Hennes tappade passerkort hittades till slut i hissen."
+    },
+    "teknisk": {
+      "explanation": "\"teknisk\" betyder att något rör metoder, praktiskt kunnande eller specialkunskap.",
+      "example": "Rapporten var så teknisk att många läsare gav upp."
+    },
+    "tempererad": {
+      "explanation": "\"tempererad\" betyder att något håller en måttlig och jämn temperatur.",
+      "example": "Växthuset hölls tempererat året runt."
+    },
+    "tennig": {
+      "explanation": "\"tennig\" betyder att något påminner om tenn i färg eller klang.",
+      "example": "Hennes röst fick en tennig ton i mikrofonen."
+    },
+    "termodynamisk": {
+      "explanation": "\"termodynamisk\" betyder att något har att göra med värme, energi och deras omvandling.",
+      "example": "Motorns termodynamiska verkningsgrad stod i fokus för studien."
+    },
+    "ters": {
+      "explanation": "\"ters\" betyder tvär, sur eller ovänligt avvisande.",
+      "example": "Han svarade med ett ters tonfall och gick vidare."
+    },
+    "tidsbunden": {
+      "explanation": "\"tidsbunden\" betyder att något bara gäller under en viss period.",
+      "example": "Erbjudandet är tidsbundet och gäller bara denna vecka."
+    },
+    "tidstypisk": {
+      "explanation": "\"tidstypisk\" betyder att något tydligt präglas av den period då det skapades.",
+      "example": "Möblerna i vardagsrummet var mycket tidstypiska för 1960-talet."
+    },
+    "tigande": {
+      "explanation": "\"tigande\" betyder att någon håller tyst och inte säger något.",
+      "example": "Hon satt tigande genom hela middagen."
+    },
+    "tillbakadragen": {
+      "explanation": "\"tillbakadragen\" betyder att någon är stillsam och inte söker uppmärksamhet.",
+      "example": "Som ny i gruppen var han ganska tillbakadragen."
+    },
+    "tillgänglig": {
+      "explanation": "\"tillgänglig\" betyder att något går att nå, använda eller få tag i.",
+      "example": "Rapporten finns nu tillgänglig på myndighetens webbplats."
+    },
+    "tillhårdnad": {
+      "explanation": "\"tillhårdnad\" betyder att någon blivit känslomässigt hård eller avtrubbad.",
+      "example": "Efter många år i yrket hade han blivit något tillhårdnad."
+    },
+    "tillmötesgående": {
+      "explanation": "\"tillmötesgående\" betyder vänlig och beredd att hjälpa till eller anpassa sig.",
+      "example": "Personalen var ovanligt tillmötesgående när vi behövde byta tid."
+    },
+    "tillräcklig": {
+      "explanation": "\"tillräcklig\" betyder att något räcker för det som behövs.",
+      "example": "Vi hade tillräcklig tid för att avsluta arbetet före lunch."
+    }
+  }
+}

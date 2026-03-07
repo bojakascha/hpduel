@@ -1,0 +1,806 @@
+{
+  "wordList": [
+    {
+      "word": "geometrisk",
+      "correct": "som rör former",
+      "distractors": ["som rör färger", "slumpmässig", "levande"],
+      "difficulty": 1
+    },
+    {
+      "word": "giltig",
+      "correct": "gällande",
+      "distractors": ["tillfällig", "osäker", "otydlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "gladlynt",
+      "correct": "munter",
+      "distractors": ["vresig", "blyg", "orolig"],
+      "difficulty": 1
+    },
+    {
+      "word": "glansig",
+      "correct": "blank",
+      "distractors": ["matt", "skrovlig", "fuktig"],
+      "difficulty": 1
+    },
+    {
+      "word": "glasklar",
+      "correct": "mycket tydlig",
+      "distractors": ["nästan osynlig", "svårtolkad", "halvfärdig"],
+      "difficulty": 1
+    },
+    {
+      "word": "glödande",
+      "correct": "brinnande",
+      "distractors": ["avkyld", "dämpad", "skör"],
+      "difficulty": 1
+    },
+    {
+      "word": "godmodig",
+      "correct": "vänlig",
+      "distractors": ["misstänksam", "påstridig", "sträng"],
+      "difficulty": 1
+    },
+    {
+      "word": "golvad",
+      "correct": "häpen",
+      "distractors": ["besviken", "rastlös", "förberedd"],
+      "difficulty": 2
+    },
+    {
+      "word": "grov",
+      "correct": "oslipad",
+      "distractors": ["precis", "mild", "försiktig"],
+      "difficulty": 1
+    },
+    {
+      "word": "grund",
+      "correct": "inte djup",
+      "distractors": ["bred", "stabil", "tung"],
+      "difficulty": 1
+    },
+    {
+      "word": "grym",
+      "correct": "hänsynslös",
+      "distractors": ["besvärlig", "ovanlig", "osäker"],
+      "difficulty": 1
+    },
+    {
+      "word": "gränslös",
+      "correct": "obegränsad",
+      "distractors": ["otillåten", "splittrad", "ensidig"],
+      "difficulty": 1
+    },
+    {
+      "word": "grön",
+      "correct": "oerfaren",
+      "distractors": ["miljövänlig", "barnslig", "långsam"],
+      "difficulty": 2
+    },
+    {
+      "word": "gråtmild",
+      "correct": "lätt att börja gråta",
+      "distractors": ["lätt att bli arg", "ovanligt tyst", "mycket känslokall"],
+      "difficulty": 2
+    },
+    {
+      "word": "gudomlig",
+      "correct": "underbar",
+      "distractors": ["jordnära", "obetydlig", "motvillig"],
+      "difficulty": 1
+    },
+    {
+      "word": "gynnsam",
+      "correct": "fördelaktig",
+      "distractors": ["riskabel", "osäker", "tveksam"],
+      "difficulty": 1
+    },
+    {
+      "word": "gyttrig",
+      "correct": "oordnad",
+      "distractors": ["rymlig", "stillsam", "slät"],
+      "difficulty": 3
+    },
+    {
+      "word": "gåtfull",
+      "correct": "svårtolkad",
+      "distractors": ["rättfram", "pratsam", "vardaglig"],
+      "difficulty": 2
+    },
+    {
+      "word": "gänglig",
+      "correct": "lång och smal",
+      "distractors": ["kort och kraftig", "bredaxlad", "tätt byggd"],
+      "difficulty": 4
+    },
+    {
+      "word": "göromålsam",
+      "correct": "arbetsam",
+      "distractors": ["bekväm", "långsint", "tankespridd"],
+      "difficulty": 3
+    },
+    {
+      "word": "habil",
+      "correct": "duglig",
+      "distractors": ["omedgörlig", "märkvärdig", "sluten"],
+      "difficulty": 2
+    },
+    {
+      "word": "hafsig",
+      "correct": "slarvig",
+      "distractors": ["dröjande", "allvarlig", "högtidlig"],
+      "difficulty": 3
+    },
+    {
+      "word": "hal",
+      "correct": "slipprig",
+      "distractors": ["stickig", "stel", "bubblig"],
+      "difficulty": 1
+    },
+    {
+      "word": "halvdan",
+      "correct": "medioker",
+      "distractors": ["genomarbetad", "ovanlig", "omfattande"],
+      "difficulty": 2
+    },
+    {
+      "word": "hallucinatorisk",
+      "correct": "som rör sinnesvillor",
+      "distractors": ["som rör hörselskador", "som sker i sömnen", "som väcker aptit"],
+      "difficulty": 3
+    },
+    {
+      "word": "haltande",
+      "correct": "bristfällig",
+      "distractors": ["färdig", "beräknande", "välgrundad"],
+      "difficulty": 2
+    },
+    {
+      "word": "hamrad",
+      "correct": "berusad",
+      "distractors": ["uppretad", "utmattad", "frusen"],
+      "difficulty": 2
+    },
+    {
+      "word": "havererad",
+      "correct": "sönder",
+      "distractors": ["försenad", "inköpt", "upprättad"],
+      "difficulty": 1
+    },
+    {
+      "word": "hednisk",
+      "correct": "icke-kristen",
+      "distractors": ["from", "laglydig", "hövisk"],
+      "difficulty": 3
+    },
+    {
+      "word": "helgjuten",
+      "correct": "gedigen",
+      "distractors": ["splittrad", "skör", "snäv"],
+      "difficulty": 2
+    },
+    {
+      "word": "helig",
+      "correct": "okränkbar",
+      "distractors": ["värdefull", "efterlängtad", "påkostad"],
+      "difficulty": 2
+    },
+    {
+      "word": "hemfallen",
+      "correct": "benägen",
+      "distractors": ["motvillig", "påläst", "ångerfull"],
+      "difficulty": 3
+    },
+    {
+      "word": "hemlig",
+      "correct": "dold",
+      "distractors": ["oviktig", "öppen", "vänlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "heroisk",
+      "correct": "tapper",
+      "distractors": ["högljudd", "undergiven", "vardaglig"],
+      "difficulty": 1
+    },
+    {
+      "word": "hiskelig",
+      "correct": "förskräcklig",
+      "distractors": ["storslagen", "smidig", "trovärdig"],
+      "difficulty": 3
+    },
+    {
+      "word": "hisnande",
+      "correct": "svindlande",
+      "distractors": ["lugnande", "obetydlig", "lågmäld"],
+      "difficulty": 2
+    },
+    {
+      "word": "hopplös",
+      "correct": "utsiktslös",
+      "distractors": ["målmedveten", "tillfällig", "förtrolig"],
+      "difficulty": 1
+    },
+    {
+      "word": "horisontell",
+      "correct": "vågrät",
+      "distractors": ["lodrät", "genomskinlig", "bågformad"],
+      "difficulty": 1
+    },
+    {
+      "word": "hotfull",
+      "correct": "hotande",
+      "distractors": ["tveksam", "sårbar", "vänskaplig"],
+      "difficulty": 1
+    },
+    {
+      "word": "human",
+      "correct": "medmänsklig",
+      "distractors": ["strikt", "opartisk", "självgod"],
+      "difficulty": 2
+    },
+    {
+      "word": "humoristisk",
+      "correct": "skämtsam",
+      "distractors": ["vördnadsfull", "bitter", "ordknapp"],
+      "difficulty": 1
+    },
+    {
+      "word": "huslig",
+      "correct": "hemmastadd i hushållsarbete",
+      "distractors": ["bunden till arbetet", "ovan vid hemmet", "sällskapssjuk"],
+      "difficulty": 2
+    },
+    {
+      "word": "hycklande",
+      "correct": "falsk",
+      "distractors": ["öppenhjärtig", "hängiven", "ordentlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "hygglig",
+      "correct": "trevlig",
+      "distractors": ["hård", "misslyckad", "svajig"],
+      "difficulty": 1
+    },
+    {
+      "word": "hypnotisk",
+      "correct": "trollbindande",
+      "distractors": ["sömnig", "ryckig", "trumpen"],
+      "difficulty": 2
+    },
+    {
+      "word": "högstämd",
+      "correct": "upplyft",
+      "distractors": ["småsint", "skeptisk", "likgiltig"],
+      "difficulty": 2
+    },
+    {
+      "word": "hämningslös",
+      "correct": "tygellös",
+      "distractors": ["behärskad", "förtegen", "omtänksam"],
+      "difficulty": 2
+    },
+    {
+      "word": "hänförd",
+      "correct": "förtjust",
+      "distractors": ["förargad", "obetänksam", "försagd"],
+      "difficulty": 1
+    },
+    {
+      "word": "hänsynsfull",
+      "correct": "omtänksam",
+      "distractors": ["självisk", "orolig", "stram"],
+      "difficulty": 1
+    },
+    {
+      "word": "härdad",
+      "correct": "tålig",
+      "distractors": ["spröd", "otålig", "bedrövad"],
+      "difficulty": 2
+    },
+    {
+      "word": "härlig",
+      "correct": "underbar",
+      "distractors": ["dyster", "trång", "vilsen"],
+      "difficulty": 1
+    },
+    {
+      "word": "hätsk",
+      "correct": "aggressiv",
+      "distractors": ["mild", "eftertänksam", "lugn"],
+      "difficulty": 2
+    },
+    {
+      "word": "hävdvunnen",
+      "correct": "traditionell",
+      "distractors": ["nydanande", "lagstridig", "tillfällig"],
+      "difficulty": 3
+    },
+    {
+      "word": "högertid",
+      "correct": "period av högerstyre",
+      "distractors": ["religiös högtid", "ekonomisk lågkonjunktur", "period av vänsterstyre"],
+      "difficulty": 4
+    },
+    {
+      "word": "iakttagbar",
+      "correct": "märkbar",
+      "distractors": ["obetydlig", "förnekad", "onaturlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "ideologisk",
+      "correct": "som rör samhällsidéer",
+      "distractors": ["som rör naturkrafter", "som rör sjukdomar", "som rör familjeband"],
+      "difficulty": 2
+    },
+    {
+      "word": "idyllisk",
+      "correct": "fridfull",
+      "distractors": ["bullrig", "tillgjord", "otrygg"],
+      "difficulty": 2
+    },
+    {
+      "word": "illusionistisk",
+      "correct": "som skapar en synvilla",
+      "distractors": ["som bygger på statistik", "som väcker medlidande", "som bryter mot regler"],
+      "difficulty": 3
+    },
+    {
+      "word": "illvillig",
+      "correct": "elak",
+      "distractors": ["hjälpsam", "försynt", "splittrad"],
+      "difficulty": 1
+    },
+    {
+      "word": "imaginär",
+      "correct": "inbillad",
+      "distractors": ["påtaglig", "förbisedd", "förklarad"],
+      "difficulty": 2
+    },
+    {
+      "word": "immun",
+      "correct": "motståndskraftig",
+      "distractors": ["smittsam", "sårbar", "bedövad"],
+      "difficulty": 1
+    },
+    {
+      "word": "imperativ",
+      "correct": "befallande",
+      "distractors": ["frågande", "tveksam", "otålig"],
+      "difficulty": 2
+    },
+    {
+      "word": "impopulär",
+      "correct": "illa omtyckt",
+      "distractors": ["omtalad", "uppskjuten", "lyckosam"],
+      "difficulty": 1
+    },
+    {
+      "word": "imponerad",
+      "correct": "fylld av beundran",
+      "distractors": ["fylld av misstro", "helt oberörd", "starkt irriterad"],
+      "difficulty": 1
+    },
+    {
+      "word": "improduktiv",
+      "correct": "oeffektiv",
+      "distractors": ["målmedveten", "samarbetsvillig", "framåtblickande"],
+      "difficulty": 2
+    },
+    {
+      "word": "improvisatorisk",
+      "correct": "oförberedd",
+      "distractors": ["noggrant planerad", "teoretisk", "regelstyrd"],
+      "difficulty": 2
+    },
+    {
+      "word": "impulsstyrd",
+      "correct": "som handlar utan eftertanke",
+      "distractors": ["som alltid följer regler", "som undviker risker", "som tänker långsiktigt"],
+      "difficulty": 2
+    },
+    {
+      "word": "incitamentsdriven",
+      "correct": "styrd av belöningar",
+      "distractors": ["styrd av slumpen", "styrd av vana", "styrd av tvång"],
+      "difficulty": 3
+    },
+    {
+      "word": "indiskret",
+      "correct": "taktlös",
+      "distractors": ["diskret", "noggrann", "pålitlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "indoktrinerad",
+      "correct": "ensidigt påverkad",
+      "distractors": ["välutbildad", "tvivlande", "självständig"],
+      "difficulty": 3
+    },
+    {
+      "word": "indolent",
+      "correct": "lat",
+      "distractors": ["nervös", "målmedveten", "sträng"],
+      "difficulty": 3
+    },
+    {
+      "word": "indragen",
+      "correct": "återkallad",
+      "distractors": ["uppskjuten", "utdelad", "godkänd"],
+      "difficulty": 2
+    },
+    {
+      "word": "industriell",
+      "correct": "som rör fabriker",
+      "distractors": ["som rör jordbruk", "som rör hushåll", "som rör skogsvård"],
+      "difficulty": 1
+    },
+    {
+      "word": "inelegant",
+      "correct": "klumpig",
+      "distractors": ["raffinerad", "försiktig", "sirlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "infallsrik",
+      "correct": "fantasifull",
+      "distractors": ["fyrkantig", "sträng", "reserverad"],
+      "difficulty": 1
+    },
+    {
+      "word": "infekterad",
+      "correct": "smittad",
+      "distractors": ["läkt", "avkyld", "utspädd"],
+      "difficulty": 2
+    },
+    {
+      "word": "inflammerad",
+      "correct": "svullen och irriterad",
+      "distractors": ["helt läkt", "särskilt tålig", "ovanligt kall"],
+      "difficulty": 2
+    },
+    {
+      "word": "informerad",
+      "correct": "underrättad",
+      "distractors": ["överraskad", "misstrodd", "förtegad"],
+      "difficulty": 1
+    },
+    {
+      "word": "infödd",
+      "correct": "ursprunglig",
+      "distractors": ["invandrad", "utsedd", "bortrest"],
+      "difficulty": 2
+    },
+    {
+      "word": "ingående",
+      "correct": "grundlig",
+      "distractors": ["kortfattad", "ytlig", "oviss"],
+      "difficulty": 1
+    }
+  ],
+  "wordDetails": {
+    "geometrisk": {
+      "explanation": "\"geometrisk\" betyder att något rör former, figurer eller rumsliga samband.",
+      "example": "Mönstret på golvet hade en tydligt geometrisk form."
+    },
+    "giltig": {
+      "explanation": "\"giltig\" betyder att något gäller och är formellt användbart eller godkänt.",
+      "example": "Biljetten är giltig hela vägen fram till midnatt."
+    },
+    "gladlynt": {
+      "explanation": "\"gladlynt\" betyder munter och positiv till sättet.",
+      "example": "Hon är så gladlynt att hon ofta höjer stämningen i rummet."
+    },
+    "glansig": {
+      "explanation": "\"glansig\" betyder blank och skinande på ytan.",
+      "example": "Bordet blev glansigt efter att han hade polerat det."
+    },
+    "glasklar": {
+      "explanation": "\"glasklar\" betyder mycket tydlig och lätt att förstå.",
+      "example": "Instruktionen var glasklar och lämnade inget utrymme för missförstånd."
+    },
+    "glödande": {
+      "explanation": "\"glödande\" betyder brinnande eller mycket starkt intensiv.",
+      "example": "Hon höll ett glödande försvarstal för kulturens betydelse."
+    },
+    "godmodig": {
+      "explanation": "\"godmodig\" betyder vänlig, mild och vänligt sinnad.",
+      "example": "Den godmodige grannen hjälpte gärna till med tunga kassar."
+    },
+    "golvad": {
+      "explanation": "\"golvad\" betyder starkt överraskad eller häpen.",
+      "example": "Jag blev helt golvad när hon berättade att hon hade vunnit priset."
+    },
+    "grov": {
+      "explanation": "\"grov\" betyder rå, oslipad eller utan finess.",
+      "example": "Hans grova skämt fick flera runt bordet att tystna."
+    },
+    "grund": {
+      "explanation": "\"grund\" betyder att något inte är djupt.",
+      "example": "Vattnet var så grunt att barnen kunde stå nästan överallt."
+    },
+    "grym": {
+      "explanation": "\"grym\" betyder hänsynslös och hård mot andra.",
+      "example": "Det vore grymt att lämna djuret utan mat och skydd."
+    },
+    "gränslös": {
+      "explanation": "\"gränslös\" betyder utan tydliga gränser eller begränsningar.",
+      "example": "Barnens glädje verkade gränslös när skolan stängde för sommaren."
+    },
+    "grön": {
+      "explanation": "\"grön\" kan betyda oerfaren och ovan i en viss roll eller situation.",
+      "example": "Han var fortfarande ganska grön som chef och tog gärna råd från andra."
+    },
+    "gråtmild": {
+      "explanation": "\"gråtmild\" betyder att man lätt blir rörd och börjar gråta.",
+      "example": "Hon blev gråtmild när barnen sjöng på avslutningen."
+    },
+    "gudomlig": {
+      "explanation": "\"gudomlig\" betyder underbar eller så bra att det nästan känns övernaturligt.",
+      "example": "Desserten var så gudomlig att alla tog om."
+    },
+    "gynnsam": {
+      "explanation": "\"gynnsam\" betyder fördelaktig och bra för ett visst syfte.",
+      "example": "Vädret var gynnsamt för en lång dag till sjöss."
+    },
+    "gyttrig": {
+      "explanation": "\"gyttrig\" betyder oordnad, trasslig eller rörig.",
+      "example": "Texten blev gyttrig när för många idéer pressades in i samma stycke."
+    },
+    "gåtfull": {
+      "explanation": "\"gåtfull\" betyder svårtolkad och inte lätt att förstå.",
+      "example": "Han gav henne ett gåtfullt leende men sa ingenting mer."
+    },
+    "gänglig": {
+      "explanation": "\"gänglig\" betyder lång, smal och lite ranglig till formen.",
+      "example": "Den gänglige tonåringen stack upp ett huvud över sina klasskamrater."
+    },
+    "göromålsam": {
+      "explanation": "\"göromålsam\" betyder arbetsam och ständigt sysselsatt med uppgifter.",
+      "example": "Hon är så göromålsam att hon alltid hittar något nytt att ta itu med."
+    },
+    "habil": {
+      "explanation": "\"habil\" betyder duglig och ganska skicklig, utan att vara enastående.",
+      "example": "Han gjorde en habil insats trots den korta förberedelsetiden."
+    },
+    "hafsig": {
+      "explanation": "\"hafsig\" betyder slarvig och utan tillräcklig noggrannhet.",
+      "example": "Rapporten kändes hafsig och hade flera onödiga fel."
+    },
+    "hal": {
+      "explanation": "\"hal\" betyder slipprig och lätt att halka på.",
+      "example": "Bryggan var hal efter nattens regn."
+    },
+    "halvdan": {
+      "explanation": "\"halvdan\" betyder medelmåttig eller ganska svag i kvalitet.",
+      "example": "Filmen fick ett halvdan mottagande av kritikerna."
+    },
+    "hallucinatorisk": {
+      "explanation": "\"hallucinatorisk\" betyder att något rör hallucinationer eller sinnesvillor.",
+      "example": "Febern gav honom ett nästan hallucinatoriskt tillstånd under natten."
+    },
+    "haltande": {
+      "explanation": "\"haltande\" betyder bristfällig eller svag, särskilt om ett resonemang.",
+      "example": "Argumentationen var haltande och övertygade ingen i salen."
+    },
+    "hamrad": {
+      "explanation": "\"hamrad\" betyder berusad, ofta ganska kraftigt berusad.",
+      "example": "Han kom hem sent och verkade helt hamrad."
+    },
+    "havererad": {
+      "explanation": "\"havererad\" betyder att något har gått sönder eller slutat fungera.",
+      "example": "Vi blev stående längs vägen med en havererad bil."
+    },
+    "hednisk": {
+      "explanation": "\"hednisk\" betyder icke-kristen eller knuten till äldre religioner.",
+      "example": "I boken skildras flera hedniska ritualer från forntiden."
+    },
+    "helgjuten": {
+      "explanation": "\"helgjuten\" betyder gedigen, genomarbetad och jämnt stark.",
+      "example": "Det var en helgjuten föreställning utan svaga partier."
+    },
+    "helig": {
+      "explanation": "\"helig\" betyder okränkbar eller särskilt skyddad, ofta av religiösa skäl.",
+      "example": "För många troende är platsen helig."
+    },
+    "hemfallen": {
+      "explanation": "\"hemfallen\" betyder benägen att falla in i ett visst beteende eller tillstånd.",
+      "example": "Han var hemfallen åt att skjuta upp allt till sista minuten."
+    },
+    "hemlig": {
+      "explanation": "\"hemlig\" betyder dold och inte avsedd att vara känd av alla.",
+      "example": "De hade en hemlig plan som ingen annan kände till."
+    },
+    "heroisk": {
+      "explanation": "\"heroisk\" betyder tapper och modig på ett beundransvärt sätt.",
+      "example": "Brandmannen gjorde en heroisk insats i det rökfyllda huset."
+    },
+    "hiskelig": {
+      "explanation": "\"hiskelig\" betyder förskräcklig eller mycket obehaglig.",
+      "example": "De möttes av en hiskelig lukt när dörren öppnades."
+    },
+    "hisnande": {
+      "explanation": "\"hisnande\" betyder svindlande och nästan överväldigande stort eller starkt.",
+      "example": "Utsikten från klippan var hisnande."
+    },
+    "hopplös": {
+      "explanation": "\"hopplös\" betyder utsiktslös eller mycket svår att få ordning på.",
+      "example": "Situationen kändes hopplös efter ännu ett avslag."
+    },
+    "horisontell": {
+      "explanation": "\"horisontell\" betyder vågrät, alltså liggande i sidled.",
+      "example": "Ett horisontellt streck delade figuren i två delar."
+    },
+    "hotfull": {
+      "explanation": "\"hotfull\" betyder att något verkar hotande och inger rädsla.",
+      "example": "Mannen tog ett steg framåt med en hotfull min."
+    },
+    "human": {
+      "explanation": "\"human\" betyder medmänsklig och präglad av omtanke om andra.",
+      "example": "Domaren ansågs ha gjort en ovanligt human bedömning."
+    },
+    "humoristisk": {
+      "explanation": "\"humoristisk\" betyder skämtsam och rolig till sin karaktär.",
+      "example": "Hennes humoristiska tal fick publiken att skratta högt."
+    },
+    "huslig": {
+      "explanation": "\"huslig\" betyder hemmastadd i hushållsarbete eller inriktad på hemmet.",
+      "example": "Han är ovanligt huslig och lagar gärna stora middagar."
+    },
+    "hycklande": {
+      "explanation": "\"hycklande\" betyder falsk och oärlig i sitt uppträdande.",
+      "example": "Hon tyckte att hans plötsliga omtanke lät hycklande."
+    },
+    "hygglig": {
+      "explanation": "\"hygglig\" betyder trevlig, vänlig eller ganska bra.",
+      "example": "Det var hyggligt av dig att stanna kvar och hjälpa till."
+    },
+    "hypnotisk": {
+      "explanation": "\"hypnotisk\" betyder så fängslande att det nästan känns som att bli trollbunden.",
+      "example": "Musiken hade en hypnotisk rytm som drog in publiken."
+    },
+    "högstämd": {
+      "explanation": "\"högstämd\" betyder upplyft, högtidlig eller starkt känsloladdad.",
+      "example": "Stämningen blev högstämd när kören började sjunga."
+    },
+    "hämningslös": {
+      "explanation": "\"hämningslös\" betyder tygellös och utan vanliga spärrar.",
+      "example": "Firandet övergick snart i ett hämningslöst jubel."
+    },
+    "hänförd": {
+      "explanation": "\"hänförd\" betyder mycket förtjust och starkt gripen.",
+      "example": "Hon blev hänförd av den stilla musiken i kyrkan."
+    },
+    "hänsynsfull": {
+      "explanation": "\"hänsynsfull\" betyder omtänksam och varsam mot andra.",
+      "example": "Han var hänsynsfull nog att sänka rösten när barnet sov."
+    },
+    "härdad": {
+      "explanation": "\"härdad\" betyder tålig efter att ha vant sig vid svårigheter.",
+      "example": "Efter många år i yrket var hon härdad av pressen."
+    },
+    "härlig": {
+      "explanation": "\"härlig\" betyder underbar och mycket angenäm.",
+      "example": "Vi hade en härlig dag vid sjön."
+    },
+    "hätsk": {
+      "explanation": "\"hätsk\" betyder aggressiv, bitter och ofta hård i tonen.",
+      "example": "Debatten blev snabbt hätsk när anklagelserna började hagla."
+    },
+    "hävdvunnen": {
+      "explanation": "\"hävdvunnen\" betyder etablerad genom lång tradition eller vana.",
+      "example": "Det är en hävdvunnen sed att samlas där varje midsommar."
+    },
+    "högertid": {
+      "explanation": "\"högertid\" betyder en period då högerinriktade idéer eller partier dominerar.",
+      "example": "Flera debattörer menar att landet just nu befinner sig i en ny högertid."
+    },
+    "iakttagbar": {
+      "explanation": "\"iakttagbar\" betyder märkbar eller möjlig att lägga märke till.",
+      "example": "Efter behandlingen var en tydlig förbättring iakttagbar."
+    },
+    "ideologisk": {
+      "explanation": "\"ideologisk\" betyder att något rör idéer om hur samhället bör vara ordnat.",
+      "example": "Konflikten handlade mer om ideologiska skillnader än om pengar."
+    },
+    "idyllisk": {
+      "explanation": "\"idyllisk\" betyder fridfull, vacker och nästan drömlikt harmonisk.",
+      "example": "De tillbringade sommaren i en idyllisk by vid havet."
+    },
+    "illusionistisk": {
+      "explanation": "\"illusionistisk\" betyder att något skapar en stark synvilla eller verklighetsillusion.",
+      "example": "Målningen hade ett illusionistiskt djup som fick väggen att verka öppen."
+    },
+    "illvillig": {
+      "explanation": "\"illvillig\" betyder elak och med avsikt att skada eller såra.",
+      "example": "Det spreds ett illvilligt rykte om henne på arbetsplatsen."
+    },
+    "imaginär": {
+      "explanation": "\"imaginär\" betyder inbillad eller endast tänkt.",
+      "example": "Barnet pratade länge med sin imaginära vän."
+    },
+    "immun": {
+      "explanation": "\"immun\" betyder motståndskraftig mot en viss smitta eller påverkan.",
+      "example": "Efter vaccinationen var hon immun mot sjukdomen."
+    },
+    "imperativ": {
+      "explanation": "\"imperativ\" betyder befallande eller absolut nödvändigt.",
+      "example": "Det är imperativt att vi agerar innan problemen växer."
+    },
+    "impopulär": {
+      "explanation": "\"impopulär\" betyder illa omtyckt eller ogillad av många.",
+      "example": "Beslutet blev snabbt impopulärt bland de anställda."
+    },
+    "imponerad": {
+      "explanation": "\"imponerad\" betyder fylld av beundran inför något som känns starkt eller skickligt.",
+      "example": "Jag blev imponerad av hur lugnt hon hanterade situationen."
+    },
+    "improduktiv": {
+      "explanation": "\"improduktiv\" betyder oeffektiv och utan tydligt resultat.",
+      "example": "Mötet blev improduktivt eftersom ingen höll sig till ämnet."
+    },
+    "improvisatorisk": {
+      "explanation": "\"improvisatorisk\" betyder oförberedd och gjord utan fast plan.",
+      "example": "De fick ordna en improvisatorisk lösning när tekniken slutade fungera."
+    },
+    "impulsstyrd": {
+      "explanation": "\"impulsstyrd\" betyder att man handlar snabbt utan särskilt mycket eftertanke.",
+      "example": "Det var ett impulsstyrt köp som hon snart ångrade."
+    },
+    "incitamentsdriven": {
+      "explanation": "\"incitamentsdriven\" betyder styrd av belöningar eller andra drivkrafter.",
+      "example": "Systemet är starkt incitamentsdrivet och premierar höga resultat."
+    },
+    "indiskret": {
+      "explanation": "\"indiskret\" betyder taktlös och benägen att avslöja sådant som borde hållas privat.",
+      "example": "Frågan om hennes lön uppfattades som indiskret."
+    },
+    "indoktrinerad": {
+      "explanation": "\"indoktrinerad\" betyder ensidigt påverkad att tro på en viss lära utan kritisk prövning.",
+      "example": "Han kände sig indoktrinerad efter åren i den slutna miljön."
+    },
+    "indolent": {
+      "explanation": "\"indolent\" betyder lat och obenägen att anstränga sig.",
+      "example": "Han låg kvar med ett indolent uttryck medan andra började arbeta."
+    },
+    "indragen": {
+      "explanation": "\"indragen\" betyder återkallad eller borttagen av en myndighet eller annan instans.",
+      "example": "Hans körkort blev indraget efter fortkörningen."
+    },
+    "industriell": {
+      "explanation": "\"industriell\" betyder att något rör fabriker, tillverkning eller industri.",
+      "example": "Staden växte snabbt under den industriella expansionen."
+    },
+    "inelegant": {
+      "explanation": "\"inelegant\" betyder klumpig eller utan stil och finess.",
+      "example": "Lösningen fungerade, men den var ganska inelegant."
+    },
+    "infallsrik": {
+      "explanation": "\"infallsrik\" betyder fantasifull och full av idéer.",
+      "example": "Hon hittade en infallsrik lösning på problemet."
+    },
+    "infekterad": {
+      "explanation": "\"infekterad\" betyder smittad eller angripen av infektion.",
+      "example": "Såret blev infekterat och behövde behandlas."
+    },
+    "inflammerad": {
+      "explanation": "\"inflammerad\" betyder svullen, irriterad och ofta öm på grund av inflammation.",
+      "example": "Knät var inflammerat efter den långa löpturen."
+    },
+    "informerad": {
+      "explanation": "\"informerad\" betyder underrättad och väl insatt i vad som gäller.",
+      "example": "Alla medarbetare hölls informerade om förändringarna."
+    },
+    "infödd": {
+      "explanation": "\"infödd\" betyder ursprunglig eller född på den plats det gäller.",
+      "example": "Guiden berättade om områdets infödda befolkning."
+    },
+    "ingående": {
+      "explanation": "\"ingående\" betyder grundlig och mycket noggrann.",
+      "example": "Hon gjorde en ingående analys av materialet innan hon drog sin slutsats."
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "wordList": [
+    {
+      "word": "yrvaken",
+      "correct": "nyvaken",
+      "distractors": ["klarvaken", "sömnlös", "stressad"],
+      "difficulty": 1
+    },
+    {
+      "word": "ytmässig",
+      "correct": "ytlig",
+      "distractors": ["grundlig", "noggrann", "saklig"],
+      "difficulty": 2
+    },
+    {
+      "word": "ångerfull",
+      "correct": "full av ånger",
+      "distractors": ["full av hopp", "utan skuld", "utan känslor"],
+      "difficulty": 1
+    },
+    {
+      "word": "åsidosatt",
+      "correct": "förbisedd",
+      "distractors": ["prioriterad", "erkänd", "delaktig"],
+      "difficulty": 2
+    },
+    {
+      "word": "återhållen",
+      "correct": "behärskad",
+      "distractors": ["utlevande", "hetlevrad", "oförställd"],
+      "difficulty": 2
+    },
+    {
+      "word": "återkommande",
+      "correct": "som kommer tillbaka",
+      "distractors": ["som upphör direkt", "som sker en gång", "som är slumpmässig"],
+      "difficulty": 1
+    },
+    {
+      "word": "äggande",
+      "correct": "sporrande",
+      "distractors": ["avskräckande", "dämpande", "likgiltigt"],
+      "difficulty": 3
+    },
+    {
+      "word": "äktenskaplig",
+      "correct": "som hör till äktenskap",
+      "distractors": ["som gäller släktskap", "som gäller arbete", "som gäller religion"],
+      "difficulty": 2
+    },
+    {
+      "word": "älskvärd",
+      "correct": "vänlig",
+      "distractors": ["vresig", "högdragen", "inställsam"],
+      "difficulty": 1
+    },
+    {
+      "word": "ämbar",
+      "correct": "hink",
+      "distractors": ["skål", "spade", "kittel"],
+      "difficulty": 3
+    },
+    {
+      "word": "ändamålsenlig",
+      "correct": "praktisk",
+      "distractors": ["överflödig", "tillfällig", "dyrbar"],
+      "difficulty": 2
+    },
+    {
+      "word": "ängslig",
+      "correct": "orolig",
+      "distractors": ["självsäker", "obrydd", "balanserad"],
+      "difficulty": 1
+    },
+    {
+      "word": "ärbar",
+      "correct": "anständig",
+      "distractors": ["listig", "förmögen", "bullrig"],
+      "difficulty": 4
+    },
+    {
+      "word": "ärrad",
+      "correct": "märkt av ärr",
+      "distractors": ["solbränd", "skäggig", "spenslig"],
+      "difficulty": 2
+    },
+    {
+      "word": "ödelagd",
+      "correct": "förstörd",
+      "distractors": ["påbörjad", "förskönad", "bevarad"],
+      "difficulty": 1
+    },
+    {
+      "word": "ömklig",
+      "correct": "ynklig",
+      "distractors": ["storslagen", "bestämd", "kraftfull"],
+      "difficulty": 2
+    },
+    {
+      "word": "ömtålig",
+      "correct": "känslig",
+      "distractors": ["slitstark", "lättskött", "okomplicerad"],
+      "difficulty": 1
+    },
+    {
+      "word": "överbefolkad",
+      "correct": "med för många invånare",
+      "distractors": ["glesbefolkad", "välplanerad", "svåråtkomlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "överhängande",
+      "correct": "nära förestående",
+      "distractors": ["osannolik", "avlägsen", "obetydlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "överkänslig",
+      "correct": "alltför känslig",
+      "distractors": ["motståndskraftig", "okänslig", "robust"],
+      "difficulty": 1
+    },
+    {
+      "word": "överlagd",
+      "correct": "planerad",
+      "distractors": ["impulsiv", "slarvig", "bristfällig"],
+      "difficulty": 2
+    },
+    {
+      "word": "översvallad",
+      "correct": "entusiastisk",
+      "distractors": ["återhållsam", "likgiltig", "vresig"],
+      "difficulty": 3
+    },
+    {
+      "word": "överskattad",
+      "correct": "värderad för högt",
+      "distractors": ["underskattad", "välgrundad", "eftertraktad"],
+      "difficulty": 2
+    },
+    {
+      "word": "övertänd",
+      "correct": "överstimulerad",
+      "distractors": ["avslagen", "uttråkad", "avvaktande"],
+      "difficulty": 2
+    },
+    {
+      "word": "överväldigande",
+      "correct": "mycket stark",
+      "distractors": ["obetydlig", "måttlig", "tveksam"],
+      "difficulty": 2
+    }
+  ],
+  "wordDetails": {
+    "yrvaken": {
+      "explanation": "\"yrvaken\" betyder nyvaken och fortfarande lite sömnig.",
+      "example": "Hon kom yrvaken ut i köket när väckarklockan ringt för tredje gången."
+    },
+    "ytmässig": {
+      "explanation": "\"ytmässig\" betyder ytlig och inte särskilt genomtänkt.",
+      "example": "Hans analys fick kritik för att vara alltför ytmässig."
+    },
+    "ångerfull": {
+      "explanation": "\"ångerfull\" betyder att man känner stark ånger över något man gjort.",
+      "example": "Hon såg ångerfull ut efter sitt hårda utbrott."
+    },
+    "åsidosatt": {
+      "explanation": "\"åsidosatt\" betyder förbisedd eller satt åt sidan.",
+      "example": "Han kände sig åsidosatt när beslutet fattades utan att någon frågade honom."
+    },
+    "återhållen": {
+      "explanation": "\"återhållen\" betyder behärskad och inte alltför öppen i sitt uttryck.",
+      "example": "Trots framgången var hennes reaktion stillsam och återhållen."
+    },
+    "återkommande": {
+      "explanation": "\"återkommande\" betyder att något kommer tillbaka eller upprepas.",
+      "example": "Hon har återkommande problem med ryggen varje vinter."
+    },
+    "äggande": {
+      "explanation": "\"äggande\" betyder sporrande eller uppmuntrande till handling.",
+      "example": "Tränarens äggande ord gav laget ny energi."
+    },
+    "äktenskaplig": {
+      "explanation": "\"äktenskaplig\" betyder att något hör till eller rör äktenskap.",
+      "example": "Paret sökte hjälp för sina äktenskapliga problem."
+    },
+    "älskvärd": {
+      "explanation": "\"älskvärd\" betyder vänlig, charmig och lätt att tycka om.",
+      "example": "Värden var så älskvärd att alla genast kände sig välkomna."
+    },
+    "ämbar": {
+      "explanation": "\"ämbar\" betyder ungefär \"hink\" eller större kärl.",
+      "example": "Hon bar vatten i ett ämbar från brunnen."
+    },
+    "ändamålsenlig": {
+      "explanation": "\"ändamålsenlig\" betyder praktisk och väl anpassad för sitt syfte.",
+      "example": "Lokalen var enkel men mycket ändamålsenlig för verksamheten."
+    },
+    "ängslig": {
+      "explanation": "\"ängslig\" betyder orolig och lätt bekymrad.",
+      "example": "Barnet blev ängsligt när det började mörkna ute."
+    },
+    "ärbar": {
+      "explanation": "\"ärbar\" betyder anständig, hederlig och moraliskt respektabel.",
+      "example": "I romanen försöker hon leva ett ärbart liv trots omgivningens misstänksamhet."
+    },
+    "ärrad": {
+      "explanation": "\"ärrad\" betyder märkt av ärr efter skador eller sår.",
+      "example": "Hans ärrade händer avslöjade många år av hårt arbete."
+    },
+    "ödelagd": {
+      "explanation": "\"ödelagd\" betyder förstörd eller svårt skadad.",
+      "example": "Byn låg nästan ödelagd efter stormen."
+    },
+    "ömklig": {
+      "explanation": "\"ömklig\" betyder ynklig och väcker ofta medlidande eller förakt.",
+      "example": "Han gjorde ett ömkligt försök att skylla ifrån sig."
+    },
+    "ömtålig": {
+      "explanation": "\"ömtålig\" betyder känslig och lätt att skada eller påverka.",
+      "example": "Glaset är så ömtåligt att det måste packas mycket noggrant."
+    },
+    "överbefolkad": {
+      "explanation": "\"överbefolkad\" betyder att ett område har fler invånare än det egentligen finns utrymme för.",
+      "example": "Staden upplevdes som överbefolkad efter den snabba inflyttningen."
+    },
+    "överhängande": {
+      "explanation": "\"överhängande\" betyder nära förestående och ofta hotfullt.",
+      "example": "Det fanns en överhängande risk för strejk innan avtalet skrevs under."
+    },
+    "överkänslig": {
+      "explanation": "\"överkänslig\" betyder alltför känslig, fysiskt eller känslomässigt.",
+      "example": "Han är överkänslig mot starka dofter och får lätt huvudvärk."
+    },
+    "överlagd": {
+      "explanation": "\"överlagd\" betyder noga planerad och avsiktlig.",
+      "example": "Brottet verkade vara överlagt snarare än impulsivt."
+    },
+    "översvallad": {
+      "explanation": "\"översvallad\" betyder entusiastisk och starkt känslofull.",
+      "example": "Publiken gav artisten ett översvallat mottagande efter extranumret."
+    },
+    "överskattad": {
+      "explanation": "\"överskattad\" betyder värderad högre än vad som är rimligt.",
+      "example": "Han menade att filmen var snygg men ändå klart överskattad."
+    },
+    "övertänd": {
+      "explanation": "\"övertänd\" betyder överstimulerad, uppskruvad eller alltför ivrig.",
+      "example": "Barnen blev helt övertända efter allt godis på kalaset."
+    },
+    "överväldigande": {
+      "explanation": "\"överväldigande\" betyder mycket starkt eller så mäktigt att det är svårt att ta in.",
+      "example": "Responsen på hennes tal var överväldigande."
+    }
+  }
+}

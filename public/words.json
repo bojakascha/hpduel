@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "word": "abstrus",
+      "correct": "svårbegriplig",
+      "distractors": ["kortvarig", "överdriven", "obetydlig"],
+      "explanation": "Abstrus betyder att något är svårt att förstå eller uttryckt på ett dunkelt sätt.",
+      "example": "Resonemanget i artikeln var så abstrust att flera läsare tappade tråden.",
+      "difficulty": 3
+    },
+    {
+      "id": 2,
+      "word": "vankelmodig",
+      "correct": "obeslutsam",
+      "distractors": ["självsäker", "långsint", "förtegen"],
+      "explanation": "Vankelmodig betyder osäker och tveksam, särskilt när man har svårt att fatta beslut.",
+      "example": "Inför valet av utbildning blev han plötsligt vankelmodig.",
+      "difficulty": 3
+    },
+    {
+      "id": 3,
+      "word": "frugal",
+      "correct": "sparsam",
+      "distractors": ["högdragen", "slösaktig", "högljudd"],
+      "explanation": "Frugal betyder sparsam och återhållsam i fråga om konsumtion eller användning av resurser.",
+      "example": "Trots hög lön levde hon frugalt och lade undan mycket pengar varje månad.",
+      "difficulty": 3
+    },
+    {
+      "id": 4,
+      "word": "intrikat",
+      "correct": "komplicerad",
+      "distractors": ["uppenbar", "ytlig", "trög"],
+      "explanation": "Intrikat betyder komplicerad, finurlig eller sammansatt på ett invecklat sätt.",
+      "example": "Utredningen visade sig vara mer intrikat än polisen först hade trott.",
+      "difficulty": 3
+    },
+    {
+      "id": 5,
+      "word": "rudimentär",
+      "correct": "enkel",
+      "distractors": ["fullständig", "överlägsen", "påträngande"],
+      "explanation": "Rudimentär betyder mycket enkel, ofullständig eller bara i ett tidigt utvecklingsstadium.",
+      "example": "De första modellerna var ganska rudimentära men fungerade ändå hjälpligt.",
+      "difficulty": 2
+    },
+    {
+      "id": 6,
+      "word": "försumlig",
+      "correct": "slarvig",
+      "distractors": ["plikttrogen", "förnöjsam", "resonerlig"],
+      "explanation": "Försumlig betyder att man vårdslöst låter bli att göra det man borde.",
+      "example": "Chefen ansåg att det var försumligt att inte kontrollera siffrorna före publicering.",
+      "difficulty": 2
+    },
+    {
+      "id": 7,
+      "word": "beklämd",
+      "correct": "nedstämd",
+      "distractors": ["upprymd", "vaksam", "enveten"],
+      "explanation": "Beklämd betyder nedstämd, generad eller illa till mods.",
+      "example": "Hon såg beklämd ut efter det obehagliga samtalet.",
+      "difficulty": 2
+    },
+    {
+      "id": 8,
+      "word": "förhärskande",
+      "correct": "dominerande",
+      "distractors": ["tillfällig", "underordnad", "hemlig"],
+      "explanation": "Förhärskande betyder dominerande eller vanligast förekommande i ett visst sammanhang.",
+      "example": "Den förhärskande uppfattningen i forskargruppen var att mer data behövdes.",
+      "difficulty": 2
+    },
+    {
+      "id": 9,
+      "word": "skönsmässig",
+      "correct": "ungefärlig",
+      "distractors": ["bindande", "ordagrann", "slutgiltig"],
+      "explanation": "Skönsmässig betyder att något bygger på bedömning snarare än på exakt mätning eller strikt regel.",
+      "example": "Myndigheten gjorde en skönsmässig uppskattning av kostnaderna.",
+      "difficulty": 4
+    },
+    {
+      "id": 10,
+      "word": "ömkansvärd",
+      "correct": "ynklig",
+      "distractors": ["storslagen", "hänsynslös", "bestämd"],
+      "explanation": "Ömkansvärd betyder så dålig, svag eller sorglig att den väcker medlidande.",
+      "example": "Laget gjorde en ömkansvärd insats i den avgörande matchen.",
+      "difficulty": 2
+    }
+  ]

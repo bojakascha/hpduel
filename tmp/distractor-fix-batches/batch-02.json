@@ -1,0 +1,802 @@
+[
+  {
+    "word": "konservativ",
+    "correct": "bevarande",
+    "distractors": [
+      "nyskapande",
+      "vårdslös",
+      "yvig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "kontroversiell",
+    "correct": "omstridd",
+    "distractors": [
+      "självklar",
+      "lågmäld",
+      "enig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "konventionell",
+    "correct": "traditionell",
+    "distractors": [
+      "originell",
+      "vågad",
+      "udda"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "korrekt",
+    "correct": "riktig",
+    "distractors": [
+      "missvisande",
+      "slarvig",
+      "lösryckt"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "kreativ",
+    "correct": "nyskapande",
+    "distractors": [
+      "fyrkantig",
+      "efterapande",
+      "passiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "kritisk",
+    "correct": "granskande",
+    "distractors": [
+      "godtrogen",
+      "eftergiven",
+      "hövisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "kronisk",
+    "correct": "långvarig",
+    "distractors": [
+      "hastig",
+      "tillfällig",
+      "kortvarig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "kulturell",
+    "correct": "som rör kultur",
+    "distractors": [
+      "som rör natur",
+      "som rör ekonomi",
+      "som rör teknik"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "legitim",
+    "correct": "berättigad",
+    "distractors": [
+      "tveksam",
+      "förbjuden",
+      "opassande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "lojal",
+    "correct": "trogen",
+    "distractors": [
+      "svekfull",
+      "nyckfull",
+      "självisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "lågmäld",
+    "correct": "stillsam",
+    "distractors": [
+      "högröstad",
+      "tvär",
+      "pompös"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "manifest",
+    "correct": "uppenbar",
+    "distractors": [
+      "dold",
+      "obestämd",
+      "tillkrånglad"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "marginal",
+    "correct": "obetydlig",
+    "distractors": [
+      "central",
+      "avgörande",
+      "omfångsrik"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "mekanisk",
+    "correct": "maskinmässig",
+    "distractors": [
+      "spontan",
+      "varsam",
+      "originell"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "metaforisk",
+    "correct": "bildlig",
+    "distractors": [
+      "bokstavlig",
+      "schematisk",
+      "teoretisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "metodisk",
+    "correct": "systematisk",
+    "distractors": [
+      "spontan",
+      "oprecis",
+      "passiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "mild",
+    "correct": "lindrig",
+    "distractors": [
+      "skarp",
+      "rigid",
+      "omfattande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "moderat",
+    "correct": "återhållsam",
+    "distractors": [
+      "extrem",
+      "offensiv",
+      "naiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "monoton",
+    "correct": "enformig",
+    "distractors": [
+      "originell",
+      "livlig",
+      "tvetydig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "moralisk",
+    "correct": "etisk",
+    "distractors": [
+      "teoretisk",
+      "neutral",
+      "skeptisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "mottaglig",
+    "correct": "receptiv",
+    "distractors": [
+      "restriktiv",
+      "rigid",
+      "neutral"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "mångtydig",
+    "correct": "flertydig",
+    "distractors": [
+      "specifik",
+      "transparent",
+      "regelbunden"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "naiv",
+    "correct": "godtrogen",
+    "distractors": [
+      "skeptisk",
+      "reflekterad",
+      "rigid"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "negativ",
+    "correct": "avvisande",
+    "distractors": [
+      "positiv",
+      "neutral",
+      "spontan"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "neutral",
+    "correct": "opartisk",
+    "distractors": [
+      "partisk",
+      "offensiv",
+      "moralisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "normativ",
+    "correct": "föreskrivande",
+    "distractors": [
+      "beskrivande",
+      "neutral",
+      "statisk"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "nyanserad",
+    "correct": "välavvägd",
+    "distractors": [
+      "ensidig",
+      "offensiv",
+      "schematisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "objektiv",
+    "correct": "saklig",
+    "distractors": [
+      "subjektiv",
+      "symbolisk",
+      "spontan"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "obsolet",
+    "correct": "föråldrad",
+    "distractors": [
+      "originell",
+      "robust",
+      "omgående"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "offensiv",
+    "correct": "angreppsinriktad",
+    "distractors": [
+      "defensiv",
+      "varsam",
+      "opartisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "oförsonlig",
+    "correct": "kompromisslös",
+    "distractors": [
+      "förlåtande",
+      "nyanserad",
+      "mild"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "oklar",
+    "correct": "otydlig",
+    "distractors": [
+      "precis",
+      "saklig",
+      "stabil"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "omfattande",
+    "correct": "vidsträckt",
+    "distractors": [
+      "smal",
+      "punktlig",
+      "lokal"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "omgående",
+    "correct": "genast",
+    "distractors": [
+      "senare",
+      "småningom",
+      "plötsligt"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "omogen",
+    "correct": "barnslig",
+    "distractors": [
+      "mogen",
+      "stabil",
+      "regelbunden"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "opartisk",
+    "correct": "neutral",
+    "distractors": [
+      "partisk",
+      "moralisk",
+      "offensiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "oprecis",
+    "correct": "inexakt",
+    "distractors": [
+      "grundlig",
+      "nyanserad",
+      "specifik"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "optimistisk",
+    "correct": "hoppfull",
+    "distractors": [
+      "skeptisk",
+      "dyster",
+      "passiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "organisk",
+    "correct": "naturlig",
+    "distractors": [
+      "syntetisk",
+      "statisk",
+      "mekanisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "originell",
+    "correct": "nyskapande",
+    "distractors": [
+      "traditionell",
+      "schematisk",
+      "mild"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "ostadig",
+    "correct": "instabil",
+    "distractors": [
+      "stabil",
+      "solid",
+      "regelbunden"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "paradoxal",
+    "correct": "motsägelsefull",
+    "distractors": [
+      "logisk",
+      "neutral",
+      "transparent"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "passiv",
+    "correct": "overksam",
+    "distractors": [
+      "aktiv",
+      "offensiv",
+      "spontan"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "patetisk",
+    "correct": "ynklig",
+    "distractors": [
+      "storslagen",
+      "saklig",
+      "robust"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "perifer",
+    "correct": "avlägsen",
+    "distractors": [
+      "central",
+      "primär",
+      "närliggande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "permanent",
+    "correct": "varaktig",
+    "distractors": [
+      "provisorisk",
+      "tillfällig",
+      "spontan"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "plausibel",
+    "correct": "trovärdig",
+    "distractors": [
+      "orimlig",
+      "subjektiv",
+      "schematisk"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "pluralistisk",
+    "correct": "mångfaldsinriktad",
+    "distractors": [
+      "enhetlig",
+      "restriktiv",
+      "rigid"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "positiv",
+    "correct": "gynnsam",
+    "distractors": [
+      "negativ",
+      "neutral",
+      "passiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "potentiell",
+    "correct": "möjlig",
+    "distractors": [
+      "säker",
+      "permanent",
+      "färdig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "pragmatisk",
+    "correct": "praktisk",
+    "distractors": [
+      "teoretisk",
+      "romantisk",
+      "rigid"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "precis",
+    "correct": "exakt",
+    "distractors": [
+      "oklar",
+      "oprecis",
+      "schematisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "prekär",
+    "correct": "osäker",
+    "distractors": [
+      "stabil",
+      "robust",
+      "tillfällig"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "primär",
+    "correct": "huvudsaklig",
+    "distractors": [
+      "sekundär",
+      "perifer",
+      "kompletterande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "principiell",
+    "correct": "principfast",
+    "distractors": [
+      "opportunistisk",
+      "provisorisk",
+      "neutral"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "progressiv",
+    "correct": "framstegsvänlig",
+    "distractors": [
+      "konservativ",
+      "statisk",
+      "passiv"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "provisorisk",
+    "correct": "tillfällig",
+    "distractors": [
+      "permanent",
+      "stabil",
+      "tidlös"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "psykologisk",
+    "correct": "som rör psyket",
+    "distractors": [
+      "fysisk",
+      "teoretisk",
+      "biologisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "reaktiv",
+    "correct": "reagerande",
+    "distractors": [
+      "initiativrik",
+      "stabil",
+      "strategisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "redundant",
+    "correct": "överflödig",
+    "distractors": [
+      "nödvändig",
+      "precis",
+      "primär"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "reflekterad",
+    "correct": "eftertänksam",
+    "distractors": [
+      "spontan",
+      "naiv",
+      "offensiv"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "regelbunden",
+    "correct": "återkommande",
+    "distractors": [
+      "sporadisk",
+      "tillfällig",
+      "ostadig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "relativ",
+    "correct": "inte absolut",
+    "distractors": [
+      "fullständig",
+      "permanent",
+      "precis"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "relevant",
+    "correct": "betydelsefull",
+    "distractors": [
+      "trivial",
+      "perifer",
+      "neutral"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "restriktiv",
+    "correct": "begränsande",
+    "distractors": [
+      "tillåtande",
+      "öppen",
+      "spontan"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "rigid",
+    "correct": "stel",
+    "distractors": [
+      "flexibel",
+      "mild",
+      "mottaglig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "robust",
+    "correct": "tålig",
+    "distractors": [
+      "skör",
+      "ostadig",
+      "prekär"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "romantisk",
+    "correct": "känslosam",
+    "distractors": [
+      "saklig",
+      "rigid",
+      "moralisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "saklig",
+    "correct": "objektiv",
+    "distractors": [
+      "subjektiv",
+      "svulstig",
+      "mångtydig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "schematisk",
+    "correct": "förenklad",
+    "distractors": [
+      "nyanserad",
+      "detaljerad",
+      "organisk"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "sekundär",
+    "correct": "underordnad",
+    "distractors": [
+      "primär",
+      "central",
+      "avgörande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "selektiv",
+    "correct": "utväljande",
+    "distractors": [
+      "slumpmässig",
+      "neutral",
+      "omfattande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "sensibel",
+    "correct": "känslig",
+    "distractors": [
+      "robust",
+      "rigid",
+      "solid"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "skeptisk",
+    "correct": "tvivlande",
+    "distractors": [
+      "godtrogen",
+      "positiv",
+      "passiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "solid",
+    "correct": "gedigen",
+    "distractors": [
+      "bräcklig",
+      "schematisk",
+      "spontan"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "specifik",
+    "correct": "bestämd",
+    "distractors": [
+      "allmän",
+      "oklar",
+      "relativ"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "spontan",
+    "correct": "oförberedd",
+    "distractors": [
+      "planerad",
+      "metodisk",
+      "rigid"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "stabil",
+    "correct": "stadig",
+    "distractors": [
+      "ostadig",
+      "prekär",
+      "reaktiv"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "statisk",
+    "correct": "orörlig",
+    "distractors": [
+      "dynamisk",
+      "successiv",
+      "spontan"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "subjektiv",
+    "correct": "personlig",
+    "distractors": [
+      "objektiv",
+      "saklig",
+      "neutral"
+    ],
+    "difficulty": 2
+  }
+]

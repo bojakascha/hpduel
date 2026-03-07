@@ -1,0 +1,808 @@
+[
+  {
+    "word": "abstrus",
+    "correct": "svårbegriplig",
+    "distractors": [
+      "kortvarig",
+      "överdriven",
+      "obetydlig"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "vankelmodig",
+    "correct": "obeslutsam",
+    "distractors": [
+      "självsäker",
+      "långsint",
+      "förtegen"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "frugal",
+    "correct": "sparsam",
+    "distractors": [
+      "högdragen",
+      "slösaktig",
+      "högljudd"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "intrikat",
+    "correct": "komplicerad",
+    "distractors": [
+      "uppenbar",
+      "ytlig",
+      "trög"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "rudimentär",
+    "correct": "enkel",
+    "distractors": [
+      "fullständig",
+      "överlägsen",
+      "påträngande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "försumlig",
+    "correct": "slarvig",
+    "distractors": [
+      "plikttrogen",
+      "förnöjsam",
+      "resonerlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "beklämd",
+    "correct": "nedstämd",
+    "distractors": [
+      "upprymd",
+      "vaksam",
+      "enveten"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "förhärskande",
+    "correct": "dominerande",
+    "distractors": [
+      "tillfällig",
+      "underordnad",
+      "hemlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "skönsmässig",
+    "correct": "ungefärlig",
+    "distractors": [
+      "bindande",
+      "ordagrann",
+      "slutgiltig"
+    ],
+    "difficulty": 4
+  },
+  {
+    "word": "ömkansvärd",
+    "correct": "ynklig",
+    "distractors": [
+      "storslagen",
+      "hänsynslös",
+      "bestämd"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "bilateral",
+    "correct": "som rör två parter",
+    "distractors": [
+      "ömsesidig",
+      "jämställd",
+      "målinriktad",
+      "inofficiell",
+      "motstridig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "lamell",
+    "correct": "tunn skiva",
+    "distractors": [
+      "kägla",
+      "skiva",
+      "tygbit",
+      "frans",
+      "rulle"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "abonnera",
+    "correct": "prenumerera på",
+    "distractors": [
+      "leverera",
+      "göra tillgänglig",
+      "förhandsbeställa",
+      "komma överens",
+      "återbetala"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "adekvat",
+    "correct": "passande",
+    "distractors": [
+      "otålig",
+      "tillfällig",
+      "avvikande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "ambivalent",
+    "correct": "kluven",
+    "distractors": [
+      "övertygad",
+      "likgiltig",
+      "långsint"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "arbiträr",
+    "correct": "godtycklig",
+    "distractors": [
+      "noggrann",
+      "rättvis",
+      "eftertänksam"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "autonom",
+    "correct": "självständig",
+    "distractors": [
+      "beroende",
+      "tillfällig",
+      "undergiven"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "beständig",
+    "correct": "varaktig",
+    "distractors": [
+      "skör",
+      "plötslig",
+      "ytlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "betänklig",
+    "correct": "tveksam",
+    "distractors": [
+      "trygg",
+      "uppenbar",
+      "skonsam"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "bisarr",
+    "correct": "underlig",
+    "distractors": [
+      "vardaglig",
+      "försiktig",
+      "högtidlig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "bräcklig",
+    "correct": "skör",
+    "distractors": [
+      "stadig",
+      "riklig",
+      "envis"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "cynisk",
+    "correct": "hånfull",
+    "distractors": [
+      "godtrogen",
+      "hövisk",
+      "sorglös"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "dekadent",
+    "correct": "förfallen",
+    "distractors": [
+      "upphöjd",
+      "sparsam",
+      "stram"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "delikat",
+    "correct": "känslig",
+    "distractors": [
+      "robust",
+      "häftig",
+      "sluten"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "destruktiv",
+    "correct": "nedbrytande",
+    "distractors": [
+      "uppbygglig",
+      "försiktig",
+      "långsam"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "diffus",
+    "correct": "otydlig",
+    "distractors": [
+      "skarp",
+      "enkel",
+      "envis"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "diskret",
+    "correct": "återhållsam",
+    "distractors": [
+      "högljudd",
+      "påstridig",
+      "svävande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "dogmatisk",
+    "correct": "tvärsäker",
+    "distractors": [
+      "nyfiken",
+      "prövande",
+      "flexibel"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "effektiv",
+    "correct": "verkningsfull",
+    "distractors": [
+      "omständig",
+      "tveksam",
+      "slarvig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "egensinnig",
+    "correct": "envis",
+    "distractors": [
+      "foglig",
+      "vänlig",
+      "tveksam"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "elastisk",
+    "correct": "töjbar",
+    "distractors": [
+      "skör",
+      "sträv",
+      "fyrkantig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "emfatisk",
+    "correct": "eftertrycklig",
+    "distractors": [
+      "avmätt",
+      "svävande",
+      "diskret"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "enigmatisk",
+    "correct": "gåtfull",
+    "distractors": [
+      "tydlig",
+      "vardaglig",
+      "öppenhjärtig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "episk",
+    "correct": "storslagen",
+    "distractors": [
+      "kortfattad",
+      "vardaglig",
+      "försagd"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "eroderad",
+    "correct": "nedsliten",
+    "distractors": [
+      "förstärkt",
+      "nygjord",
+      "tät"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "esoterisk",
+    "correct": "för invigda",
+    "distractors": [
+      "folklig",
+      "tydlig",
+      "allmängiltig"
+    ],
+    "difficulty": 4
+  },
+  {
+    "word": "etisk",
+    "correct": "moralisk",
+    "distractors": [
+      "teknisk",
+      "slumpmässig",
+      "högröstad"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "euforisk",
+    "correct": "upprymd",
+    "distractors": [
+      "dämpad",
+      "tvivlande",
+      "butter"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "exakt",
+    "correct": "precis",
+    "distractors": [
+      "ungefärlig",
+      "yvig",
+      "stapplande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "excentrisk",
+    "correct": "udda",
+    "distractors": [
+      "anspråkslös",
+      "ordnad",
+      "försiktig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "expansiv",
+    "correct": "utåtriktad",
+    "distractors": [
+      "tillbakadragen",
+      "kylig",
+      "återhållsam"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "fatal",
+    "correct": "ödesdiger",
+    "distractors": [
+      "lycklig",
+      "övergående",
+      "obetydlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "fundamental",
+    "correct": "grundläggande",
+    "distractors": [
+      "tillfällig",
+      "utsmyckad",
+      "senkommen"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "generös",
+    "correct": "frikostig",
+    "distractors": [
+      "missunnsam",
+      "stel",
+      "karg"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "graciös",
+    "correct": "elegant",
+    "distractors": [
+      "klumpig",
+      "sträv",
+      "dyster"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "grandios",
+    "correct": "storslagen",
+    "distractors": [
+      "oansenlig",
+      "vardaglig",
+      "dämpad"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "harmonisk",
+    "correct": "välavvägd",
+    "distractors": [
+      "splittrad",
+      "skrikig",
+      "misslynt"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "heterogen",
+    "correct": "blandad",
+    "distractors": [
+      "enhetlig",
+      "bestämd",
+      "lodrät"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "homogen",
+    "correct": "enhetlig",
+    "distractors": [
+      "brokig",
+      "ojämn",
+      "kantig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "hypotetisk",
+    "correct": "antagen",
+    "distractors": [
+      "bevisad",
+      "praktisk",
+      "slutgiltig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "idealisk",
+    "correct": "bäst lämpad",
+    "distractors": [
+      "undermålig",
+      "tillfällig",
+      "ensidig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "identisk",
+    "correct": "likadan",
+    "distractors": [
+      "närliggande",
+      "möjlig",
+      "skiftande"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "illusorisk",
+    "correct": "skenbar",
+    "distractors": [
+      "påtaglig",
+      "gedigen",
+      "beständig"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "immanent",
+    "correct": "inneboende",
+    "distractors": [
+      "yttre",
+      "flyktig",
+      "tillfällig"
+    ],
+    "difficulty": 4
+  },
+  {
+    "word": "impulsiv",
+    "correct": "förhastad",
+    "distractors": [
+      "sansad",
+      "långsint",
+      "metodisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "inadekvat",
+    "correct": "olämplig",
+    "distractors": [
+      "träffsäker",
+      "fullständig",
+      "varsam"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "indifferent",
+    "correct": "likgiltig",
+    "distractors": [
+      "engagerad",
+      "sårbar",
+      "generös"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "indirekt",
+    "correct": "underförstådd",
+    "distractors": [
+      "tydlig",
+      "rak",
+      "omedelbar"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "individuell",
+    "correct": "personlig",
+    "distractors": [
+      "gemensam",
+      "likformig",
+      "officiell"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "ineffektiv",
+    "correct": "verkningslös",
+    "distractors": [
+      "snabb",
+      "systematisk",
+      "kraftfull"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "infam",
+    "correct": "skändlig",
+    "distractors": [
+      "ädel",
+      "varsam",
+      "beskedlig"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "informell",
+    "correct": "ledig",
+    "distractors": [
+      "högtidlig",
+      "stram",
+      "juridisk"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "inhuman",
+    "correct": "omänsklig",
+    "distractors": [
+      "medmänsklig",
+      "varsam",
+      "mild"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "initial",
+    "correct": "inledande",
+    "distractors": [
+      "avslutande",
+      "tillfällig",
+      "sidoställd"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "inskränkt",
+    "correct": "trångsynt",
+    "distractors": [
+      "vidsynt",
+      "noggrann",
+      "öppen"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "instabil",
+    "correct": "vacklande",
+    "distractors": [
+      "stadig",
+      "lojal",
+      "rundlig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "integrerad",
+    "correct": "införlivad",
+    "distractors": [
+      "avskild",
+      "tillfällig",
+      "överordnad"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "intensiv",
+    "correct": "stark",
+    "distractors": [
+      "svag",
+      "stillsam",
+      "ytlig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "intuitiv",
+    "correct": "instinktiv",
+    "distractors": [
+      "inlärd",
+      "omständlig",
+      "bokstavlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "ironisk",
+    "correct": "sarkastisk",
+    "distractors": [
+      "högtidlig",
+      "bokstavlig",
+      "oskuldsfull"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "irrelevant",
+    "correct": "oväsentlig",
+    "distractors": [
+      "avgörande",
+      "användbar",
+      "noggrann"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "isolerad",
+    "correct": "avskild",
+    "distractors": [
+      "central",
+      "livlig",
+      "sammanbunden"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "kapabel",
+    "correct": "duglig",
+    "distractors": [
+      "orkeslös",
+      "osäker",
+      "bristfällig"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "karaktäristisk",
+    "correct": "typisk",
+    "distractors": [
+      "ovanlig",
+      "tveksam",
+      "föränderlig"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "kategorisk",
+    "correct": "bestämd",
+    "distractors": [
+      "försiktig",
+      "svävande",
+      "undvikande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "kausal",
+    "correct": "orsaksmässig",
+    "distractors": [
+      "tillfällig",
+      "parallell",
+      "estetisk"
+    ],
+    "difficulty": 3
+  },
+  {
+    "word": "kollektiv",
+    "correct": "gemensam",
+    "distractors": [
+      "privat",
+      "enskild",
+      "splittrad"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "koncis",
+    "correct": "kortfattad",
+    "distractors": [
+      "svulstig",
+      "omständig",
+      "trevande"
+    ],
+    "difficulty": 2
+  },
+  {
+    "word": "konkret",
+    "correct": "påtaglig",
+    "distractors": [
+      "abstrakt",
+      "svävande",
+      "osäker"
+    ],
+    "difficulty": 1
+  },
+  {
+    "word": "konsekvent",
+    "correct": "följdriktig",
+    "distractors": [
+      "motsägelsefull",
+      "nyckfull",
+      "trevande"
+    ],
+    "difficulty": 1
+  }
+]

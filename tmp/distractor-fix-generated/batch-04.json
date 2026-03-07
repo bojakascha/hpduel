@@ -1,0 +1,722 @@
+[
+  {
+    "word": "desperat",
+    "distractors": [
+      "sansad",
+      "tålmodig",
+      "återhållsam",
+      "uppgiven"
+    ]
+  },
+  {
+    "word": "detaljerad",
+    "distractors": [
+      "summarisk",
+      "lättsam",
+      "svepande",
+      "noggrann"
+    ]
+  },
+  {
+    "word": "devot",
+    "distractors": [
+      "trotsig",
+      "skeptisk",
+      "nonchalant",
+      "hängiven"
+    ]
+  },
+  {
+    "word": "diametral",
+    "distractors": [
+      "näraliggande",
+      "gradvis",
+      "likvärdig",
+      "avvikande"
+    ]
+  },
+  {
+    "word": "didaktisk",
+    "distractors": [
+      "förvillande",
+      "skönlitterär",
+      "slumpmässig",
+      "metodisk"
+    ]
+  },
+  {
+    "word": "diskvalificerad",
+    "distractors": [
+      "godkänd",
+      "nominerad",
+      "uttagen",
+      "avvisad"
+    ]
+  },
+  {
+    "word": "distanserad",
+    "distractors": [
+      "hjärtlig",
+      "påflugen",
+      "oreserverad",
+      "avvaktande"
+    ]
+  },
+  {
+    "word": "divergent",
+    "distractors": [
+      "samstämmig",
+      "rak",
+      "identisk",
+      "splittrad"
+    ]
+  },
+  {
+    "word": "doktrinär",
+    "distractors": [
+      "pragmatisk",
+      "nyanserad",
+      "prövande",
+      "principfast"
+    ]
+  },
+  {
+    "word": "drakonisk",
+    "distractors": [
+      "mild",
+      "otydlig",
+      "tillfällig",
+      "hård"
+    ]
+  },
+  {
+    "word": "drastisk",
+    "distractors": [
+      "försiktig",
+      "långsam",
+      "obetydlig",
+      "genomgripande"
+    ]
+  },
+  {
+    "word": "dristig",
+    "distractors": [
+      "feg",
+      "lydig",
+      "varsam",
+      "orädd"
+    ]
+  },
+  {
+    "word": "dunkel",
+    "distractors": [
+      "glasklar",
+      "ljus",
+      "utförlig",
+      "mystisk"
+    ]
+  },
+  {
+    "word": "dydig",
+    "distractors": [
+      "lättrogen",
+      "självgod",
+      "fåfäng",
+      "anständig"
+    ]
+  },
+  {
+    "word": "dynamisk",
+    "distractors": [
+      "stillsam",
+      "trög",
+      "enformig",
+      "initiativrik"
+    ]
+  },
+  {
+    "word": "dyster",
+    "distractors": [
+      "hoppfull",
+      "livlig",
+      "högtidlig",
+      "mörk"
+    ]
+  },
+  {
+    "word": "effektfull",
+    "distractors": [
+      "överlastad",
+      "kortvarig",
+      "anspråkslös",
+      "slagkraftig"
+    ]
+  },
+  {
+    "word": "eftergiven",
+    "distractors": [
+      "orubblig",
+      "vresig",
+      "påstridig",
+      "medgörlig"
+    ]
+  },
+  {
+    "word": "egendomlig",
+    "distractors": [
+      "ordentlig",
+      "förnäm",
+      "trovärdig",
+      "särpräglad"
+    ]
+  },
+  {
+    "word": "egenvillig",
+    "distractors": [
+      "medgörlig",
+      "omtänksam",
+      "hängiven",
+      "självrådig"
+    ]
+  },
+  {
+    "word": "eländig",
+    "distractors": [
+      "lyxig",
+      "varsam",
+      "stadig",
+      "torftig"
+    ]
+  },
+  {
+    "word": "elegant",
+    "distractors": [
+      "klumpig",
+      "prålig",
+      "sliten",
+      "sofistikerad"
+    ]
+  },
+  {
+    "word": "elitistisk",
+    "distractors": [
+      "folklig",
+      "ödmjuk",
+      "vardaglig",
+      "överlägsen"
+    ]
+  },
+  {
+    "word": "empatisk",
+    "distractors": [
+      "likgiltig",
+      "självupptagen",
+      "sträng",
+      "omtänksam"
+    ]
+  },
+  {
+    "word": "empirisk",
+    "distractors": [
+      "teoretisk",
+      "godtycklig",
+      "dogmatisk",
+      "praktisk"
+    ]
+  },
+  {
+    "word": "enfaldig",
+    "distractors": [
+      "slug",
+      "grundlig",
+      "hänsynsfull",
+      "naiv"
+    ]
+  },
+  {
+    "word": "energisk",
+    "distractors": [
+      "matt",
+      "trevande",
+      "senfärdig",
+      "drivande"
+    ]
+  },
+  {
+    "word": "enhetlig",
+    "distractors": [
+      "spretig",
+      "tvetydig",
+      "ojämn",
+      "konsekvent"
+    ]
+  },
+  {
+    "word": "enkelspårig",
+    "distractors": [
+      "nyanserad",
+      "pålitlig",
+      "omtänksam",
+      "rigid"
+    ]
+  },
+  {
+    "word": "envis",
+    "distractors": [
+      "vacklande",
+      "uppgiven",
+      "foglig",
+      "målmedveten"
+    ]
+  },
+  {
+    "word": "epokgörande",
+    "distractors": [
+      "föråldrad",
+      "obetydlig",
+      "vardaglig",
+      "nyskapande"
+    ]
+  },
+  {
+    "word": "erfaren",
+    "distractors": [
+      "oskolad",
+      "trevande",
+      "ointresserad",
+      "kunnig"
+    ]
+  },
+  {
+    "word": "erotisk",
+    "distractors": [
+      "oskuldsfull",
+      "saklig",
+      "högtidlig",
+      "förförisk"
+    ]
+  },
+  {
+    "word": "eskapistisk",
+    "distractors": [
+      "jordnära",
+      "plikttrogen",
+      "stram",
+      "drömmande"
+    ]
+  },
+  {
+    "word": "etablerad",
+    "distractors": [
+      "okänd",
+      "tillfällig",
+      "ifrågasatt",
+      "inflytelserik"
+    ]
+  },
+  {
+    "word": "evig",
+    "distractors": [
+      "kortlivad",
+      "skör",
+      "osäker",
+      "beständig"
+    ]
+  },
+  {
+    "word": "exklusiv",
+    "distractors": [
+      "allmänt tillgänglig",
+      "provisorisk",
+      "prisvärd",
+      "lyxig"
+    ]
+  },
+  {
+    "word": "exotisk",
+    "distractors": [
+      "inhemsk",
+      "vanlig",
+      "färglös",
+      "ovanlig"
+    ]
+  },
+  {
+    "word": "expeditiv",
+    "distractors": [
+      "tveksam",
+      "omständig",
+      "senfärdig",
+      "effektiv"
+    ]
+  },
+  {
+    "word": "explosiv",
+    "distractors": [
+      "behärskad",
+      "varsam",
+      "lågmäld",
+      "temperamentsfull"
+    ]
+  },
+  {
+    "word": "faktisk",
+    "distractors": [
+      "påhittad",
+      "möjlig",
+      "osäker",
+      "konkret"
+    ]
+  },
+  {
+    "word": "fanatisk",
+    "distractors": [
+      "måttfull",
+      "likgiltig",
+      "försonlig",
+      "övertygad"
+    ]
+  },
+  {
+    "word": "fantasilös",
+    "distractors": [
+      "lekfull",
+      "djärv",
+      "lyhörd",
+      "förutsägbar"
+    ]
+  },
+  {
+    "word": "farsartad",
+    "distractors": [
+      "sorglig",
+      "saklig",
+      "värdig",
+      "komisk"
+    ]
+  },
+  {
+    "word": "feg",
+    "distractors": [
+      "djärv",
+      "beslutsam",
+      "påstridig",
+      "försiktig"
+    ]
+  },
+  {
+    "word": "fientlig",
+    "distractors": [
+      "välvillig",
+      "saktmodig",
+      "omtänksam",
+      "aggressiv"
+    ]
+  },
+  {
+    "word": "finstämd",
+    "distractors": [
+      "burdus",
+      "bullrig",
+      "rå",
+      "lyhörd"
+    ]
+  },
+  {
+    "word": "flegmatisk",
+    "distractors": [
+      "hetlevrad",
+      "nervös",
+      "rastlös",
+      "avmätt"
+    ]
+  },
+  {
+    "word": "flyktig",
+    "distractors": [
+      "bestående",
+      "noggrann",
+      "grundlig",
+      "föränderlig"
+    ]
+  },
+  {
+    "word": "fokuserad",
+    "distractors": [
+      "splittrad",
+      "lättsam",
+      "dröjande",
+      "målmedveten"
+    ]
+  },
+  {
+    "word": "forcerad",
+    "distractors": [
+      "naturlig",
+      "varsam",
+      "långsam",
+      "stressad"
+    ]
+  },
+  {
+    "word": "formell",
+    "distractors": [
+      "förtrolig",
+      "spontan",
+      "vardaglig",
+      "högtidlig"
+    ]
+  },
+  {
+    "word": "framsynt",
+    "distractors": [
+      "kortsiktig",
+      "godtrogen",
+      "obeslutsam",
+      "strategisk"
+    ]
+  },
+  {
+    "word": "frapperande",
+    "distractors": [
+      "obetydlig",
+      "sömnig",
+      "enkel",
+      "anmärkningsvärd"
+    ]
+  },
+  {
+    "word": "frikostig",
+    "distractors": [
+      "snål",
+      "återhållsam",
+      "vresig",
+      "välvillig"
+    ]
+  },
+  {
+    "word": "frivillig",
+    "distractors": [
+      "tvingad",
+      "ordnad",
+      "planerad",
+      "valfri"
+    ]
+  },
+  {
+    "word": "fruktbar",
+    "distractors": [
+      "steril",
+      "osäker",
+      "ytlig",
+      "produktiv"
+    ]
+  },
+  {
+    "word": "frän",
+    "distractors": [
+      "mild",
+      "sval",
+      "murrig",
+      "bitter"
+    ]
+  },
+  {
+    "word": "fulländad",
+    "distractors": [
+      "bristfällig",
+      "provisorisk",
+      "medelmåttig",
+      "utmärkt"
+    ]
+  },
+  {
+    "word": "fånig",
+    "distractors": [
+      "allvarlig",
+      "respektabel",
+      "stram",
+      "barnslig"
+    ]
+  },
+  {
+    "word": "fängslande",
+    "distractors": [
+      "sövande",
+      "ytlig",
+      "förutsägbar",
+      "intressant"
+    ]
+  },
+  {
+    "word": "förtrolig",
+    "distractors": [
+      "ytlig",
+      "officiell",
+      "misstänksam",
+      "intim"
+    ]
+  },
+  {
+    "word": "förtäckt",
+    "distractors": [
+      "öppen",
+      "uppriktig",
+      "rak",
+      "underförstådd"
+    ]
+  },
+  {
+    "word": "föränderlig",
+    "distractors": [
+      "stabil",
+      "enhetlig",
+      "orubblig",
+      "instabil"
+    ]
+  },
+  {
+    "word": "förarglig",
+    "distractors": [
+      "smickrande",
+      "behaglig",
+      "vänlig",
+      "besvärlig"
+    ]
+  },
+  {
+    "word": "förbehållsam",
+    "distractors": [
+      "utåtriktad",
+      "öppenhjärtig",
+      "påflugen",
+      "reserverad"
+    ]
+  },
+  {
+    "word": "fördelaktig",
+    "distractors": [
+      "riskabel",
+      "obetydlig",
+      "ensidig",
+      "lönsam"
+    ]
+  },
+  {
+    "word": "fördold",
+    "distractors": [
+      "synlig",
+      "uttalad",
+      "uppenbar",
+      "hemlig"
+    ]
+  },
+  {
+    "word": "förfinad",
+    "distractors": [
+      "burdus",
+      "primitiv",
+      "oslipad",
+      "sofistikerad"
+    ]
+  },
+  {
+    "word": "förhastad",
+    "distractors": [
+      "välavvägd",
+      "tålmodig",
+      "grundlig",
+      "impulsiv"
+    ]
+  },
+  {
+    "word": "förklarlig",
+    "distractors": [
+      "obegriplig",
+      "tillgjord",
+      "motvillig",
+      "logisk"
+    ]
+  },
+  {
+    "word": "förkonstlad",
+    "distractors": [
+      "naturlig",
+      "vardaglig",
+      "rak",
+      "onaturlig"
+    ]
+  },
+  {
+    "word": "förlåtande",
+    "distractors": [
+      "hämndlysten",
+      "sträng",
+      "butter",
+      "storsint"
+    ]
+  },
+  {
+    "word": "förnumstig",
+    "distractors": [
+      "rådvill",
+      "ödmjuk",
+      "läraktig",
+      "pretentiös"
+    ]
+  },
+  {
+    "word": "förnäm",
+    "distractors": [
+      "anspråkslös",
+      "hjärtlig",
+      "rörelseglad",
+      "snobbig"
+    ]
+  },
+  {
+    "word": "försonlig",
+    "distractors": [
+      "stridslysten",
+      "kallsinnig",
+      "tvär",
+      "fredlig"
+    ]
+  },
+  {
+    "word": "förtegen",
+    "distractors": [
+      "pratsam",
+      "öppenhjärtig",
+      "uppsluppen",
+      "sluten"
+    ]
+  },
+  {
+    "word": "förtvivlad",
+    "distractors": [
+      "lättad",
+      "balanserad",
+      "hoppfull",
+      "uppgiven"
+    ]
+  },
+  {
+    "word": "gagnlös",
+    "distractors": [
+      "användbar",
+      "givande",
+      "pålitlig",
+      "ineffektiv"
+    ]
+  },
+  {
+    "word": "galant",
+    "distractors": [
+      "klumpig",
+      "vresig",
+      "motsträvig",
+      "charmig"
+    ]
+  }
+]

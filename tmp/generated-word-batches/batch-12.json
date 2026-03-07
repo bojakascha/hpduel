@@ -1,0 +1,806 @@
+{
+  "wordList": [
+    {
+      "word": "erbarmlig",
+      "correct": "eländig",
+      "distractors": ["storslagen", "varsam", "livlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "erforderlig",
+      "correct": "nödvändig",
+      "distractors": ["frivillig", "tillfällig", "obetydlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "erigerad",
+      "correct": "upprättad",
+      "distractors": ["nedriven", "ihopfälld", "bemålad"],
+      "difficulty": 4
+    },
+    {
+      "word": "ersatt",
+      "correct": "utbytt",
+      "distractors": ["bevarad", "försenad", "förvärrad"],
+      "difficulty": 1
+    },
+    {
+      "word": "eruptiv",
+      "correct": "utbrottsartad",
+      "distractors": ["stillsam", "uthållig", "ordnad"],
+      "difficulty": 4
+    },
+    {
+      "word": "essentiell",
+      "correct": "grundläggande",
+      "distractors": ["ytlig", "tillfällig", "senkommen"],
+      "difficulty": 2
+    },
+    {
+      "word": "evinnerlig",
+      "correct": "ändlös",
+      "distractors": ["kortvarig", "oväntad", "kraftig"],
+      "difficulty": 3
+    },
+    {
+      "word": "evolutionär",
+      "correct": "utvecklingsmässig",
+      "distractors": ["bakåtblickande", "lagbunden", "säsongsbunden"],
+      "difficulty": 4
+    },
+    {
+      "word": "exalterad",
+      "correct": "upphetsad",
+      "distractors": ["avmätt", "likgiltig", "sömnig"],
+      "difficulty": 2
+    },
+    {
+      "word": "exemplarisk",
+      "correct": "föredömlig",
+      "distractors": ["bristfällig", "obetänksam", "osäker"],
+      "difficulty": 2
+    },
+    {
+      "word": "existentiell",
+      "correct": "livsavgörande",
+      "distractors": ["tillfällig", "praktisk", "ytlig"],
+      "difficulty": 3
+    },
+    {
+      "word": "expansionslysten",
+      "correct": "som vill växa",
+      "distractors": ["som vill bevara", "som vill minska", "som vill dölja"],
+      "difficulty": 3
+    },
+    {
+      "word": "expedierad",
+      "correct": "ivägskickad",
+      "distractors": ["tillbakahållen", "omarbetad", "fördröjd"],
+      "difficulty": 2
+    },
+    {
+      "word": "experimentell",
+      "correct": "prövande",
+      "distractors": ["traditionell", "slutgiltig", "förutsägbar"],
+      "difficulty": 2
+    },
+    {
+      "word": "exploitativ",
+      "correct": "utnyttjande",
+      "distractors": ["omtänksam", "beskyddande", "försiktig"],
+      "difficulty": 4
+    },
+    {
+      "word": "exponerad",
+      "correct": "utsatt",
+      "distractors": ["skyddad", "förbättrad", "samlad"],
+      "difficulty": 2
+    },
+    {
+      "word": "extatisk",
+      "correct": "hänförd",
+      "distractors": ["modfälld", "tvivlande", "samlad"],
+      "difficulty": 3
+    },
+    {
+      "word": "extensiv",
+      "correct": "omfattande",
+      "distractors": ["begränsad", "kortvarig", "ensidig"],
+      "difficulty": 3
+    },
+    {
+      "word": "extravagant",
+      "correct": "överdådig",
+      "distractors": ["återhållsam", "enkel", "snål"],
+      "difficulty": 2
+    },
+    {
+      "word": "fadd",
+      "correct": "smaklös",
+      "distractors": ["kryddig", "frisk", "mustig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fager",
+      "correct": "vacker",
+      "distractors": ["butter", "spenslig", "mörk"],
+      "difficulty": 2
+    },
+    {
+      "word": "falsk",
+      "correct": "oäkta",
+      "distractors": ["påtaglig", "ärlig", "varsam"],
+      "difficulty": 1
+    },
+    {
+      "word": "familjär",
+      "correct": "vardaglig",
+      "distractors": ["högtidlig", "fientlig", "oklar"],
+      "difficulty": 2
+    },
+    {
+      "word": "famnande",
+      "correct": "omslutande",
+      "distractors": ["avvisande", "snäv", "splittrad"],
+      "difficulty": 3
+    },
+    {
+      "word": "fantastisk",
+      "correct": "enastående",
+      "distractors": ["medelmåttig", "besvärlig", "dämpad"],
+      "difficulty": 1
+    },
+    {
+      "word": "farbar",
+      "correct": "framkomlig",
+      "distractors": ["igenbommad", "hal", "avlägsen"],
+      "difficulty": 2
+    },
+    {
+      "word": "farlig",
+      "correct": "riskfylld",
+      "distractors": ["ofarlig", "tillgänglig", "lindrig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fascinerande",
+      "correct": "fängslande",
+      "distractors": ["trivial", "störande", "likgiltig"],
+      "difficulty": 1
+    },
+    {
+      "word": "federativ",
+      "correct": "förbunds-",
+      "distractors": ["enväldig", "lokal", "tillfällig"],
+      "difficulty": 4
+    },
+    {
+      "word": "feodal",
+      "correct": "herrskapsbunden",
+      "distractors": ["jämlik", "industriell", "demokratisk"],
+      "difficulty": 4
+    },
+    {
+      "word": "festlig",
+      "correct": "högtidlig",
+      "distractors": ["dyster", "sparsam", "sträng"],
+      "difficulty": 1
+    },
+    {
+      "word": "fiffig",
+      "correct": "påhittig",
+      "distractors": ["fumlig", "slö", "fyrkantig"],
+      "difficulty": 1
+    },
+    {
+      "word": "figurativ",
+      "correct": "bildlig",
+      "distractors": ["bokstavlig", "rätlinjig", "torftig"],
+      "difficulty": 3
+    },
+    {
+      "word": "filantropisk",
+      "correct": "välgörande",
+      "distractors": ["självisk", "vinstdriven", "snäv"],
+      "difficulty": 3
+    },
+    {
+      "word": "filosofisk",
+      "correct": "eftertänksam",
+      "distractors": ["hastig", "ytlig", "handgriplig"],
+      "difficulty": 2
+    },
+    {
+      "word": "finansiell",
+      "correct": "ekonomisk",
+      "distractors": ["språklig", "medicinsk", "teknisk"],
+      "difficulty": 2
+    },
+    {
+      "word": "fingrad",
+      "correct": "med fingerlik form",
+      "distractors": ["helt rund", "slät", "taggig"],
+      "difficulty": 4
+    },
+    {
+      "word": "finurlig",
+      "correct": "listig",
+      "distractors": ["trubbig", "öppenhjärtig", "klumpig"],
+      "difficulty": 2
+    },
+    {
+      "word": "fiskal",
+      "correct": "åklagare",
+      "distractors": ["domare", "vittne", "försvarare"],
+      "difficulty": 4
+    },
+    {
+      "word": "fixerad",
+      "correct": "låst",
+      "distractors": ["rörlig", "trevande", "slumpmässig"],
+      "difficulty": 2
+    },
+    {
+      "word": "fjärran",
+      "correct": "avlägsen",
+      "distractors": ["närliggande", "omedelbar", "påtaglig"],
+      "difficulty": 2
+    },
+    {
+      "word": "flack",
+      "correct": "vidsträckt",
+      "distractors": ["brant", "sluten", "smal"],
+      "difficulty": 3
+    },
+    {
+      "word": "flammande",
+      "correct": "brinnande",
+      "distractors": ["slocknad", "dämpad", "mörk"],
+      "difficulty": 1
+    },
+    {
+      "word": "flata",
+      "correct": "plan yta",
+      "distractors": ["djup spricka", "vass kant", "rund kula"],
+      "difficulty": 2
+    },
+    {
+      "word": "flitig",
+      "correct": "arbetsam",
+      "distractors": ["lat", "slarvig", "tvehågsen"],
+      "difficulty": 1
+    },
+    {
+      "word": "floskulös",
+      "correct": "tomt pratsam",
+      "distractors": ["kortfattad", "saklig", "tvär"],
+      "difficulty": 4
+    },
+    {
+      "word": "flyhänt",
+      "correct": "snabbhänt",
+      "distractors": ["trög", "fumlig", "orörlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "fokal",
+      "correct": "central",
+      "distractors": ["obetydlig", "kringgående", "senkommen"],
+      "difficulty": 3
+    },
+    {
+      "word": "forcerbar",
+      "correct": "möjlig att driva igenom",
+      "distractors": ["omöjlig att ändra", "lätt att glömma", "värd att bevara"],
+      "difficulty": 4
+    },
+    {
+      "word": "fortgående",
+      "correct": "pågående",
+      "distractors": ["avslutad", "tillfällig", "plötslig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fragmentarisk",
+      "correct": "ofullständig",
+      "distractors": ["sammanhängande", "noggrann", "övertydlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "framfusig",
+      "correct": "påträngande",
+      "distractors": ["blyg", "varsam", "undvikande"],
+      "difficulty": 2
+    },
+    {
+      "word": "framkomlig",
+      "correct": "möjlig att ta sig fram på",
+      "distractors": ["översvämmad", "avlägsen", "stängd"],
+      "difficulty": 1
+    },
+    {
+      "word": "framstående",
+      "correct": "betydande",
+      "distractors": ["obetydlig", "anspråkslös", "senkommen"],
+      "difficulty": 1
+    },
+    {
+      "word": "fransig",
+      "correct": "trasig i kanten",
+      "distractors": ["nyputsad", "slät", "genomskinlig"],
+      "difficulty": 2
+    },
+    {
+      "word": "frapperad",
+      "correct": "överraskad",
+      "distractors": ["oberörd", "lugn", "medgörlig"],
+      "difficulty": 3
+    },
+    {
+      "word": "fridsam",
+      "correct": "fredlig",
+      "distractors": ["stridslysten", "orolig", "högljudd"],
+      "difficulty": 1
+    },
+    {
+      "word": "friktionell",
+      "correct": "som rör gnidning",
+      "distractors": ["som rör ljus", "som rör vätska", "som rör lukt"],
+      "difficulty": 4
+    },
+    {
+      "word": "frimodigt",
+      "correct": "öppet",
+      "distractors": ["motvilligt", "tveksamt", "hemligt"],
+      "difficulty": 2
+    },
+    {
+      "word": "friserad",
+      "correct": "stylad",
+      "distractors": ["otrimmad", "smutsig", "skrynklig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fruktansvärd",
+      "correct": "hemsk",
+      "distractors": ["angenäm", "obetydlig", "måttlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fuktig",
+      "correct": "småvåt",
+      "distractors": ["torr", "het", "sträv"],
+      "difficulty": 1
+    },
+    {
+      "word": "fullgod",
+      "correct": "tillräcklig",
+      "distractors": ["bristfällig", "osäker", "oväntad"],
+      "difficulty": 2
+    },
+    {
+      "word": "fyllig",
+      "correct": "rik",
+      "distractors": ["mager", "tunn", "blek"],
+      "difficulty": 2
+    },
+    {
+      "word": "fyrkantig",
+      "correct": "stel",
+      "distractors": ["smidig", "öppen", "ledsam"],
+      "difficulty": 2
+    },
+    {
+      "word": "fysisk",
+      "correct": "kroppslig",
+      "distractors": ["mental", "teoretisk", "tillfällig"],
+      "difficulty": 1
+    },
+    {
+      "word": "fägring",
+      "correct": "skönhet",
+      "distractors": ["svaghet", "stränghet", "kyla"],
+      "difficulty": 3
+    },
+    {
+      "word": "fälld",
+      "correct": "dömd skyldig",
+      "distractors": ["frikänd", "förhörd", "misstänkt"],
+      "difficulty": 2
+    },
+    {
+      "word": "färgstark",
+      "correct": "livlig",
+      "distractors": ["blek", "dämpad", "tråkig"],
+      "difficulty": 1
+    },
+    {
+      "word": "färsk",
+      "correct": "ny",
+      "distractors": ["gammal", "unken", "uttorkad"],
+      "difficulty": 1
+    },
+    {
+      "word": "förtätningsbar",
+      "correct": "möjlig att komprimera",
+      "distractors": ["omöjlig att forma", "lätt att lösa upp", "snabb att förbränna"],
+      "difficulty": 4
+    },
+    {
+      "word": "gammaldags",
+      "correct": "omodern",
+      "distractors": ["nyskapande", "snabb", "prydlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "gapskrattande",
+      "correct": "hejdlöst skrattande",
+      "distractors": ["tyst gråtande", "stelt leende", "högljutt ropande"],
+      "difficulty": 2
+    },
+    {
+      "word": "garvad",
+      "correct": "erfaren",
+      "distractors": ["oskolad", "skör", "försynt"],
+      "difficulty": 2
+    },
+    {
+      "word": "gemensam",
+      "correct": "delad",
+      "distractors": ["enskild", "hemlig", "tillfällig"],
+      "difficulty": 1
+    },
+    {
+      "word": "gengående",
+      "correct": "återkommande",
+      "distractors": ["engångs-", "obetydlig", "undantagen"],
+      "difficulty": 3
+    },
+    {
+      "word": "genomtänkt",
+      "correct": "välövervägd",
+      "distractors": ["förhastad", "splittrad", "obetydlig"],
+      "difficulty": 1
+    },
+    {
+      "word": "genomträngande",
+      "correct": "skarpt intensiv",
+      "distractors": ["mild", "ytlig", "dämpad"],
+      "difficulty": 3
+    },
+    {
+      "word": "genrebunden",
+      "correct": "styrd av konventioner",
+      "distractors": ["gränslös", "spontan", "opersonlig"],
+      "difficulty": 4
+    },
+    {
+      "word": "gentil",
+      "correct": "artig",
+      "distractors": ["burdus", "vresig", "gränslös"],
+      "difficulty": 3
+    }
+  ],
+  "wordDetails": {
+    "erbarmlig": {
+      "explanation": "\"erbarmlig\" betyder ungefär \"eländig\".",
+      "example": "Skicket på huset var erbarmligt efter vintern."
+    },
+    "erforderlig": {
+      "explanation": "\"erforderlig\" betyder ungefär \"nödvändig\".",
+      "example": "Ytterligare intyg var erforderliga för ansökan."
+    },
+    "erigerad": {
+      "explanation": "\"erigerad\" betyder ungefär \"upprättad\".",
+      "example": "På torget stod en erigerad staty av stadens grundare."
+    },
+    "ersatt": {
+      "explanation": "\"ersatt\" betyder ungefär \"utbytt\".",
+      "example": "Den gamla maskinen blev snabbt ersatt av en ny modell."
+    },
+    "eruptiv": {
+      "explanation": "\"eruptiv\" betyder ungefär \"utbrottsartad\".",
+      "example": "Hans eruptiva humör gjorde mötet svårt att leda."
+    },
+    "essentiell": {
+      "explanation": "\"essentiell\" betyder ungefär \"grundläggande\".",
+      "example": "Sömn är essentiell för att kroppen ska återhämta sig."
+    },
+    "evinnerlig": {
+      "explanation": "\"evinnerlig\" betyder ungefär \"ändlös\".",
+      "example": "Kön till biljettkassan kändes evinnerlig."
+    },
+    "evolutionär": {
+      "explanation": "\"evolutionär\" betyder ungefär \"utvecklingsmässig\".",
+      "example": "Forskaren diskuterade människans evolutionära anpassningar."
+    },
+    "exalterad": {
+      "explanation": "\"exalterad\" betyder ungefär \"upphetsad\".",
+      "example": "Publiken blev allt mer exalterad före finalen."
+    },
+    "exemplarisk": {
+      "explanation": "\"exemplarisk\" betyder ungefär \"föredömlig\".",
+      "example": "Hon gjorde en exemplarisk insats under krisen."
+    },
+    "existentiell": {
+      "explanation": "\"existentiell\" betyder ungefär \"livsavgörande\".",
+      "example": "Romanen kretsar kring existentiella frågor om mening och ansvar."
+    },
+    "expansionslysten": {
+      "explanation": "\"expansionslysten\" betyder ungefär \"som vill växa\".",
+      "example": "Bolaget var expansionslystet och sökte nya marknader."
+    },
+    "expedierad": {
+      "explanation": "\"expedierad\" betyder ungefär \"ivägskickad\".",
+      "example": "Beställningen var expedierad redan samma eftermiddag."
+    },
+    "experimentell": {
+      "explanation": "\"experimentell\" betyder ungefär \"prövande\".",
+      "example": "Konstnären arbetar i en tydligt experimentell stil."
+    },
+    "exploitativ": {
+      "explanation": "\"exploitativ\" betyder ungefär \"utnyttjande\".",
+      "example": "Kritikerna menade att företaget hade en exploitativ affärsmodell."
+    },
+    "exponerad": {
+      "explanation": "\"exponerad\" betyder ungefär \"utsatt\".",
+      "example": "Huset låg exponerat för hårda vindar från havet."
+    },
+    "extatisk": {
+      "explanation": "\"extatisk\" betyder ungefär \"hänförd\".",
+      "example": "Hon var extatisk efter att ha fått beskedet."
+    },
+    "extensiv": {
+      "explanation": "\"extensiv\" betyder ungefär \"omfattande\".",
+      "example": "Rapporten bygger på en extensiv genomgång av materialet."
+    },
+    "extravagant": {
+      "explanation": "\"extravagant\" betyder ungefär \"överdådig\".",
+      "example": "Han dök upp i en extravagant kostym som alla lade märke till."
+    },
+    "fadd": {
+      "explanation": "\"fadd\" betyder ungefär \"smaklös\".",
+      "example": "Soppan blev fadd eftersom den nästan saknade kryddor."
+    },
+    "fager": {
+      "explanation": "\"fager\" betyder ungefär \"vacker\".",
+      "example": "I dikten beskrivs en fager sommarmorgon."
+    },
+    "falsk": {
+      "explanation": "\"falsk\" betyder ungefär \"oäkta\".",
+      "example": "Butiken avslöjades med att sälja falska märkesväskor."
+    },
+    "familjär": {
+      "explanation": "\"familjär\" betyder ungefär \"vardaglig\".",
+      "example": "Samtalet fick snabbt en familjär ton."
+    },
+    "famnande": {
+      "explanation": "\"famnande\" betyder ungefär \"omslutande\".",
+      "example": "Mörkret låg famnande kring huset."
+    },
+    "fantastisk": {
+      "explanation": "\"fantastisk\" betyder ungefär \"enastående\".",
+      "example": "Hon gjorde ett fantastiskt lopp och vann klart."
+    },
+    "farbar": {
+      "explanation": "\"farbar\" betyder ungefär \"framkomlig\".",
+      "example": "Vägen var fortfarande farbar trots nattens snöfall."
+    },
+    "farlig": {
+      "explanation": "\"farlig\" betyder ungefär \"riskfylld\".",
+      "example": "Det är farligt att gå ut på den tunna isen."
+    },
+    "fascinerande": {
+      "explanation": "\"fascinerande\" betyder ungefär \"fängslande\".",
+      "example": "Hon berättade en fascinerande historia om sin resa."
+    },
+    "federativ": {
+      "explanation": "\"federativ\" betyder ungefär \"förbunds-\".",
+      "example": "Landet styrs genom en federativ modell med starka delstater."
+    },
+    "feodal": {
+      "explanation": "\"feodal\" betyder ungefär \"herrskapsbunden\".",
+      "example": "Romanen skildrar ett feodalt samhälle med stora klasskillnader."
+    },
+    "festlig": {
+      "explanation": "\"festlig\" betyder ungefär \"högtidlig\".",
+      "example": "Stämningen blev festlig när gästerna anlände."
+    },
+    "fiffig": {
+      "explanation": "\"fiffig\" betyder ungefär \"påhittig\".",
+      "example": "Det var en fiffig lösning på ett gammalt problem."
+    },
+    "figurativ": {
+      "explanation": "\"figurativ\" betyder ungefär \"bildlig\".",
+      "example": "Uttrycket ska förstås figurativt och inte bokstavligt."
+    },
+    "filantropisk": {
+      "explanation": "\"filantropisk\" betyder ungefär \"välgörande\".",
+      "example": "Stiftelsen är känd för sitt filantropiska arbete."
+    },
+    "filosofisk": {
+      "explanation": "\"filosofisk\" betyder ungefär \"eftertänksam\".",
+      "example": "Hon blev ovanligt filosofisk efter samtalet."
+    },
+    "finansiell": {
+      "explanation": "\"finansiell\" betyder ungefär \"ekonomisk\".",
+      "example": "Företaget fick finansiell hjälp för att klara året."
+    },
+    "fingrad": {
+      "explanation": "\"fingrad\" betyder ungefär \"med fingerlik form\".",
+      "example": "Bladet var djupt fingrat och lätt att känna igen."
+    },
+    "finurlig": {
+      "explanation": "\"finurlig\" betyder ungefär \"listig\".",
+      "example": "Hon kom på en finurlig genväg genom systemet."
+    },
+    "fiskal": {
+      "explanation": "\"fiskal\" betyder ungefär \"åklagare\".",
+      "example": "Fiskalen yrkade på strängare straff i hovrätten."
+    },
+    "fixerad": {
+      "explanation": "\"fixerad\" betyder ungefär \"låst\".",
+      "example": "Hjulet satt fixerad i ett fast läge under transporten."
+    },
+    "fjärran": {
+      "explanation": "\"fjärran\" betyder ungefär \"avlägsen\".",
+      "example": "De drömde om ett liv i fjärran länder."
+    },
+    "flack": {
+      "explanation": "\"flack\" betyder ungefär \"vidsträckt\".",
+      "example": "Landskapet var flackt och öppet åt alla håll."
+    },
+    "flammande": {
+      "explanation": "\"flammande\" betyder ungefär \"brinnande\".",
+      "example": "Hon höll ett flammande tal om rättvisa."
+    },
+    "flata": {
+      "explanation": "\"flata\" betyder ungefär \"plan yta\".",
+      "example": "Han lade boken på stenens släta flata."
+    },
+    "flitig": {
+      "explanation": "\"flitig\" betyder ungefär \"arbetsam\".",
+      "example": "Hon var en flitig student som alltid kom väl förberedd."
+    },
+    "floskulös": {
+      "explanation": "\"floskulös\" betyder ungefär \"tomt pratsam\".",
+      "example": "Talet var så floskulöst att ingen visste vad som egentligen sades."
+    },
+    "flyhänt": {
+      "explanation": "\"flyhänt\" betyder ungefär \"snabbhänt\".",
+      "example": "Den flyhänta snickaren satte upp hyllan på några minuter."
+    },
+    "fokal": {
+      "explanation": "\"fokal\" betyder ungefär \"central\".",
+      "example": "Den mest fokala frågan gällde skolans finansiering."
+    },
+    "forcerbar": {
+      "explanation": "\"forcerbar\" betyder ungefär \"möjlig att driva igenom\".",
+      "example": "Planen verkade inte forcerbar utan att kvaliteten blev lidande."
+    },
+    "fortgående": {
+      "explanation": "\"fortgående\" betyder ungefär \"pågående\".",
+      "example": "Den fortgående utredningen väntas bli klar i höst."
+    },
+    "fragmentarisk": {
+      "explanation": "\"fragmentarisk\" betyder ungefär \"ofullständig\".",
+      "example": "Minnesbilden var fragmentarisk men ändå stark."
+    },
+    "framfusig": {
+      "explanation": "\"framfusig\" betyder ungefär \"påträngande\".",
+      "example": "Säljaren upplevdes som alltför framfusig."
+    },
+    "framkomlig": {
+      "explanation": "\"framkomlig\" betyder ungefär \"möjlig att ta sig fram på\".",
+      "example": "Stigen var smal men fortfarande framkomlig."
+    },
+    "framstående": {
+      "explanation": "\"framstående\" betyder ungefär \"betydande\".",
+      "example": "Hon är en framstående forskare inom området."
+    },
+    "fransig": {
+      "explanation": "\"fransig\" betyder ungefär \"trasig i kanten\".",
+      "example": "Den gamla duken hade blivit fransig med åren."
+    },
+    "frapperad": {
+      "explanation": "\"frapperad\" betyder ungefär \"överraskad\".",
+      "example": "Han såg frapperad ut när siffrorna presenterades."
+    },
+    "fridsam": {
+      "explanation": "\"fridsam\" betyder ungefär \"fredlig\".",
+      "example": "Det var en fridsam kväll vid sjön."
+    },
+    "friktionell": {
+      "explanation": "\"friktionell\" betyder ungefär \"som rör gnidning\".",
+      "example": "Mätningen visade hur stor den friktionella kraften var."
+    },
+    "frimodigt": {
+      "explanation": "\"frimodigt\" betyder ungefär \"öppet\".",
+      "example": "Hon talade frimodigt om problemen på arbetsplatsen."
+    },
+    "friserad": {
+      "explanation": "\"friserad\" betyder ungefär \"stylad\".",
+      "example": "Han kom nyfriserad till intervjun."
+    },
+    "fruktansvärd": {
+      "explanation": "\"fruktansvärd\" betyder ungefär \"hemsk\".",
+      "example": "Det var en fruktansvärd olycka på vägen."
+    },
+    "fuktig": {
+      "explanation": "\"fuktig\" betyder ungefär \"småvåt\".",
+      "example": "Luften kändes fuktig efter regnet."
+    },
+    "fullgod": {
+      "explanation": "\"fullgod\" betyder ungefär \"tillräcklig\".",
+      "example": "Det här underlaget är fullgott för ett första beslut."
+    },
+    "fyllig": {
+      "explanation": "\"fyllig\" betyder ungefär \"rik\".",
+      "example": "Vinet hade en fyllig smak med tydliga toner av bär."
+    },
+    "fyrkantig": {
+      "explanation": "\"fyrkantig\" betyder ungefär \"stel\".",
+      "example": "Han uppfattades som lite fyrkantig i sina regler."
+    },
+    "fysisk": {
+      "explanation": "\"fysisk\" betyder ungefär \"kroppslig\".",
+      "example": "Arbetet är tungt och kräver god fysisk ork."
+    },
+    "fägring": {
+      "explanation": "\"fägring\" betyder ungefär \"skönhet\".",
+      "example": "Dikten hyllar vårens fägring i skogen."
+    },
+    "fälld": {
+      "explanation": "\"fälld\" betyder ungefär \"dömd skyldig\".",
+      "example": "Mannen blev fälld för brottet trots att han nekade."
+    },
+    "färgstark": {
+      "explanation": "\"färgstark\" betyder ungefär \"livlig\".",
+      "example": "Hon är en färgstark personlighet som märks i varje rum."
+    },
+    "färsk": {
+      "explanation": "\"färsk\" betyder ungefär \"ny\".",
+      "example": "Vi fick färska uppgifter strax före mötet."
+    },
+    "förtätningsbar": {
+      "explanation": "\"förtätningsbar\" betyder ungefär \"möjlig att komprimera\".",
+      "example": "Materialet är lätt och förtätningsbart vid högt tryck."
+    },
+    "gammaldags": {
+      "explanation": "\"gammaldags\" betyder ungefär \"omodern\".",
+      "example": "Möblerna gav rummet en gammaldags känsla."
+    },
+    "gapskrattande": {
+      "explanation": "\"gapskrattande\" betyder ungefär \"hejdlöst skrattande\".",
+      "example": "Barnen stod gapskrattande åt den oväntade vurpan."
+    },
+    "garvad": {
+      "explanation": "\"garvad\" betyder ungefär \"erfaren\".",
+      "example": "Hon är en garvad journalist med många år i branschen."
+    },
+    "gemensam": {
+      "explanation": "\"gemensam\" betyder ungefär \"delad\".",
+      "example": "De tog ett gemensamt ansvar för projektet."
+    },
+    "gengående": {
+      "explanation": "\"gengående\" betyder ungefär \"återkommande\".",
+      "example": "Temat är gengående i hela författarskapet."
+    },
+    "genomtänkt": {
+      "explanation": "\"genomtänkt\" betyder ungefär \"välövervägd\".",
+      "example": "Förslaget var så genomtänkt att få invändningar återstod."
+    },
+    "genomträngande": {
+      "explanation": "\"genomträngande\" betyder ungefär \"skarpt intensiv\".",
+      "example": "En genomträngande lukt av rök låg kvar i huset."
+    },
+    "genrebunden": {
+      "explanation": "\"genrebunden\" betyder ungefär \"styrd av konventioner\".",
+      "example": "Filmen är medvetet genrebunden men ändå personlig."
+    },
+    "gentil": {
+      "explanation": "\"gentil\" betyder ungefär \"artig\".",
+      "example": "Han tackade på ett stillsamt och gentilt sätt."
+    }
+  }
+}

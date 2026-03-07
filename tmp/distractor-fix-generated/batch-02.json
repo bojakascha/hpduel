@@ -1,0 +1,722 @@
+[
+  {
+    "word": "konservativ",
+    "distractors": [
+      "nyskapande",
+      "vårdslös",
+      "yvig",
+      "traditionell"
+    ]
+  },
+  {
+    "word": "kontroversiell",
+    "distractors": [
+      "självklar",
+      "lågmäld",
+      "enig",
+      "provocerande"
+    ]
+  },
+  {
+    "word": "konventionell",
+    "distractors": [
+      "originell",
+      "vågad",
+      "udda",
+      "vanlig"
+    ]
+  },
+  {
+    "word": "korrekt",
+    "distractors": [
+      "missvisande",
+      "slarvig",
+      "lösryckt",
+      "exakt"
+    ]
+  },
+  {
+    "word": "kreativ",
+    "distractors": [
+      "fyrkantig",
+      "efterapande",
+      "passiv",
+      "originell"
+    ]
+  },
+  {
+    "word": "kritisk",
+    "distractors": [
+      "godtrogen",
+      "eftergiven",
+      "hövisk",
+      "skeptisk"
+    ]
+  },
+  {
+    "word": "kronisk",
+    "distractors": [
+      "hastig",
+      "tillfällig",
+      "kortvarig",
+      "permanent"
+    ]
+  },
+  {
+    "word": "kulturell",
+    "distractors": [
+      "som rör natur",
+      "som rör ekonomi",
+      "som rör teknik",
+      "som rör samhälle"
+    ]
+  },
+  {
+    "word": "legitim",
+    "distractors": [
+      "tveksam",
+      "förbjuden",
+      "opassande",
+      "laglig"
+    ]
+  },
+  {
+    "word": "lojal",
+    "distractors": [
+      "svekfull",
+      "nyckfull",
+      "självisk",
+      "pålitlig"
+    ]
+  },
+  {
+    "word": "lågmäld",
+    "distractors": [
+      "högröstad",
+      "tvär",
+      "pompös",
+      "reserverad"
+    ]
+  },
+  {
+    "word": "manifest",
+    "distractors": [
+      "dold",
+      "obestämd",
+      "tillkrånglad",
+      "officiell"
+    ]
+  },
+  {
+    "word": "marginal",
+    "distractors": [
+      "central",
+      "avgörande",
+      "omfångsrik",
+      "sidoställd"
+    ]
+  },
+  {
+    "word": "mekanisk",
+    "distractors": [
+      "spontan",
+      "varsam",
+      "originell",
+      "stel"
+    ]
+  },
+  {
+    "word": "metaforisk",
+    "distractors": [
+      "bokstavlig",
+      "schematisk",
+      "teoretisk",
+      "symbolisk"
+    ]
+  },
+  {
+    "word": "metodisk",
+    "distractors": [
+      "spontan",
+      "oprecis",
+      "passiv",
+      "noggrann"
+    ]
+  },
+  {
+    "word": "mild",
+    "distractors": [
+      "skarp",
+      "rigid",
+      "omfattande",
+      "vänlig"
+    ]
+  },
+  {
+    "word": "moderat",
+    "distractors": [
+      "extrem",
+      "offensiv",
+      "naiv",
+      "balanserad"
+    ]
+  },
+  {
+    "word": "monoton",
+    "distractors": [
+      "originell",
+      "livlig",
+      "tvetydig",
+      "stillsam"
+    ]
+  },
+  {
+    "word": "moralisk",
+    "distractors": [
+      "teoretisk",
+      "neutral",
+      "skeptisk",
+      "principfast"
+    ]
+  },
+  {
+    "word": "mottaglig",
+    "distractors": [
+      "restriktiv",
+      "rigid",
+      "neutral",
+      "öppen"
+    ]
+  },
+  {
+    "word": "mångtydig",
+    "distractors": [
+      "specifik",
+      "transparent",
+      "regelbunden",
+      "oklar"
+    ]
+  },
+  {
+    "word": "naiv",
+    "distractors": [
+      "skeptisk",
+      "reflekterad",
+      "rigid",
+      "oskuldsfull"
+    ]
+  },
+  {
+    "word": "negativ",
+    "distractors": [
+      "positiv",
+      "neutral",
+      "spontan",
+      "kritisk"
+    ]
+  },
+  {
+    "word": "neutral",
+    "distractors": [
+      "partisk",
+      "offensiv",
+      "moralisk",
+      "reserverad"
+    ]
+  },
+  {
+    "word": "normativ",
+    "distractors": [
+      "beskrivande",
+      "neutral",
+      "statisk",
+      "vägledande"
+    ]
+  },
+  {
+    "word": "nyanserad",
+    "distractors": [
+      "ensidig",
+      "offensiv",
+      "schematisk",
+      "genomtänkt"
+    ]
+  },
+  {
+    "word": "objektiv",
+    "distractors": [
+      "subjektiv",
+      "symbolisk",
+      "spontan",
+      "neutral"
+    ]
+  },
+  {
+    "word": "obsolet",
+    "distractors": [
+      "originell",
+      "robust",
+      "omgående",
+      "gammaldags"
+    ]
+  },
+  {
+    "word": "offensiv",
+    "distractors": [
+      "defensiv",
+      "varsam",
+      "opartisk",
+      "aggressiv"
+    ]
+  },
+  {
+    "word": "oförsonlig",
+    "distractors": [
+      "förlåtande",
+      "nyanserad",
+      "mild",
+      "hård"
+    ]
+  },
+  {
+    "word": "oklar",
+    "distractors": [
+      "precis",
+      "saklig",
+      "stabil",
+      "diffus"
+    ]
+  },
+  {
+    "word": "omfattande",
+    "distractors": [
+      "smal",
+      "punktlig",
+      "lokal",
+      "stor"
+    ]
+  },
+  {
+    "word": "omgående",
+    "distractors": [
+      "senare",
+      "småningom",
+      "plötsligt",
+      "direkt"
+    ]
+  },
+  {
+    "word": "omogen",
+    "distractors": [
+      "mogen",
+      "stabil",
+      "regelbunden",
+      "oerfaren"
+    ]
+  },
+  {
+    "word": "opartisk",
+    "distractors": [
+      "partisk",
+      "moralisk",
+      "offensiv",
+      "rättvis"
+    ]
+  },
+  {
+    "word": "oprecis",
+    "distractors": [
+      "grundlig",
+      "nyanserad",
+      "specifik",
+      "vag"
+    ]
+  },
+  {
+    "word": "optimistisk",
+    "distractors": [
+      "skeptisk",
+      "dyster",
+      "passiv",
+      "positiv"
+    ]
+  },
+  {
+    "word": "organisk",
+    "distractors": [
+      "syntetisk",
+      "statisk",
+      "mekanisk",
+      "biologisk"
+    ]
+  },
+  {
+    "word": "originell",
+    "distractors": [
+      "traditionell",
+      "schematisk",
+      "mild",
+      "kreativ"
+    ]
+  },
+  {
+    "word": "ostadig",
+    "distractors": [
+      "stabil",
+      "solid",
+      "regelbunden",
+      "bräcklig"
+    ]
+  },
+  {
+    "word": "paradoxal",
+    "distractors": [
+      "logisk",
+      "neutral",
+      "transparent",
+      "absurd"
+    ]
+  },
+  {
+    "word": "passiv",
+    "distractors": [
+      "aktiv",
+      "offensiv",
+      "spontan",
+      "stillsam"
+    ]
+  },
+  {
+    "word": "patetisk",
+    "distractors": [
+      "storslagen",
+      "saklig",
+      "robust",
+      "löjlig"
+    ]
+  },
+  {
+    "word": "perifer",
+    "distractors": [
+      "central",
+      "primär",
+      "närliggande",
+      "sekundär"
+    ]
+  },
+  {
+    "word": "permanent",
+    "distractors": [
+      "provisorisk",
+      "tillfällig",
+      "spontan",
+      "stabil"
+    ]
+  },
+  {
+    "word": "plausibel",
+    "distractors": [
+      "orimlig",
+      "subjektiv",
+      "schematisk",
+      "möjlig"
+    ]
+  },
+  {
+    "word": "pluralistisk",
+    "distractors": [
+      "enhetlig",
+      "restriktiv",
+      "rigid",
+      "öppen"
+    ]
+  },
+  {
+    "word": "positiv",
+    "distractors": [
+      "negativ",
+      "neutral",
+      "passiv",
+      "optimistisk"
+    ]
+  },
+  {
+    "word": "potentiell",
+    "distractors": [
+      "säker",
+      "permanent",
+      "färdig",
+      "tänkbar"
+    ]
+  },
+  {
+    "word": "pragmatisk",
+    "distractors": [
+      "teoretisk",
+      "romantisk",
+      "rigid",
+      "konkret"
+    ]
+  },
+  {
+    "word": "precis",
+    "distractors": [
+      "oklar",
+      "oprecis",
+      "schematisk",
+      "noggrann"
+    ]
+  },
+  {
+    "word": "prekär",
+    "distractors": [
+      "stabil",
+      "robust",
+      "tillfällig",
+      "utsatt"
+    ]
+  },
+  {
+    "word": "primär",
+    "distractors": [
+      "sekundär",
+      "perifer",
+      "kompletterande",
+      "central"
+    ]
+  },
+  {
+    "word": "principiell",
+    "distractors": [
+      "opportunistisk",
+      "provisorisk",
+      "neutral",
+      "konsekvent"
+    ]
+  },
+  {
+    "word": "progressiv",
+    "distractors": [
+      "konservativ",
+      "statisk",
+      "passiv",
+      "modern"
+    ]
+  },
+  {
+    "word": "provisorisk",
+    "distractors": [
+      "permanent",
+      "stabil",
+      "tidlös",
+      "preliminär"
+    ]
+  },
+  {
+    "word": "psykologisk",
+    "distractors": [
+      "fysisk",
+      "teoretisk",
+      "biologisk",
+      "emotionell"
+    ]
+  },
+  {
+    "word": "reaktiv",
+    "distractors": [
+      "initiativrik",
+      "stabil",
+      "strategisk",
+      "impulsiv"
+    ]
+  },
+  {
+    "word": "redundant",
+    "distractors": [
+      "nödvändig",
+      "precis",
+      "primär",
+      "upprepad"
+    ]
+  },
+  {
+    "word": "reflekterad",
+    "distractors": [
+      "spontan",
+      "naiv",
+      "offensiv",
+      "lugn"
+    ]
+  },
+  {
+    "word": "regelbunden",
+    "distractors": [
+      "sporadisk",
+      "tillfällig",
+      "ostadig",
+      "stabil"
+    ]
+  },
+  {
+    "word": "relativ",
+    "distractors": [
+      "fullständig",
+      "permanent",
+      "precis",
+      "beroende"
+    ]
+  },
+  {
+    "word": "relevant",
+    "distractors": [
+      "trivial",
+      "perifer",
+      "neutral",
+      "central"
+    ]
+  },
+  {
+    "word": "restriktiv",
+    "distractors": [
+      "tillåtande",
+      "öppen",
+      "spontan",
+      "försiktig"
+    ]
+  },
+  {
+    "word": "rigid",
+    "distractors": [
+      "flexibel",
+      "mild",
+      "mottaglig",
+      "hård"
+    ]
+  },
+  {
+    "word": "robust",
+    "distractors": [
+      "skör",
+      "ostadig",
+      "prekär",
+      "stabil"
+    ]
+  },
+  {
+    "word": "romantisk",
+    "distractors": [
+      "saklig",
+      "rigid",
+      "moralisk",
+      "idealistisk"
+    ]
+  },
+  {
+    "word": "saklig",
+    "distractors": [
+      "subjektiv",
+      "svulstig",
+      "mångtydig",
+      "neutral"
+    ]
+  },
+  {
+    "word": "schematisk",
+    "distractors": [
+      "nyanserad",
+      "detaljerad",
+      "organisk",
+      "översiktlig"
+    ]
+  },
+  {
+    "word": "sekundär",
+    "distractors": [
+      "primär",
+      "central",
+      "avgörande",
+      "indirekt"
+    ]
+  },
+  {
+    "word": "selektiv",
+    "distractors": [
+      "slumpmässig",
+      "neutral",
+      "omfattande",
+      "noggrann"
+    ]
+  },
+  {
+    "word": "sensibel",
+    "distractors": [
+      "robust",
+      "rigid",
+      "solid",
+      "mottaglig"
+    ]
+  },
+  {
+    "word": "skeptisk",
+    "distractors": [
+      "godtrogen",
+      "positiv",
+      "passiv",
+      "kritisk"
+    ]
+  },
+  {
+    "word": "solid",
+    "distractors": [
+      "bräcklig",
+      "schematisk",
+      "spontan",
+      "stabil"
+    ]
+  },
+  {
+    "word": "specifik",
+    "distractors": [
+      "allmän",
+      "oklar",
+      "relativ",
+      "konkret"
+    ]
+  },
+  {
+    "word": "spontan",
+    "distractors": [
+      "planerad",
+      "metodisk",
+      "rigid",
+      "impulsiv"
+    ]
+  },
+  {
+    "word": "stabil",
+    "distractors": [
+      "ostadig",
+      "prekär",
+      "reaktiv",
+      "robust"
+    ]
+  },
+  {
+    "word": "statisk",
+    "distractors": [
+      "dynamisk",
+      "successiv",
+      "spontan",
+      "stel"
+    ]
+  },
+  {
+    "word": "subjektiv",
+    "distractors": [
+      "objektiv",
+      "saklig",
+      "neutral",
+      "känslostyrd"
+    ]
+  }
+]
