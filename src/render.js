@@ -61,9 +61,16 @@ export function renderQuiz() {
     if (!opUid) return '';
     const op = state.room.players[opUid];
     const total = state.questions.length;
+    const progressPct = total > 0 ? (op.current / total) * 100 : 0;
+    const accuracyPct = op.current > 0 ? op.score / op.current : 1;
     return `<div class="opponent-bar">
-      <span class="opponent-name">${op.name}</span>
-      <span class="opponent-progress">${op.current}/${total} &middot; ${op.score} rätt</span>
+      <div class="opponent-info">
+        <span class="opponent-name">${op.name}</span>
+        <span class="opponent-progress">${op.current}/${total} &middot; ${op.score} rätt</span>
+      </div>
+      <div class="opponent-track">
+        <div class="opponent-fill" style="width:${progressPct}%;--accuracy:${accuracyPct}"></div>
+      </div>
     </div>`;
   })();
 
@@ -198,11 +205,11 @@ export function renderSettings() {
         </div>
         <div class="setting-group">
           <div class="setting-label">Antal frågor</div>
-          ${segmented('questionCount', [['10', '10'], ['20', '20'], ['30', '30'], ['0', 'Alla']], settings.questionCount)}
+          ${segmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], settings.questionCount)}
         </div>
         <div class="setting-group">
           <div class="setting-label">Tidsbegränsning</div>
-          ${segmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min'], ['180', '3min']], settings.timeLimit)}
+          ${segmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], settings.timeLimit)}
         </div>
         <div class="setting-group">
           <div class="setting-label">Tid per ord</div>
@@ -228,6 +235,10 @@ export function renderMultiplayerMenu() {
         <span class="settings-title">Multiplayer</span>
       </div>
       <div class="mp-menu-body">
+        <div class="mp-name-field" id="mpNameField">
+          <div class="setting-label">Ditt namn</div>
+          <input class="login-input" type="text" id="mpNameInput" placeholder="Ange ditt namn" maxlength="20" autocomplete="off" required value="${state.user?.displayName || ''}" />
+        </div>
         <button class="mp-menu-option" id="mpCreateBtn">
           <div class="mp-menu-option-title">Skapa spel</div>
           <div class="mp-menu-option-desc">Bjud in en vän med en spelkod</div>
@@ -246,6 +257,13 @@ export function renderMultiplayerMenu() {
   `;
 }
 
+function lobbySegmented(name, options, activeValue, editable) {
+  const btns = options.map(([value, label]) =>
+    `<button class="setting-option${String(activeValue) === String(value) ? ' active' : ''}" data-setting="${name}" data-value="${value}" ${editable ? '' : 'disabled'}>${label}</button>`
+  ).join('');
+  return `<div class="setting-options${editable ? '' : ' disabled'}">${btns}</div>`;
+}
+
 export function renderLobby() {
   const room = state.room;
   if (!room) return '<div class="screen"></div>';
@@ -253,6 +271,7 @@ export function renderLobby() {
   const isHost = room.hostUid === state.user?.uid;
   const players = Object.entries(room.players || {});
   const playerCount = players.length;
+  const rs = room.settings || {};
 
   const playersHtml = players.map(([, p]) =>
     `<div class="lobby-player">
@@ -273,6 +292,24 @@ export function renderLobby() {
         <div class="lobby-players-section">
           <div class="lobby-label">Spelare (${playerCount}/2)</div>
           <div class="lobby-players">${playersHtml}</div>
+        </div>
+        <div class="lobby-settings" id="lobbySettings">
+          <div class="setting-group">
+            <div class="setting-label">Svårighetsgrad</div>
+            ${lobbySegmented('difficulty', [['all', 'Alla'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], rs.difficulty, isHost)}
+          </div>
+          <div class="setting-group">
+            <div class="setting-label">Antal frågor</div>
+            ${lobbySegmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], rs.questionCount, isHost)}
+          </div>
+          <div class="setting-group">
+            <div class="setting-label">Tidsbegränsning</div>
+            ${lobbySegmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], rs.timeLimit, isHost)}
+          </div>
+          <div class="setting-group">
+            <div class="setting-label">Tid per ord</div>
+            ${lobbySegmented('timePerWord', [['0', 'Av'], ['5', '5s'], ['10', '10s'], ['15', '15s']], rs.timePerWord, isHost)}
+          </div>
         </div>
         ${isHost && playerCount >= 2
           ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta spel</button>'

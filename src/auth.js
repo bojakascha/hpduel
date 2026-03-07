@@ -3,6 +3,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signInWithPopup,
+  signInAnonymously,
   GoogleAuthProvider,
   onAuthStateChanged,
   signOut,
@@ -55,6 +56,13 @@ export async function loginWithGoogle() {
     if (err.code === 'auth/popup-closed-by-user') return null;
     throw new Error(mapError(err));
   }
+}
+
+export async function ensureAnonymousAuth() {
+  if (!auth) throw new Error('Firebase är inte konfigurerat.');
+  if (auth.currentUser) return auth.currentUser;
+  const cred = await signInAnonymously(auth);
+  return cred.user;
 }
 
 export async function logout() {

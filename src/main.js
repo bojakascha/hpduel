@@ -1,9 +1,9 @@
 import './style.css';
 import { state, settings, loadWords, initQuiz, selectQuestions, initQuizWithQuestions, updateSetting, recordAnswer, recordTimeout, advanceQuestion, toggleDetail } from './game.js';
 import { renderStart, renderQuiz, renderResult, renderSettings, renderLogin, renderMultiplayerMenu, renderLobby } from './render.js';
-import { loginWithEmail, registerWithEmail, loginWithGoogle, logout, onAuthChange } from './auth.js';
+import { loginWithEmail, registerWithEmail, loginWithGoogle, ensureAnonymousAuth, logout, onAuthChange } from './auth.js';
 import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings } from './db.js';
-import { createRoom, joinRoom, listenRoom, startRoom, updatePlayerProgress, markPlayerFinished } from './room.js';
+import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished } from './room.js';
 
 const SELECTED_PAUSE = 400;
 const EXIT_DURATION = 220;
@@ -330,26 +330,48 @@ function getUserName() {
   return state.user.displayName || state.user.email?.split('@')[0] || 'Spelare';
 }
 
-function openMultiplayerMenu() {
-  if (!state.user) {
-    openLogin();
-    return;
-  }
+async function ensureAuthForMultiplayer() {
+  if (state.user) return state.user;
+  const user = await ensureAnonymousAuth();
+  state.user = user;
+  return user;
+}
 
+function getPlayerName() {
+  const input = document.getElementById('mpNameInput');
+  if (input) return input.value.trim();
+  return getUserName();
+}
+
+function openMultiplayerMenu() {
   const overlay = openOverlay('mpMenuOverlay', renderMultiplayerMenu());
   overlay.querySelector('#mpMenuBackBtn').addEventListener('click', () => closeOverlay('mpMenuOverlay'));
 
+  // Show name input only if user has no display name
+  const nameField = overlay.querySelector('#mpNameField');
+  const nameInput = overlay.querySelector('#mpNameInput');
+  if (state.user?.displayName) {
+    nameField.style.display = 'none';
+  }
+  nameInput.addEventListener('input', () => nameInput.classList.remove('input-error'));
+
   overlay.querySelector('#mpCreateBtn').addEventListener('click', async () => {
+    const name = getPlayerName();
+    const nameInput = overlay.querySelector('#mpNameInput');
+    if (!name) {
+      nameInput.classList.add('input-error');
+      nameInput.focus();
+      return;
+    }
     const btn = overlay.querySelector('#mpCreateBtn');
     btn.disabled = true;
     try {
-      const questions = selectQuestions();
-      const { id, code } = await createRoom(state.user.uid, getUserName(), settings, questions);
+      await ensureAuthForMultiplayer();
+      const { id } = await createRoom(state.user.uid, name, settings);
       state.roomId = id;
+      state.phase = 'mp-lobby';
       closeOverlay('mpMenuOverlay');
       startRoomListener(id);
-      state.phase = 'mp-lobby';
-      render();
     } catch (err) {
       btn.disabled = false;
       alert(err.message);
@@ -364,6 +386,13 @@ function openMultiplayerMenu() {
   });
 
   overlay.querySelector('#mpJoinSubmitBtn').addEventListener('click', async () => {
+    const name = getPlayerName();
+    const nameInput = overlay.querySelector('#mpNameInput');
+    if (!name) {
+      nameInput.classList.add('input-error');
+      nameInput.focus();
+      return;
+    }
     const input = overlay.querySelector('#mpCodeInput');
     const errorEl = overlay.querySelector('#mpJoinError');
     const code = input.value.trim();
@@ -373,12 +402,12 @@ function openMultiplayerMenu() {
     btn.disabled = true;
     errorEl.textContent = '';
     try {
-      const { id } = await joinRoom(code, state.user.uid, getUserName());
+      await ensureAuthForMultiplayer();
+      const { id } = await joinRoom(code, state.user.uid, name);
       state.roomId = id;
+      state.phase = 'mp-lobby';
       closeOverlay('mpMenuOverlay');
       startRoomListener(id);
-      state.phase = 'mp-lobby';
-      render();
     } catch (err) {
       errorEl.textContent = err.message;
     } finally {
@@ -393,9 +422,14 @@ function startRoomListener(roomId) {
     const prevStatus = state.room?.status;
     state.room = room;
 
+    // Lobby — render on any update (initial load, player joined, etc.)
+    if (room.status === 'waiting' && state.phase === 'mp-lobby') {
+      render();
+      return;
+    }
+
     // Room started — transition to quiz
-    if (prevStatus === 'waiting' && room.status === 'playing') {
-      // Apply room timer settings for this game
+    if (room.status === 'playing' && state.phase === 'mp-lobby') {
       settings.timeLimit = room.settings.timeLimit ?? 0;
       settings.timePerWord = room.settings.timePerWord ?? 0;
       initQuizWithQuestions(room.questions);
@@ -404,28 +438,28 @@ function startRoomListener(roomId) {
       return;
     }
 
-    // Update opponent progress on result screen or during quiz
-    if (room.status === 'playing' || room.status === 'finished') {
-      // Re-render opponent bar / result comparison
+    // Update opponent progress during quiz
+    if ((room.status === 'playing' || room.status === 'finished') && (state.phase === 'quiz' || state.phase === 'selected')) {
       const opBar = document.querySelector('.opponent-bar');
       if (opBar && state.user) {
         const opUid = Object.keys(room.players).find(id => id !== state.user.uid);
         if (opUid) {
           const op = room.players[opUid];
           const total = state.questions.length;
-          opBar.querySelector('.opponent-progress').textContent = `${op.current}/${total} \u00b7 ${op.score} rätt`;
+          const progressEl = opBar.querySelector('.opponent-progress');
+          const fillEl = opBar.querySelector('.opponent-fill');
+          if (progressEl) progressEl.textContent = `${op.current}/${total} \u00b7 ${op.score} rätt`;
+          if (fillEl) {
+            fillEl.style.width = `${total > 0 ? (op.current / total) * 100 : 0}%`;
+            fillEl.style.setProperty('--accuracy', op.current > 0 ? op.score / op.current : 1);
+          }
         }
-      }
-      // Update comparison on result screen
-      const comparison = document.querySelector('.mp-comparison');
-      if (comparison && state.phase === 'result') {
-        render();
       }
       return;
     }
 
-    // Lobby updates (new player joined)
-    if (room.status === 'waiting' && state.phase === 'mp-lobby') {
+    // Update comparison on result screen
+    if (state.phase === 'result' && document.querySelector('.mp-comparison')) {
       render();
     }
   });
@@ -437,10 +471,33 @@ function attachLobbyListeners() {
     startBtn.addEventListener('click', async () => {
       startBtn.disabled = true;
       try {
-        await startRoom(state.roomId);
+        // Apply room settings for question selection
+        const rs = state.room.settings;
+        settings.difficulty = rs.difficulty || 'all';
+        settings.questionCount = rs.questionCount || 20;
+        settings.timeLimit = rs.timeLimit || 0;
+        settings.timePerWord = rs.timePerWord || 0;
+        const questions = selectQuestions();
+        await startRoom(state.roomId, questions);
       } catch {
         startBtn.disabled = false;
       }
+    });
+  }
+
+  // Host can change settings
+  const lobbySettings = document.getElementById('lobbySettings');
+  if (lobbySettings) {
+    lobbySettings.querySelectorAll('.setting-option:not(:disabled)').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.setting;
+        const raw = btn.dataset.value;
+        const value = (key === 'questionCount' || key === 'timeLimit' || key === 'timePerWord') ? Number(raw) : raw;
+        const newSettings = { ...state.room.settings, [key]: value };
+        btn.closest('.setting-options').querySelectorAll('.setting-option').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateRoomSettings(state.roomId, newSettings).catch(() => {});
+      });
     });
   }
 

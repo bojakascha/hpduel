@@ -1,7 +1,7 @@
 const SETTINGS_KEY = 'hpduel-settings';
 
 function defaultSettings() {
-  return { difficulty: 'all', questionCount: 20, showInstantFeedback: false, timeLimit: 0, timePerWord: 0 };
+  return { difficulty: 'all', questionCount: 10, showInstantFeedback: false, timeLimit: 0, timePerWord: 0 };
 }
 
 function loadSettings() {
