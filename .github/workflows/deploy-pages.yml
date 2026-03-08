@@ -25,6 +25,14 @@ jobs:
           cache: "npm"
 
       - run: npm ci
+      - name: Check Firebase secrets
+        run: |
+          if [ -z "${{ secrets.VITE_FIREBASE_API_KEY }}" ] || [ -z "${{ secrets.VITE_FIREBASE_PROJECT_ID }}" ]; then
+            echo "::error::Firebase secrets missing. Add these in GitHub → Settings → Secrets and variables → Actions:"
+            echo "  VITE_FIREBASE_API_KEY, VITE_FIREBASE_AUTH_DOMAIN, VITE_FIREBASE_PROJECT_ID,"
+            echo "  VITE_FIREBASE_STORAGE_BUCKET, VITE_FIREBASE_MESSAGING_SENDER_ID, VITE_FIREBASE_APP_ID"
+            exit 1
+          fi
       - run: npm run build
         env:
           VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
