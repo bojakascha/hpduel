@@ -40,6 +40,7 @@ export async function createRoom(uid, name, gameSettings) {
       questionCount: gameSettings.questionCount || 20,
       timeLimit: gameSettings.timeLimit || 0,
       timePerWord: gameSettings.timePerWord || 0,
+      showInstantFeedback: gameSettings.showInstantFeedback ?? false,
     },
     questions: [],
     createdAt: serverTimestamp(),
@@ -104,12 +105,16 @@ export function listenRoom(roomId, callback) {
 
 export async function updateRoomSettings(roomId, newSettings) {
   if (!db) return;
-  await updateDoc(doc(db, 'rooms', roomId), {
+  const updates = {
     'settings.difficulty': newSettings.difficulty || 'all',
     'settings.questionCount': newSettings.questionCount || 20,
     'settings.timeLimit': newSettings.timeLimit || 0,
     'settings.timePerWord': newSettings.timePerWord || 0,
-  });
+  };
+  if (typeof newSettings.showInstantFeedback === 'boolean') {
+    updates['settings.showInstantFeedback'] = newSettings.showInstantFeedback;
+  }
+  await updateDoc(doc(db, 'rooms', roomId), updates);
 }
 
 export async function startRoom(roomId, questions) {

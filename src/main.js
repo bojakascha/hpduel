@@ -344,7 +344,8 @@ async function ensureAuthForMultiplayer() {
 
 function getPlayerName() {
   const input = document.getElementById('mpNameInput');
-  if (input) return input.value.trim();
+  const name = input?.value?.trim();
+  if (name) return name;
   return getUserName();
 }
 
