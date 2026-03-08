@@ -396,7 +396,7 @@ function openMultiplayerMenu(prefillCode = null) {
   }
   nameInput.addEventListener('input', () => nameInput.classList.remove('input-error'));
 
-  overlay.querySelector('#mpCreateBtn').addEventListener('click', async () => {
+  overlay.querySelector('#mpCreateBtn')?.addEventListener('click', async () => {
     const name = getPlayerName();
     const nameInput = overlay.querySelector('#mpNameInput');
     if (!name) {
@@ -420,7 +420,7 @@ function openMultiplayerMenu(prefillCode = null) {
   });
 
   const joinForm = overlay.querySelector('#mpJoinForm');
-  overlay.querySelector('#mpJoinBtn').addEventListener('click', () => {
+  overlay.querySelector('#mpJoinBtn')?.addEventListener('click', () => {
     joinForm.style.display = joinForm.style.display === 'none' ? 'flex' : 'none';
     const input = overlay.querySelector('#mpCodeInput');
     if (joinForm.style.display !== 'none') input.focus();
