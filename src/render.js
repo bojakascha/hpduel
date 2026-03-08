@@ -208,7 +208,7 @@ const googleIcon = `<svg width="18" height="18" viewBox="0 0 18 18"><path d="M17
 
 const shareIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>`;
 
-const qrIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="3" height="3"/><rect x="14" y="10" width="3" height="3"/><rect x="3" y="14" width="3" height="3"/><rect x="10" y="14" width="3" height="3"/><rect x="18" y="14" width="3" height="3"/></svg>`;
+const qrIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>`;
 
 export function renderSettings() {
   return `
@@ -219,8 +219,8 @@ export function renderSettings() {
       </div>
       <div class="settings-body">
         <div class="setting-group">
-          <div class="setting-label">Svårighetsgrad</div>
-          ${segmented('difficulty', [['all', 'Alla'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], settings.difficulty)}
+          <div class="setting-label">Nivå</div>
+          ${segmented('difficulty', [['all', 'Blandad'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], settings.difficulty)}
         </div>
         <div class="setting-group">
           <div class="setting-label">Antal frågor</div>
@@ -301,6 +301,17 @@ export function renderLobby() {
 
   const chevron = `<svg class="lobby-settings-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
+  const difficultyLabel = { all: 'Blandad', easy: 'Lätt', medium: 'Medel', hard: 'Svår' }[rs.difficulty] ?? 'Blandad';
+  const timeLimitLabel = rs.timeLimit > 0 ? (rs.timeLimit >= 60 ? `${rs.timeLimit / 60}min` : `${rs.timeLimit}s`) : null;
+  const timePerWordLabel = rs.timePerWord > 0 ? `${rs.timePerWord}s/ord` : null;
+  const settingsSummary = [
+    difficultyLabel,
+    `${rs.questionCount ?? 10} frågor`,
+    timeLimitLabel,
+    timePerWordLabel,
+    rs.showInstantFeedback ? 'Visa svar' : null,
+  ].filter(Boolean).join(' · ');
+
   return `
     <div class="screen lobby-screen">
       ${menuHtml()}
@@ -324,42 +335,47 @@ export function renderLobby() {
         </div>
         <div class="lobby-actions">
           ${isHost && playerCount >= 2
-            ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta spel</button>'
+            ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta</button>'
             : `<div class="lobby-waiting">${isHost ? 'Väntar på motståndare...' : 'Väntar på att värden startar...'}</div>`
           }
           <button class="lobby-leave-btn" id="lobbyLeaveBtn">Lämna</button>
         </div>
+        ${isHost ? `
         <details class="lobby-settings-wrap">
           <summary class="lobby-settings-toggle">
-            <span>Inställningar</span>
+            <div class="lobby-settings-toggle-text">
+              <span class="lobby-settings-toggle-title">Inställningar</span>
+              <span class="lobby-settings-toggle-sub">${settingsSummary}</span>
+            </div>
             ${chevron}
           </summary>
           <div class="lobby-settings" id="lobbySettings">
             <div class="setting-group">
-              <div class="setting-label">Svårighetsgrad</div>
-              ${lobbySegmented('difficulty', [['all', 'Alla'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], rs.difficulty, isHost)}
+              <div class="setting-label">Nivå</div>
+              ${lobbySegmented('difficulty', [['all', 'Blandad'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], rs.difficulty, true)}
             </div>
             <div class="setting-group">
               <div class="setting-label">Antal frågor</div>
-              ${lobbySegmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], rs.questionCount, isHost)}
+              ${lobbySegmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], rs.questionCount, true)}
             </div>
             <div class="setting-group">
               <div class="setting-label">Tidsbegränsning</div>
-              ${lobbySegmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], rs.timeLimit, isHost)}
+              ${lobbySegmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], rs.timeLimit, true)}
             </div>
             <div class="setting-group">
               <div class="setting-label">Tid per ord</div>
-              ${lobbySegmented('timePerWord', [['0', 'Av'], ['5', '5s'], ['10', '10s'], ['15', '15s']], rs.timePerWord, isHost)}
+              ${lobbySegmented('timePerWord', [['0', 'Av'], ['5', '5s'], ['10', '10s'], ['15', '15s']], rs.timePerWord, true)}
             </div>
             <div class="setting-group">
-              <label class="setting-toggle${isHost ? '' : ' setting-toggle-disabled'}">
+              <label class="setting-toggle">
                 <span class="setting-toggle-label">Visa rätt svar direkt</span>
-                <input type="checkbox" id="lobbyInstantFeedbackToggle" ${rs.showInstantFeedback ? 'checked' : ''} ${isHost ? '' : 'disabled'} />
+                <input type="checkbox" id="lobbyInstantFeedbackToggle" ${rs.showInstantFeedback ? 'checked' : ''} />
                 <span class="toggle-track"><span class="toggle-thumb"></span></span>
               </label>
             </div>
           </div>
-        </details>
+        </details>` : `
+        <div class="lobby-settings-summary">${settingsSummary}</div>`}
       </div>
     </div>
   `;

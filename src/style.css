@@ -1077,7 +1077,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 18px;
   margin-top: 12px;
 }
 
@@ -1292,6 +1292,7 @@ body {
 }
 
 .lobby-leave-btn {
+  margin-top: 12px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.5);
   color: var(--text-muted);
@@ -1313,6 +1314,13 @@ body {
   transform: scale(0.98);
 }
 
+.lobby-settings-summary {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+}
+
 .lobby-settings-wrap {
   width: 100%;
 }
@@ -1329,16 +1337,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 12px 16px;
   border-radius: 12px;
   background: var(--card);
   border: 1px solid var(--card-border);
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lobby-settings-toggle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.lobby-settings-toggle-title {
   font-size: 14px;
   font-weight: 600;
   color: var(--text);
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
+}
+
+.lobby-settings-toggle-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+details[open] .lobby-settings-toggle-sub {
+  display: none;
 }
 
 .lobby-settings-chevron {
