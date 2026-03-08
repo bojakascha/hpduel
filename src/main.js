@@ -4,6 +4,7 @@ import { renderStart, renderQuiz, renderQuizContent, renderResult, renderSetting
 import { loginWithEmail, registerWithEmail, loginWithGoogle, ensureAnonymousAuth, logout, onAuthChange } from './auth.js';
 import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings } from './db.js';
 import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished } from './room.js';
+import QRCode from 'qrcode';
 
 const SELECTED_PAUSE = 400;
 const EXIT_DURATION = 220;
@@ -347,7 +348,7 @@ function getPlayerName() {
   return getUserName();
 }
 
-function openMultiplayerMenu() {
+function openMultiplayerMenu(prefillCode = null) {
   const overlay = openOverlay('mpMenuOverlay', renderMultiplayerMenu());
   overlay.querySelector('#mpMenuBackBtn').addEventListener('click', () => closeOverlay('mpMenuOverlay'));
 
@@ -418,6 +419,18 @@ function openMultiplayerMenu() {
       btn.disabled = false;
     }
   });
+
+  if (prefillCode) {
+    const joinForm = overlay.querySelector('#mpJoinForm');
+    const codeInput = overlay.querySelector('#mpCodeInput');
+    codeInput.value = prefillCode.toUpperCase().trim();
+    joinForm.style.display = 'flex';
+    if (getPlayerName()) {
+      overlay.querySelector('#mpJoinSubmitBtn').click();
+    } else {
+      nameInput.focus();
+    }
+  }
 }
 
 function startRoomListener(roomId) {
@@ -436,6 +449,7 @@ function startRoomListener(roomId) {
     if (room.status === 'playing' && state.phase === 'mp-lobby') {
       settings.timeLimit = room.settings.timeLimit ?? 0;
       settings.timePerWord = room.settings.timePerWord ?? 0;
+      settings.showInstantFeedback = room.settings.showInstantFeedback ?? false;
       prevOpState = null;
       initQuizWithQuestions(room.questions);
       render();
@@ -499,6 +513,14 @@ function attachLobbyListeners() {
         updateRoomSettings(state.roomId, newSettings).catch(() => {});
       });
     });
+
+    const lobbyFeedbackToggle = document.getElementById('lobbyInstantFeedbackToggle');
+    if (lobbyFeedbackToggle) {
+      lobbyFeedbackToggle.addEventListener('change', () => {
+        const newSettings = { ...state.room.settings, showInstantFeedback: lobbyFeedbackToggle.checked };
+        updateRoomSettings(state.roomId, newSettings).catch(() => {});
+      });
+    }
   }
 
   const leaveBtn = document.getElementById('lobbyLeaveBtn');
@@ -519,6 +541,86 @@ function attachLobbyListeners() {
       });
     });
   }
+
+  const shareBtn = document.getElementById('lobbyShareBtn');
+  if (shareBtn && codeEl) {
+    shareBtn.addEventListener('click', async () => {
+      const code = codeEl.textContent;
+      const url = window.location.href.split('?')[0];
+      const text = `Gå med i mitt HP Duel-spel med koden ${code}!`;
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: 'HP Duel',
+            text,
+            url: `${url}?code=${code}`,
+          });
+        } catch (e) {
+          if (e.name !== 'AbortError') fallbackCopy(code);
+        }
+      } else {
+        fallbackCopy(code);
+      }
+    });
+  }
+
+  const qrBtn = document.getElementById('lobbyQrBtn');
+  if (qrBtn && codeEl) {
+    qrBtn.addEventListener('click', () => {
+      const code = codeEl.textContent;
+      const url = window.location.href.split('?')[0];
+      openQrModal(`${url}?code=${code}`);
+    });
+  }
+}
+
+function openQrModal(shareUrl) {
+  const existing = document.getElementById('qrModalOverlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'qrModalOverlay';
+  overlay.className = 'qr-modal-overlay';
+  overlay.innerHTML = `
+    <div class="qr-modal">
+      <div class="qr-modal-header">
+        <span class="qr-modal-title">Skanna för att gå med</span>
+        <button type="button" class="qr-modal-close" id="qrModalClose" aria-label="Stäng">&times;</button>
+      </div>
+      <div class="qr-modal-body">
+        <canvas id="qrModalCanvas" width="200" height="200"></canvas>
+      </div>
+    </div>
+  `;
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeQrModal();
+  });
+  overlay.querySelector('#qrModalClose').addEventListener('click', closeQrModal);
+
+  document.getElementById('app').appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('open'));
+
+  const canvas = overlay.querySelector('#qrModalCanvas');
+  QRCode.toCanvas(canvas, shareUrl, { width: 200, margin: 2 }).catch(() => {});
+}
+
+function closeQrModal() {
+  const overlay = document.getElementById('qrModalOverlay');
+  if (overlay) {
+    overlay.classList.remove('open');
+    overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+  }
+}
+
+function fallbackCopy(text) {
+  navigator.clipboard?.writeText(text).then(() => {
+    const el = document.getElementById('lobbyCode');
+    if (el) {
+      el.classList.add('copied');
+      setTimeout(() => el.classList.remove('copied'), 1200);
+    }
+  });
 }
 
 // ── Session persistence ──────────────────────────────────────────────────────
@@ -728,6 +830,12 @@ async function init() {
     state.phase = 'error';
   }
   render();
+
+  const params = new URLSearchParams(location.search);
+  const code = params.get('code');
+  if (code && state.phase === 'start') {
+    openMultiplayerMenu(code);
+  }
 }
 
 if ('serviceWorker' in navigator) {

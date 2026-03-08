@@ -26,7 +26,7 @@ export function renderStart() {
       <div class="start-content">
         <div class="start-buttons">
           <button class="start-btn" id="startBtn">Starta</button>
-          <button class="start-btn-secondary" id="multiplayerBtn">Multiplayer</button>
+          <button class="start-btn-secondary" id="multiplayerBtn">Duel</button>
         </div>
       </div>
     </div>
@@ -106,14 +106,8 @@ export function renderQuizContent() {
 export function renderResult() {
   const total = state.results.length;
   const score = state.score;
-  const pct = Math.round((score / total) * 100);
-
-  let chipLabel, chipClass;
-  if (pct >= 90)      { chipLabel = 'Perfekt'; chipClass = 'perfekt'; }
-  else if (pct >= 80) { chipLabel = 'Starkt'; chipClass = 'starkt'; }
-  else if (pct >= 70) { chipLabel = 'Bra'; chipClass = 'bra'; }
-  else if (pct >= 50) { chipLabel = 'Okej'; chipClass = 'okej'; }
-  else                { chipLabel = 'Svagt'; chipClass = 'svagt'; }
+  const pct = total > 0 ? Math.round((score / total) * 100) : 0;
+  const isMultiplayer = Boolean(state.room && state.user);
 
   const summaryHtml = state.results
     .map(r => `<span class="result-summary-dot ${r.isCorrect ? 'correct' : 'wrong'}">${r.isCorrect ? '●' : '○'}</span>`)
@@ -147,38 +141,46 @@ export function renderResult() {
       </div>`;
   }).join('');
 
-  const mpComparisonHtml = (() => {
-    if (!state.room || !state.user) return '';
+  let headerInner;
+
+  if (isMultiplayer) {
     const myUid = state.user.uid;
-    const opUid = Object.keys(state.room.players).find(id => id !== myUid);
-    if (!opUid) return '';
-    const me = state.room.players[myUid];
-    const op = state.room.players[opUid];
-    const myWin = me.score > op.score;
-    const tie = me.score === op.score;
-    const opFinished = op.finished;
-    return `<div class="mp-comparison">
-      <div class="mp-player ${myWin ? 'mp-winner' : ''}">
-        <div class="mp-player-name">Du</div>
-        <div class="mp-player-score">${me.score}</div>
-      </div>
-      <div class="mp-vs">${tie && opFinished ? 'Lika!' : 'vs'}</div>
-      <div class="mp-player ${!myWin && !tie && opFinished ? 'mp-winner' : ''}">
-        <div class="mp-player-name">${op.name}</div>
-        <div class="mp-player-score">${opFinished ? op.score : '...'}</div>
-      </div>
-    </div>`;
-  })();
+    const allPlayers = Object.entries(state.room.players)
+      .map(([uid, p]) => ({ ...p, uid, isMe: uid === myUid }))
+      .sort((a, b) => b.score - a.score);
+    const myScore = state.room.players[myUid]?.score ?? score;
+    const myRank = Object.values(state.room.players).filter(p => p.score > myScore).length + 1;
+    const placementLabel = myRank === 1 ? '1:a plats' : myRank === 2 ? '2:a plats' : `${myRank}:e plats`;
+    const placementClass = myRank === 1 ? 'plats-1' : myRank === 2 ? 'plats-2' : 'plats-other';
+
+    const lbHtml = allPlayers.slice(0, 3).map((p, i) => `
+      <div class="mp-lb-row${p.isMe ? ' mp-lb-me' : ''}">
+        <span class="mp-lb-rank">${i + 1}.</span>
+        <span class="mp-lb-name">${p.isMe ? 'Du' : p.name}</span>
+        <span class="mp-lb-score">${p.finished ? p.score : '…'}</span>
+      </div>`).join('');
+
+    headerInner = `
+      <span class="result-chip ${placementClass}">${placementLabel}</span>
+      <div class="mp-leaderboard">${lbHtml}</div>`;
+  } else {
+    let chipLabel, chipClass;
+    if (pct === 100)    { chipLabel = 'Perfekt';  chipClass = 'perfekt'; }
+    else if (pct >= 85) { chipLabel = 'Utmärkt';  chipClass = 'utmarkt'; }
+    else if (pct >= 70) { chipLabel = 'Bra';       chipClass = 'bra'; }
+    else if (pct >= 50) { chipLabel = 'Okej';      chipClass = 'okej'; }
+    else                { chipLabel = 'Svagt';     chipClass = 'svagt'; }
+
+    headerInner = `
+      <span class="result-chip ${chipClass}">${chipLabel}</span>
+      <div class="result-score">${score}<span>/${total}</span></div>`;
+  }
 
   return `
     <div class="screen result-screen">
       ${menuHtml()}
       <div class="result-header">
-        ${mpComparisonHtml}
-        <div class="result-score-row">
-          <div class="result-score">${score}<span>/${total}</span></div>
-          <span class="result-chip ${chipClass}">${chipLabel}</span>
-        </div>
+        ${headerInner}
         <div class="result-underline"></div>
       </div>
       <div class="result-list">
@@ -203,6 +205,10 @@ function segmented(name, options, activeValue) {
 const backArrow = `<svg width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9 1L1 9l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 const googleIcon = `<svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615Z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18Z" fill="#34A853"/><path d="M3.964 10.706A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.706V4.962H.957A8.997 8.997 0 0 0 0 9c0 1.452.348 2.827.957 4.038l3.007-2.332Z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.962L3.964 7.294C4.672 5.166 6.656 3.58 9 3.58Z" fill="#EA4335"/></svg>`;
+
+const shareIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>`;
+
+const qrIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="3" height="3"/><rect x="14" y="10" width="3" height="3"/><rect x="3" y="14" width="3" height="3"/><rect x="10" y="14" width="3" height="3"/><rect x="18" y="14" width="3" height="3"/></svg>`;
 
 export function renderSettings() {
   return `
@@ -245,7 +251,7 @@ export function renderMultiplayerMenu() {
     <div class="settings-screen">
       <div class="settings-header">
         <button class="settings-back" id="mpMenuBackBtn" type="button" aria-label="Tillbaka">${backArrow}</button>
-        <span class="settings-title">Multiplayer</span>
+        <span class="settings-title">Duel</span>
       </div>
       <div class="mp-menu-body">
         <div class="mp-name-field" id="mpNameField">
@@ -293,6 +299,8 @@ export function renderLobby() {
     </div>`
   ).join('');
 
+  const chevron = `<svg class="lobby-settings-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
   return `
     <div class="screen lobby-screen">
       ${menuHtml()}
@@ -300,35 +308,58 @@ export function renderLobby() {
         <div class="lobby-code-section">
           <div class="lobby-label">Spelkod</div>
           <div class="lobby-code" id="lobbyCode">${room.code}</div>
-          <div class="lobby-hint">Dela koden med din vän</div>
+          <div class="lobby-code-actions">
+            <button type="button" class="lobby-share-btn" id="lobbyShareBtn" aria-label="Dela spelkod">
+              <span class="lobby-share-icon">${shareIcon}</span>
+              Dela
+            </button>
+            <button type="button" class="lobby-qr-btn" id="lobbyQrBtn" aria-label="Visa QR-kod">
+              <span class="lobby-qr-icon">${qrIcon}</span>
+            </button>
+          </div>
         </div>
         <div class="lobby-players-section">
-          <div class="lobby-label">Spelare (${playerCount}/2)</div>
+          <div class="lobby-label">Spelare</div>
           <div class="lobby-players">${playersHtml}</div>
         </div>
-        <div class="lobby-settings" id="lobbySettings">
-          <div class="setting-group">
-            <div class="setting-label">Svårighetsgrad</div>
-            ${lobbySegmented('difficulty', [['all', 'Alla'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], rs.difficulty, isHost)}
-          </div>
-          <div class="setting-group">
-            <div class="setting-label">Antal frågor</div>
-            ${lobbySegmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], rs.questionCount, isHost)}
-          </div>
-          <div class="setting-group">
-            <div class="setting-label">Tidsbegränsning</div>
-            ${lobbySegmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], rs.timeLimit, isHost)}
-          </div>
-          <div class="setting-group">
-            <div class="setting-label">Tid per ord</div>
-            ${lobbySegmented('timePerWord', [['0', 'Av'], ['5', '5s'], ['10', '10s'], ['15', '15s']], rs.timePerWord, isHost)}
-          </div>
+        <div class="lobby-actions">
+          ${isHost && playerCount >= 2
+            ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta spel</button>'
+            : `<div class="lobby-waiting">${isHost ? 'Väntar på motståndare...' : 'Väntar på att värden startar...'}</div>`
+          }
+          <button class="lobby-leave-btn" id="lobbyLeaveBtn">Lämna</button>
         </div>
-        ${isHost && playerCount >= 2
-          ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta spel</button>'
-          : `<div class="lobby-waiting">${isHost ? 'Väntar på motståndare...' : 'Väntar på att värden startar...'}</div>`
-        }
-        <button class="lobby-leave-btn" id="lobbyLeaveBtn">Lämna</button>
+        <details class="lobby-settings-wrap">
+          <summary class="lobby-settings-toggle">
+            <span>Inställningar</span>
+            ${chevron}
+          </summary>
+          <div class="lobby-settings" id="lobbySettings">
+            <div class="setting-group">
+              <div class="setting-label">Svårighetsgrad</div>
+              ${lobbySegmented('difficulty', [['all', 'Alla'], ['easy', 'Lätt'], ['medium', 'Medel'], ['hard', 'Svår']], rs.difficulty, isHost)}
+            </div>
+            <div class="setting-group">
+              <div class="setting-label">Antal frågor</div>
+              ${lobbySegmented('questionCount', [['5', '5'], ['10', '10'], ['20', '20'], ['30', '30']], rs.questionCount, isHost)}
+            </div>
+            <div class="setting-group">
+              <div class="setting-label">Tidsbegränsning</div>
+              ${lobbySegmented('timeLimit', [['0', 'Av'], ['30', '30s'], ['60', '1min'], ['120', '2min']], rs.timeLimit, isHost)}
+            </div>
+            <div class="setting-group">
+              <div class="setting-label">Tid per ord</div>
+              ${lobbySegmented('timePerWord', [['0', 'Av'], ['5', '5s'], ['10', '10s'], ['15', '15s']], rs.timePerWord, isHost)}
+            </div>
+            <div class="setting-group">
+              <label class="setting-toggle${isHost ? '' : ' setting-toggle-disabled'}">
+                <span class="setting-toggle-label">Visa rätt svar direkt</span>
+                <input type="checkbox" id="lobbyInstantFeedbackToggle" ${rs.showInstantFeedback ? 'checked' : ''} ${isHost ? '' : 'disabled'} />
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+            </div>
+          </div>
+        </details>
       </div>
     </div>
   `;
