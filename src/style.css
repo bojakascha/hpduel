@@ -301,13 +301,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: var(--card-width);
+  width: min(89%, 420px);
   margin: 0 auto;
 }
 
 .option-btn {
   width: 100%;
-  padding: 16px 18px;
+  padding: 13px 20px;
   border-radius: 14px;
   border: 1px solid var(--card-border);
   background: var(--card);
