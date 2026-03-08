@@ -103,19 +103,24 @@ export function renderResult() {
   const score = state.score;
   const pct = Math.round((score / total) * 100);
 
-  let message;
-  if (pct >= 90)      message = 'Fantastiskt!';
-  else if (pct >= 70) message = 'Bra jobbat!';
-  else if (pct >= 50) message = 'Helt okej – fortsätt träna!';
-  else                message = 'Fortsätt öva – du når dit!';
+  let chipLabel, chipClass;
+  if (pct >= 90)      { chipLabel = 'Perfekt'; chipClass = 'perfekt'; }
+  else if (pct >= 80) { chipLabel = 'Starkt'; chipClass = 'starkt'; }
+  else if (pct >= 70) { chipLabel = 'Bra'; chipClass = 'bra'; }
+  else if (pct >= 50) { chipLabel = 'Okej'; chipClass = 'okej'; }
+  else                { chipLabel = 'Svagt'; chipClass = 'svagt'; }
 
-  const itemsHtml = state.results.map(r => {
+  const summaryHtml = state.results
+    .map(r => `<span class="result-summary-dot ${r.isCorrect ? 'correct' : 'wrong'}">${r.isCorrect ? '●' : '○'}</span>`)
+    .join('');
+
+  const itemsHtml = state.results.map((r, i) => {
     const info = r.isCorrect
-      ? ''
+      ? `<div class="result-your-answer correct">Ditt svar: ${capitalizeFirst(r.chosen)}</div>`
       : `<div class="result-your-answer">Ditt svar: ${capitalizeFirst(r.chosen)}</div>
          <div class="result-correct-answer">Rätt: ${capitalizeFirst(r.correct)}</div>`;
     return `
-      <div class="result-item ${r.isCorrect ? 'item-correct' : 'item-wrong'}" id="item-${r.id}">
+      <div class="result-item ${r.isCorrect ? 'item-correct' : 'item-wrong'}" id="item-${i}" data-index="${i}">
         <div class="result-item-header">
           <div class="result-status">${r.isCorrect ? '&#10003;' : '&#10007;'}</div>
           <div class="result-word-info">
@@ -124,7 +129,7 @@ export function renderResult() {
           </div>
           <span class="result-chevron">&#8250;</span>
         </div>
-        <div class="result-detail" id="detail-${r.id}">
+        <div class="result-detail" id="detail-${i}">
           <div class="result-detail-inner">
             <div class="detail-content">
               <div class="detail-label">Förklaring</div>
@@ -165,12 +170,15 @@ export function renderResult() {
       ${menuHtml()}
       <div class="result-header">
         ${mpComparisonHtml}
-        <div class="result-score">${score}<span>/${total}</span></div>
-        <div class="result-message">${message}</div>
+        <div class="result-score-row">
+          <div class="result-score">${score}<span>/${total}</span></div>
+          <span class="result-chip ${chipClass}">${chipLabel}</span>
+        </div>
         <div class="result-underline"></div>
       </div>
       <div class="result-list">
         <div class="result-list-title">Dina svar</div>
+        <div class="result-summary" aria-hidden="true">${summaryHtml}</div>
         ${itemsHtml}
       </div>
       <div class="result-footer">
