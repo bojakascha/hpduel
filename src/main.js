@@ -1,6 +1,6 @@
 import './style.css';
 import { state, settings, loadWords, initQuiz, selectQuestions, initQuizWithQuestions, updateSetting, recordAnswer, recordTimeout, advanceQuestion, toggleDetail } from './game.js';
-import { renderStart, renderQuiz, renderResult, renderSettings, renderLogin, renderMultiplayerMenu, renderLobby } from './render.js';
+import { renderStart, renderQuiz, renderQuizContent, renderResult, renderSettings, renderLogin, renderMultiplayerMenu, renderLobby } from './render.js';
 import { loginWithEmail, registerWithEmail, loginWithGoogle, ensureAnonymousAuth, logout, onAuthChange } from './auth.js';
 import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings } from './db.js';
 import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished } from './room.js';
@@ -96,14 +96,15 @@ function handleWordTimeout() {
 
   setTimeout(() => {
     advanceQuestion();
-    render();
     if (state.phase === 'result') {
       stopTimers();
+      render();
       onQuizComplete();
       if (state.roomId && state.user) {
         markPlayerFinished(state.roomId, state.user.uid, state.score).catch(() => {});
       }
     } else {
+      updateQuizContent();
       startWordTimer();
       tickTimers();
       if (state.roomId && state.user) {
@@ -316,6 +317,8 @@ function attachLoginListeners(overlay) {
 
 // ── Multiplayer ──────────────────────────────────────────────────────────────
 
+let prevOpState = null;
+
 function cleanupRoom() {
   if (state.roomUnsub) {
     state.roomUnsub();
@@ -323,6 +326,7 @@ function cleanupRoom() {
   }
   state.room = null;
   state.roomId = null;
+  prevOpState = null;
 }
 
 function getUserName() {
@@ -432,27 +436,23 @@ function startRoomListener(roomId) {
     if (room.status === 'playing' && state.phase === 'mp-lobby') {
       settings.timeLimit = room.settings.timeLimit ?? 0;
       settings.timePerWord = room.settings.timePerWord ?? 0;
+      prevOpState = null;
       initQuizWithQuestions(room.questions);
       render();
       startTimers();
       return;
     }
 
-    // Update opponent progress during quiz
+    // Show toast when opponent answers
     if ((room.status === 'playing' || room.status === 'finished') && (state.phase === 'quiz' || state.phase === 'selected')) {
-      const opBar = document.querySelector('.opponent-bar');
-      if (opBar && state.user) {
+      if (state.user) {
         const opUid = Object.keys(room.players).find(id => id !== state.user.uid);
         if (opUid) {
           const op = room.players[opUid];
-          const total = state.questions.length;
-          const progressEl = opBar.querySelector('.opponent-progress');
-          const fillEl = opBar.querySelector('.opponent-fill');
-          if (progressEl) progressEl.textContent = `${op.current}/${total} \u00b7 ${op.score} rätt`;
-          if (fillEl) {
-            fillEl.style.width = `${total > 0 ? (op.current / total) * 100 : 0}%`;
-            fillEl.style.setProperty('--accuracy', op.current > 0 ? op.score / op.current : 1);
+          if (prevOpState && op.current > prevOpState.current) {
+            showOpponentToast(op.name, op.score > prevOpState.score);
           }
+          prevOpState = { current: op.current, score: op.score };
         }
       }
       return;
@@ -562,7 +562,50 @@ function haptic(pattern) {
   if (navigator.vibrate) navigator.vibrate(pattern);
 }
 
+// ── Opponent Toast ────────────────────────────────────────────────────────────
+
+function showOpponentToast(name, isCorrect) {
+  const existing = document.getElementById('opponentToast');
+  if (existing) existing.remove();
+
+  const screen = document.querySelector('.quiz-screen');
+  if (!screen) return;
+
+  const toast = document.createElement('div');
+  toast.id = 'opponentToast';
+  toast.className = `opponent-toast ${isCorrect ? 'toast-correct' : 'toast-wrong'}`;
+  toast.innerHTML = `<span class="toast-name">${name}</span><span class="toast-icon">${isCorrect ? '✓' : '✗'}</span>`;
+  screen.appendChild(toast);
+
+  requestAnimationFrame(() => requestAnimationFrame(() => toast.classList.add('toast-visible')));
+
+  setTimeout(() => {
+    toast.classList.remove('toast-visible');
+    toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+  }, 1600);
+}
+
 // ── Quiz ──────────────────────────────────────────────────────────────────────
+
+function updateQuizContent() {
+  const content = document.getElementById('quizContent');
+  const progress = document.getElementById('quizProgress');
+  if (!content || !progress) return;
+
+  const { content: contentHtml, progressLabel, progressWidth } = renderQuizContent();
+  content.innerHTML = contentHtml;
+  content.classList.remove('exiting');
+  content.classList.add('entering');
+
+  const label = progress.querySelector('.progress-label');
+  const fill = document.getElementById('progressFill');
+  if (label) label.textContent = progressLabel;
+  if (fill) fill.style.width = `${progressWidth}%`;
+
+  document.querySelectorAll('.option-btn').forEach(btn => {
+    btn.addEventListener('click', () => handleAnswer(btn.dataset.value));
+  });
+}
 
 function handleAnswer(chosen) {
   if (state.phase !== 'quiz') return;
@@ -581,15 +624,16 @@ function handleAnswer(chosen) {
 
   setTimeout(() => {
     advanceQuestion();
-    render();
     if (state.phase === 'result') {
       haptic([15, 60, 30]);
       stopTimers();
+      render();
       onQuizComplete();
       if (state.roomId && state.user) {
         markPlayerFinished(state.roomId, state.user.uid, state.score).catch(() => {});
       }
     } else {
+      updateQuizContent();
       startWordTimer();
       if (state.roomId && state.user) {
         updatePlayerProgress(state.roomId, state.user.uid, state.current, state.score).catch(() => {});

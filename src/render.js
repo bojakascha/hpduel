@@ -55,47 +55,52 @@ export function renderQuiz() {
     return `<button class="${cls}" data-value="${escaped}" ${isSelected ? 'disabled' : ''}>${capitalizeFirst(opt)}</button>`;
   }).join('');
 
-  const opponentHtml = (() => {
-    if (!state.room || !state.user) return '';
-    const opUid = Object.keys(state.room.players).find(id => id !== state.user.uid);
-    if (!opUid) return '';
-    const op = state.room.players[opUid];
-    const total = state.questions.length;
-    const progressPct = total > 0 ? (op.current / total) * 100 : 0;
-    const accuracyPct = op.current > 0 ? op.score / op.current : 1;
-    return `<div class="opponent-bar">
-      <div class="opponent-info">
-        <span class="opponent-name">${op.name}</span>
-        <span class="opponent-progress">${op.current}/${total} &middot; ${op.score} rätt</span>
-      </div>
-      <div class="opponent-track">
-        <div class="opponent-fill" style="width:${progressPct}%;--accuracy:${accuracyPct}"></div>
-      </div>
-    </div>`;
-  })();
-
   return `
     <div class="screen quiz-screen">
       ${menuHtml()}
-      ${opponentHtml}
-      <div class="quiz-content${!isSelected ? ' entering' : ''}${state.room ? ' has-opponent' : ''}">
+      <div class="quiz-content${!isSelected ? ' entering' : ''}" id="quizContent">
         <div class="word-block">
           <div class="word-text">${capitalizeFirst(q.word)}</div>
-          <div class="word-underline"></div>
+          ${settings.timePerWord === 0 ? '<div class="word-underline"></div>' : ''}
         </div>
         ${settings.timePerWord > 0 ? '<div class="word-timer-bar"><div class="word-timer-fill" id="wordTimerFill"></div></div>' : ''}
         <div class="options-list">${optionsHtml}</div>
         <div class="quiz-spacer"></div>
-        <div class="quiz-progress progress-wrap">
-          ${settings.timeLimit > 0 ? '<div class="total-timer" id="totalTimer"></div>' : ''}
-          <div class="progress-label">Fråga ${state.current + 1} av ${state.questions.length}</div>
-          <div class="progress-track">
-            <div class="progress-fill" style="width:${progress}%"></div>
-          </div>
+      </div>
+      <div class="quiz-progress progress-wrap" id="quizProgress">
+        ${settings.timeLimit > 0 ? '<div class="total-timer" id="totalTimer"></div>' : ''}
+        <div class="progress-label">Fråga ${state.current + 1} av ${state.questions.length}</div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill" style="width:${progress}%"></div>
         </div>
       </div>
     </div>
   `;
+}
+
+export function renderQuizContent() {
+  const q = state.questions[state.current];
+  const options = state.currentOptions;
+  const progress = (state.current / state.questions.length) * 100;
+
+  const optionsHtml = options.map(opt => {
+    const escaped = opt.replace(/"/g, '&quot;');
+    return `<button class="option-btn" data-value="${escaped}">${capitalizeFirst(opt)}</button>`;
+  }).join('');
+
+  return {
+    content: `
+      <div class="word-block">
+        <div class="word-text">${capitalizeFirst(q.word)}</div>
+        ${settings.timePerWord === 0 ? '<div class="word-underline"></div>' : ''}
+      </div>
+      ${settings.timePerWord > 0 ? '<div class="word-timer-bar"><div class="word-timer-fill" id="wordTimerFill"></div></div>' : ''}
+      <div class="options-list">${optionsHtml}</div>
+      <div class="quiz-spacer"></div>
+    `,
+    progressLabel: `Fråga ${state.current + 1} av ${state.questions.length}`,
+    progressWidth: progress,
+  };
 }
 
 export function renderResult() {

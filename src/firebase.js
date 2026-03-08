@@ -13,3 +13,7 @@ const isConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId);
 
 export const app = isConfigured ? initializeApp(firebaseConfig) : null;
 export { isConfigured };
+
+export function getFirebaseProjectId() {
+  return app?.options?.projectId ?? null;
+}

@@ -11,7 +11,7 @@ import {
   onSnapshot,
   serverTimestamp,
 } from 'firebase/firestore';
-import { app, isConfigured } from './firebase.js';
+import { app, isConfigured, getFirebaseProjectId } from './firebase.js';
 
 const db = isConfigured ? getFirestore(app) : null;
 
@@ -29,6 +29,8 @@ export async function createRoom(uid, name, gameSettings) {
   const code = generateCode();
   const roomRef = doc(collection(db, 'rooms'));
 
+  const projectId = getFirebaseProjectId();
+  console.log('[createRoom] projectId:', projectId, '| code:', code);
   await setDoc(roomRef, {
     code,
     hostUid: uid,
@@ -53,7 +55,8 @@ export async function joinRoom(code, uid, name) {
   if (!db) throw new Error('Firebase är inte konfigurerat.');
 
   const searchCode = code.toUpperCase().trim();
-  console.log('[joinRoom] searching for code:', JSON.stringify(searchCode));
+  const projectId = getFirebaseProjectId();
+  console.log('[joinRoom] projectId:', projectId, '| code:', JSON.stringify(searchCode), '| uid:', uid);
   const q = query(
     collection(db, 'rooms'),
     where('code', '==', searchCode),
@@ -61,13 +64,18 @@ export async function joinRoom(code, uid, name) {
   let snap;
   try {
     snap = await getDocs(q);
-    console.log('[joinRoom] query returned', snap.size, 'docs');
   } catch (err) {
     console.error('[joinRoom] query error:', err);
+    if (err.code === 'permission-denied' || err.message?.includes('permission')) {
+      throw new Error('Åtkomst nekad. Kontrollera att Firestore-reglerna tillåter läsning av rum.');
+    }
     throw new Error('Kunde inte söka efter spel: ' + err.message);
   }
 
-  if (snap.empty) throw new Error('Inget spel hittades med den koden.');
+  if (snap.empty) {
+    console.warn('[joinRoom] No room found. Verify both players use the same app (same projectId:', projectId, ')');
+    throw new Error('Inget spel hittades med den koden. Kontrollera att båda använder samma app/sajt.');
+  }
 
   const roomDoc = snap.docs[0];
   const roomData = roomDoc.data();

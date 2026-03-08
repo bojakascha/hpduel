@@ -269,10 +269,6 @@ body {
   animation: slideUp 0.28s cubic-bezier(0.25, 1, 0.5, 1) both;
 }
 
-.quiz-content.has-opponent {
-  margin-top: calc(90px + 6vh);
-}
-
 /* Word */
 
 .word-block {
@@ -401,19 +397,21 @@ body {
 /* ── Timers ───────────────────────────────────── */
 
 .word-timer-bar {
-  width: 100%;
-  height: 3px;
+  width: var(--card-width);
+  margin: 0 auto;
+  height: 6px;
   background: var(--progress-track);
-  border-radius: 2px;
+  border-radius: 999px;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-top: 20px;
+  margin-bottom: 28px;
 }
 
 .word-timer-fill {
   height: 100%;
   width: 100%;
   background: var(--accent);
-  border-radius: 2px;
+  border-radius: 999px;
   transform-origin: left;
   transition: background 0.3s ease;
 }
@@ -1139,54 +1137,47 @@ body {
   padding: 12px;
 }
 
-/* ── Opponent Bar ─────────────────────────────── */
+/* ── Opponent Toast ───────────────────────────── */
 
-.opponent-bar {
+.opponent-toast {
   position: absolute;
-  top: max(52px, calc(env(safe-area-inset-top, 0px) + 44px));
-  left: 22px;
-  right: 22px;
-  padding: 10px 14px 8px;
-  background: var(--card);
-  border-radius: 10px;
-  border: 1px solid var(--card-border);
-  box-shadow: var(--card-shadow);
-  z-index: 5;
-}
-
-.opponent-info {
+  top: max(58px, calc(env(safe-area-inset-top, 0px) + 50px));
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 7px;
-}
-
-.opponent-name {
-  font-size: 13px;
+  gap: 7px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 14px;
   font-weight: 600;
-  color: var(--text);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.opponent-progress {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
+.opponent-toast.toast-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
-.opponent-track {
-  width: 100%;
-  height: 3px;
-  background: var(--progress-track);
-  border-radius: 2px;
-  overflow: hidden;
+.opponent-toast.toast-correct {
+  background: var(--correct-bg);
+  color: var(--correct);
+  border: 1px solid rgba(61, 154, 99, 0.22);
 }
 
-.opponent-fill {
-  height: 100%;
-  border-radius: 2px;
-  transition: width 0.4s ease;
-  background: color-mix(in srgb, var(--correct) calc(var(--accuracy) * 100%), var(--wrong));
+.opponent-toast.toast-wrong {
+  background: var(--wrong-bg);
+  color: var(--wrong);
+  border: 1px solid rgba(197, 86, 86, 0.22);
+}
+
+.toast-icon {
+  font-size: 13px;
+  opacity: 0.85;
 }
 
 /* ── Multiplayer Result ──────────────────────── */
