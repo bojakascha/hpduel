@@ -546,14 +546,14 @@ function attachLobbyListeners() {
   if (shareBtn && codeEl) {
     shareBtn.addEventListener('click', async () => {
       const code = codeEl.textContent;
-      const url = window.location.href.split('?')[0];
+      const shareUrl = getShareUrl(code);
       const text = `Gå med i mitt HP Duel-spel med koden ${code}!`;
       if (navigator.share) {
         try {
           await navigator.share({
             title: 'HP Duel',
             text,
-            url: `${url}?code=${code}`,
+            url: shareUrl,
           });
         } catch (e) {
           if (e.name !== 'AbortError') fallbackCopy(code);
@@ -568,10 +568,16 @@ function attachLobbyListeners() {
   if (qrBtn && codeEl) {
     qrBtn.addEventListener('click', () => {
       const code = codeEl.textContent;
-      const url = window.location.href.split('?')[0];
-      openQrModal(`${url}?code=${code}`);
+      openQrModal(getShareUrl(code));
     });
   }
+}
+
+function getShareUrl(code) {
+  const url = new URL(window.location.href);
+  url.search = '';
+  url.searchParams.set('code', code);
+  return url.toString();
 }
 
 function openQrModal(shareUrl) {
@@ -818,7 +824,7 @@ async function init() {
       state.wordStats = {};
     }
     // Re-render to update menu (login/logout) only if no overlay is open
-    if (!document.getElementById('loginOverlay') && !document.getElementById('settingsOverlay')) {
+    if (!document.getElementById('loginOverlay') && !document.getElementById('settingsOverlay') && !document.getElementById('mpMenuOverlay')) {
       render();
     }
   });
