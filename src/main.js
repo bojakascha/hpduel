@@ -319,6 +319,7 @@ function attachLoginListeners(overlay) {
 // ── Multiplayer ──────────────────────────────────────────────────────────────
 
 let prevOpState = null;
+let prevLobbyPlayers = null;
 
 function cleanupRoom() {
   if (state.roomUnsub) {
@@ -328,6 +329,39 @@ function cleanupRoom() {
   state.room = null;
   state.roomId = null;
   prevOpState = null;
+  prevLobbyPlayers = null;
+}
+
+function lobbySettingsSummary(rs) {
+  const difficultyLabel = { all: 'Blandad', easy: 'Lätt', medium: 'Medel', hard: 'Svår' }[rs.difficulty] ?? 'Blandad';
+  const timeLimitLabel = rs.timeLimit > 0 ? (rs.timeLimit >= 60 ? `${rs.timeLimit / 60}min` : `${rs.timeLimit}s`) : null;
+  const timePerWordLabel = rs.timePerWord > 0 ? `${rs.timePerWord}s/ord` : null;
+  return [
+    difficultyLabel,
+    `${rs.questionCount ?? 10} frågor`,
+    timeLimitLabel,
+    timePerWordLabel,
+    rs.showInstantFeedback ? 'Visa svar' : null,
+  ].filter(Boolean).join(' · ');
+}
+
+function updateLobbySettingsDisplay(room) {
+  const rs = room.settings || {};
+  const isHost = room.hostUid === state.user?.uid;
+  const summary = lobbySettingsSummary(rs);
+
+  if (isHost) {
+    document.querySelectorAll('#lobbySettings .setting-option').forEach(btn => {
+      btn.classList.toggle('active', String(rs[btn.dataset.setting] ?? '') === btn.dataset.value);
+    });
+    const toggle = document.getElementById('lobbyInstantFeedbackToggle');
+    if (toggle) toggle.checked = Boolean(rs.showInstantFeedback);
+    const sub = document.querySelector('.lobby-settings-toggle-sub');
+    if (sub) sub.textContent = summary;
+  } else {
+    const el = document.querySelector('.lobby-settings-summary');
+    if (el) el.textContent = summary;
+  }
 }
 
 function getUserName() {
@@ -350,7 +384,8 @@ function getPlayerName() {
 }
 
 function openMultiplayerMenu(prefillCode = null) {
-  const overlay = openOverlay('mpMenuOverlay', renderMultiplayerMenu());
+  const joinOnly = Boolean(prefillCode);
+  const overlay = openOverlay('mpMenuOverlay', renderMultiplayerMenu(joinOnly));
   overlay.querySelector('#mpMenuBackBtn').addEventListener('click', () => closeOverlay('mpMenuOverlay'));
 
   // Show name input only if user has no display name
@@ -399,9 +434,9 @@ function openMultiplayerMenu(prefillCode = null) {
       nameInput.focus();
       return;
     }
-    const input = overlay.querySelector('#mpCodeInput');
+    const codeInput = overlay.querySelector('#mpCodeInput');
     const errorEl = overlay.querySelector('#mpJoinError');
-    const code = input.value.trim();
+    const code = codeInput ? codeInput.value.trim() : prefillCode?.toUpperCase().trim();
     if (!code) { errorEl.textContent = 'Ange en spelkod.'; return; }
 
     const btn = overlay.querySelector('#mpJoinSubmitBtn');
@@ -422,15 +457,9 @@ function openMultiplayerMenu(prefillCode = null) {
   });
 
   if (prefillCode) {
-    const joinForm = overlay.querySelector('#mpJoinForm');
     const codeInput = overlay.querySelector('#mpCodeInput');
-    codeInput.value = prefillCode.toUpperCase().trim();
-    joinForm.style.display = 'flex';
-    if (getPlayerName()) {
-      overlay.querySelector('#mpJoinSubmitBtn').click();
-    } else {
-      nameInput.focus();
-    }
+    if (codeInput) codeInput.value = prefillCode.toUpperCase().trim();
+    if (!getPlayerName()) nameInput.focus();
   }
 }
 
@@ -440,9 +469,15 @@ function startRoomListener(roomId) {
     const prevStatus = state.room?.status;
     state.room = room;
 
-    // Lobby — render on any update (initial load, player joined, etc.)
+    // Lobby update
     if (room.status === 'waiting' && state.phase === 'mp-lobby') {
-      render();
+      const playersKey = Object.keys(room.players).sort().join(',');
+      if (prevLobbyPlayers !== null && prevLobbyPlayers === playersKey) {
+        updateLobbySettingsDisplay(room);
+      } else {
+        render();
+      }
+      prevLobbyPlayers = playersKey;
       return;
     }
 

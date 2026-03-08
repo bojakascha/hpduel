@@ -246,18 +246,19 @@ export function renderSettings() {
   `;
 }
 
-export function renderMultiplayerMenu() {
+export function renderMultiplayerMenu(joinOnly = false) {
   return `
     <div class="settings-screen">
       <div class="settings-header">
         <button class="settings-back" id="mpMenuBackBtn" type="button" aria-label="Tillbaka">${backArrow}</button>
-        <span class="settings-title">Duel</span>
+        <span class="settings-title">${joinOnly ? 'Gå med i spel' : 'Duel'}</span>
       </div>
       <div class="mp-menu-body">
         <div class="mp-name-field" id="mpNameField">
           <div class="setting-label">Ditt namn</div>
           <input class="login-input" type="text" id="mpNameInput" placeholder="Ange ditt namn" maxlength="20" autocomplete="off" required value="${state.user?.displayName || ''}" />
         </div>
+        ${joinOnly ? '' : `
         <button class="mp-menu-option" id="mpCreateBtn">
           <div class="mp-menu-option-title">Skapa spel</div>
           <div class="mp-menu-option-desc">Bjud in en vän med en spelkod</div>
@@ -265,9 +266,9 @@ export function renderMultiplayerMenu() {
         <button class="mp-menu-option" id="mpJoinBtn">
           <div class="mp-menu-option-title">Gå med i spel</div>
           <div class="mp-menu-option-desc">Ange en spelkod från en vän</div>
-        </button>
-        <div class="mp-join-form" id="mpJoinForm" style="display:none">
-          <input class="login-input" type="text" id="mpCodeInput" placeholder="Ange spelkod" maxlength="5" autocomplete="off" autocapitalize="characters" />
+        </button>`}
+        <div class="mp-join-form" id="mpJoinForm" style="${joinOnly ? '' : 'display:none'}">
+          ${joinOnly ? '' : `<input class="login-input" type="text" id="mpCodeInput" placeholder="Ange spelkod" maxlength="5" autocomplete="off" autocapitalize="characters" />`}
           <div class="login-error" id="mpJoinError"></div>
           <button class="btn-primary" id="mpJoinSubmitBtn" type="button">Gå med</button>
         </div>
