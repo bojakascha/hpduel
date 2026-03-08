@@ -556,12 +556,21 @@ async function onUserLogin(user) {
   }
 }
 
+// ── Haptics ───────────────────────────────────────────────────────────────────
+
+function haptic(pattern) {
+  if (navigator.vibrate) navigator.vibrate(pattern);
+}
+
 // ── Quiz ──────────────────────────────────────────────────────────────────────
 
 function handleAnswer(chosen) {
   if (state.phase !== 'quiz') return;
 
+  haptic(8);
   recordAnswer(chosen);
+  const isCorrect = state.results[state.results.length - 1].isCorrect;
+  setTimeout(() => haptic(isCorrect ? 15 : [10, 60, 10]), 80);
   pauseWordTimer();
   render();
 
@@ -574,6 +583,7 @@ function handleAnswer(chosen) {
     advanceQuestion();
     render();
     if (state.phase === 'result') {
+      haptic([15, 60, 30]);
       stopTimers();
       onQuizComplete();
       if (state.roomId && state.user) {

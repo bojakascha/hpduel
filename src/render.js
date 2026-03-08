@@ -86,10 +86,10 @@ export function renderQuiz() {
         ${settings.timePerWord > 0 ? '<div class="word-timer-bar"><div class="word-timer-fill" id="wordTimerFill"></div></div>' : ''}
         <div class="options-list">${optionsHtml}</div>
         <div class="quiz-spacer"></div>
-        <div class="quiz-progress">
+        <div class="quiz-progress progress-wrap">
           ${settings.timeLimit > 0 ? '<div class="total-timer" id="totalTimer"></div>' : ''}
-          <span class="progress-label">Fråga ${state.current + 1} av ${state.questions.length}</span>
-          <div class="progress-bar">
+          <div class="progress-label">Fråga ${state.current + 1} av ${state.questions.length}</div>
+          <div class="progress-track">
             <div class="progress-fill" style="width:${progress}%"></div>
           </div>
         </div>
