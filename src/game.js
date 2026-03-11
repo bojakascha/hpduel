@@ -200,7 +200,9 @@ export function toggleDetail(id) {
 }
 
 function shuffleOptions(question) {
-  const all = [question.correct, ...(question.distractors || [])].filter(Boolean);
+  const allDistractors = question.distractors || [];
+  const distractors = shuffle([...allDistractors]).slice(0, 3);
+  const all = [question.correct, ...distractors].filter(Boolean);
   const unique = [...new Set(all)];
   return shuffle(unique);
 }
