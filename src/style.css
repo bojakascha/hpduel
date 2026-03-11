@@ -61,7 +61,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Screen header with overflow menu */
+/* Screen header with exit button */
 
 .screen-header {
   position: absolute;
@@ -76,70 +76,23 @@ body {
   z-index: 10;
 }
 
-.overflow-menu-btn {
-  width: 40px;
-  height: 40px;
+.game-exit-btn {
+  width: 44px;
+  height: 44px;
   border: none;
   background: transparent;
-  color: var(--text-muted);
-  font-size: 22px;
-  font-weight: 600;
+  color: rgba(15, 17, 21, 0.35);
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.15s, background 0.15s;
-  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.overflow-menu-btn:hover,
-.overflow-menu-btn:active {
+.game-exit-btn:active {
   color: var(--text);
-  background: rgba(0, 0, 0, 0.06);
-}
-
-.overflow-menu {
-  position: absolute;
-  top: 100%;
-  right: 16px;
-  margin-top: 4px;
-  min-width: 160px;
-  background: var(--card);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 6px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4px);
-  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
-  z-index: 20;
-}
-
-.overflow-menu.open {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.overflow-menu-item {
-  display: block;
-  width: 100%;
-  padding: 12px 14px;
-  border: none;
-  background: transparent;
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 500;
-  text-align: left;
-  cursor: pointer;
-  border-radius: 8px;
-  font-family: inherit;
-  transition: background 0.12s;
-}
-
-.overflow-menu-item:hover,
-.overflow-menu-item:active {
   background: rgba(0, 0, 0, 0.06);
 }
 
@@ -184,14 +137,49 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  padding-top: max(52px, calc(env(safe-area-inset-top, 0px) + 44px));
+}
+
+.start-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: max(52px, calc(env(safe-area-inset-top, 0px) + 44px));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: env(safe-area-inset-top, 0px) calc((100% - var(--card-width)) / 2) 0;
+  z-index: 10;
+}
+
+.start-icon-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: rgba(15, 17, 21, 0.35);
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, background 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.start-icon-btn:active {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.06);
 }
 
 .start-content {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 6vh 22px max(28px, env(safe-area-inset-bottom, 0px));
+  margin-top: calc(50px + 6vh);
+  padding: 0 22px max(28px, env(safe-area-inset-bottom, 0px));
 }
 
 .start-buttons {
@@ -199,7 +187,6 @@ body {
   flex-direction: column;
   gap: 18px;
   width: var(--card-width);
-  margin: 0 auto;
 }
 
 .start-btn {

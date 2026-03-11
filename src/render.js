@@ -5,28 +5,35 @@ function capitalizeFirst(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-function menuHtml() {
-  const loggedIn = Boolean(state.user);
+const exitIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+
+function gameHeaderHtml() {
   return `
     <div class="screen-header">
-      <button class="overflow-menu-btn" id="overflowMenuBtn" type="button" aria-label="Mer">&#8230;</button>
-      <div class="overflow-menu" id="overflowMenu">
-        <button class="overflow-menu-item" data-action="restart">Starta om</button>
-        <button class="overflow-menu-item" data-action="settings">Inställningar</button>
-        <button class="overflow-menu-item" data-action="${loggedIn ? 'logout' : 'login'}">${loggedIn ? 'Logga ut' : 'Logga in'}</button>
-      </div>
+      <button class="game-exit-btn" id="gameExitBtn" type="button" aria-label="Avsluta">${exitIcon}</button>
     </div>
   `;
 }
 
+const personIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>`;
+
+const gearIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>`;
+
 export function renderStart() {
   return `
     <div class="screen start-screen">
-      ${menuHtml()}
+      <div class="start-header">
+        <button class="start-icon-btn" id="profileBtn" type="button" aria-label="Profil">${personIcon}</button>
+        <button class="start-icon-btn" id="startSettingsBtn" type="button" aria-label="Inställningar">${gearIcon}</button>
+      </div>
       <div class="start-content">
+        <div class="word-block">
+          <div class="word-text">HP-Duel</div>
+          <div class="word-underline"></div>
+        </div>
         <div class="start-buttons">
           <button class="start-btn" id="startBtn">Starta</button>
-          <button class="start-btn-secondary" id="multiplayerBtn">Duel</button>
+          <button class="start-btn-secondary" id="multiplayerBtn">Duell mot vän</button>
         </div>
       </div>
     </div>
@@ -57,7 +64,7 @@ export function renderQuiz() {
 
   return `
     <div class="screen quiz-screen">
-      ${menuHtml()}
+      ${gameHeaderHtml()}
       <div class="quiz-content${!isSelected ? ' entering' : ''}" id="quizContent">
         <div class="word-block">
           <div class="word-text">${capitalizeFirst(q.word)}</div>
@@ -146,10 +153,15 @@ export function renderResult() {
   if (isMultiplayer) {
     const myUid = state.user.uid;
     const allPlayers = Object.entries(state.room.players)
-      .map(([uid, p]) => ({ ...p, uid, isMe: uid === myUid }))
+      .map(([uid, p]) => ({
+        ...p,
+        uid,
+        isMe: uid === myUid,
+        score: uid === myUid ? score : p.score,  // local state is ground truth for current player
+        finished: uid === myUid ? true : p.finished,
+      }))
       .sort((a, b) => b.score - a.score);
-    const myScore = state.room.players[myUid]?.score ?? score;
-    const myRank = Object.values(state.room.players).filter(p => p.score > myScore).length + 1;
+    const myRank = allPlayers.filter(p => !p.isMe && p.score > score).length + 1;
     const placementLabel = myRank === 1 ? '1:a plats' : myRank === 2 ? '2:a plats' : `${myRank}:e plats`;
     const placementClass = myRank === 1 ? 'plats-1' : myRank === 2 ? 'plats-2' : 'plats-other';
 
@@ -178,7 +190,7 @@ export function renderResult() {
 
   return `
     <div class="screen result-screen">
-      ${menuHtml()}
+      ${gameHeaderHtml()}
       <div class="result-header">
         ${headerInner}
         <div class="result-underline"></div>
@@ -315,7 +327,7 @@ export function renderLobby() {
 
   return `
     <div class="screen lobby-screen">
-      ${menuHtml()}
+      ${gameHeaderHtml()}
       <div class="lobby-content">
         <div class="lobby-code-section">
           <div class="lobby-label">Spelkod</div>

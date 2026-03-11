@@ -166,42 +166,15 @@ function closeOverlay(id) {
   overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
 }
 
-// ── Overflow Menu ─────────────────────────────────────────────────────────────
+// ── Game Exit Button ───────────────────────────────────────────────────────────
 
-function attachOverflowMenu() {
-  const btn = document.getElementById('overflowMenuBtn');
-  const menu = document.getElementById('overflowMenu');
-  if (!btn || !menu) return;
-
-  const closeMenu = () => menu.classList.remove('open');
-
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const wasOpen = menu.classList.toggle('open');
-    if (wasOpen) {
-      setTimeout(() => {
-        document.addEventListener('click', closeMenu, { once: true });
-      }, 0);
-    }
-  });
-
-  menu.querySelectorAll('.overflow-menu-item').forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.stopPropagation();
-      closeMenu();
-      const action = item.dataset.action;
-      if (action === 'restart') {
-        stopTimers();
-        cleanupRoom();
-        transitionOut(() => { state.phase = 'start'; render(); });
-      } else if (action === 'settings') {
-        openSettings();
-      } else if (action === 'login') {
-        openLogin();
-      } else if (action === 'logout') {
-        logout().then(() => render());
-      }
-    });
+function attachGameExitBtn() {
+  const btn = document.getElementById('gameExitBtn');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    stopTimers();
+    cleanupRoom();
+    transitionOut(() => { state.phase = 'start'; render(); });
   });
 }
 
@@ -508,8 +481,8 @@ function startRoomListener(roomId) {
       return;
     }
 
-    // Update comparison on result screen
-    if (state.phase === 'result' && document.querySelector('.mp-comparison')) {
+    // Update leaderboard on result screen when opponent finishes
+    if (state.phase === 'result' && document.querySelector('.mp-leaderboard')) {
       render();
     }
   });
@@ -804,13 +777,22 @@ function render() {
       document.getElementById('multiplayerBtn').addEventListener('click', () => {
         openMultiplayerMenu();
       });
-      attachOverflowMenu();
+      document.getElementById('profileBtn').addEventListener('click', () => {
+        if (state.user && !state.user.isAnonymous) {
+          logout().then(() => render());
+        } else {
+          openLogin();
+        }
+      });
+      document.getElementById('startSettingsBtn').addEventListener('click', () => {
+        openSettings();
+      });
       break;
 
     case 'mp-lobby':
       app.innerHTML = renderLobby();
       attachLobbyListeners();
-      attachOverflowMenu();
+      attachGameExitBtn();
       break;
 
     case 'quiz':
@@ -821,7 +803,7 @@ function render() {
           btn.addEventListener('click', () => handleAnswer(btn.dataset.value));
         });
       }
-      attachOverflowMenu();
+      attachGameExitBtn();
       break;
 
     case 'result':
@@ -833,7 +815,7 @@ function render() {
         const item = e.target.closest('.result-item');
         if (item) toggleDetail(item.id.replace('item-', ''));
       });
-      attachOverflowMenu();
+      attachGameExitBtn();
       break;
 
     case 'error':
