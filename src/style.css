@@ -1520,6 +1520,369 @@ details[open] .lobby-settings-chevron {
   font-variant-numeric: tabular-nums;
 }
 
+/* ── Profile ─────────────────────────────────── */
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-name-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-name-row .login-input {
+  flex: 1;
+}
+
+.profile-save-btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.12s;
+  flex-shrink: 0;
+}
+
+.profile-save-btn:active {
+  opacity: 0.8;
+}
+
+.profile-save-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.profile-account-info {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.profile-account-info strong {
+  font-weight: 600;
+}
+
+.profile-account-hint {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.profile-link-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: all 0.15s ease;
+  align-self: flex-start;
+}
+
+.profile-link-btn:active {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+}
+
+.profile-email-details {
+  margin-top: 4px;
+}
+
+.profile-email-details summary {
+  list-style: none;
+}
+
+.profile-email-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.profile-email-toggle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 6px 0;
+  user-select: none;
+}
+
+.profile-email-form {
+  margin-top: 10px;
+}
+
+.profile-collapsible {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 8px;
+}
+
+.profile-collapsible summary {
+  list-style: none;
+}
+
+.profile-collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.profile-collapsible-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  padding: 10px 0;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-collapsible-title::after {
+  content: '›';
+  font-size: 18px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+details[open] > .profile-collapsible-title::after {
+  transform: rotate(90deg);
+}
+
+.profile-history-content {
+  padding: 4px 0 8px;
+}
+
+.profile-loading {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 12px 0;
+}
+
+.profile-empty {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 12px 0;
+}
+
+.profile-danger {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+.profile-danger-btn {
+  border: none;
+  background: transparent;
+  color: var(--wrong);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 8px 0;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+.profile-danger-btn:active {
+  opacity: 1;
+}
+
+.profile-danger-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* History cards */
+
+.history-date-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.history-date-label:first-child {
+  margin-top: 0;
+}
+
+.history-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+}
+
+.history-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.history-score {
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.history-pct-perfect { color: #256846; }
+.history-pct-good { color: #3F6F3B; }
+.history-pct-ok { color: var(--text); }
+.history-pct-bad { color: var(--wrong); }
+
+.history-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.history-dots {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* ── Friends ─────────────────────────────────── */
+
+.friends-search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.friends-search-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.friends-search-input {
+  flex: 1;
+}
+
+.friends-search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.friends-group-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.friend-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  margin-bottom: 4px;
+}
+
+.friend-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent-bg);
+  border: 1.5px solid var(--accent-border);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.friend-name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.friend-action-btn {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.12s, opacity 0.12s;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.friend-action-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.friend-accept {
+  color: var(--correct);
+  background: var(--correct-bg);
+}
+
+.friend-accept:active:not(:disabled) {
+  opacity: 0.7;
+}
+
+.friend-ignore {
+  color: var(--text-muted);
+}
+
+.friend-ignore:active:not(:disabled) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.friend-add {
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.friend-add:active:not(:disabled) {
+  opacity: 0.7;
+}
+
+.friend-remove {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.friend-remove:active:not(:disabled) {
+  color: var(--wrong);
+}
+
 /* ── Login Screen ─────────────────────────────── */
 
 .login-screen {

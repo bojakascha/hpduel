@@ -16715,7 +16715,7 @@
       "som rör Norden",
       "som rör Grekland",
       "som rör Asien",
-      "i djup sömn"
+      "som rör Egypten"
     ],
     "difficulty": 1
   },
@@ -18876,8 +18876,8 @@
     "difficulty": 1
   },
   {
-    "word": "äggande",
-    "correct": "sporrande",
+    "word": "sporrande",
+    "correct": "eggande",
     "distractors": [
       "avskräckande",
       "dämpande",

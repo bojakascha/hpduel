@@ -430,6 +430,185 @@ export function renderLobby() {
   `;
 }
 
+export function renderProfile() {
+  const user = state.user;
+  const name = user?.displayName || '';
+  const isManaged = user && !user.isAnonymous;
+  const email = user?.email || '';
+
+  const accountSection = isManaged
+    ? `<div class="profile-section">
+        <div class="setting-label">Konto</div>
+        <div class="profile-account-info">Inloggad som <strong>${email}</strong></div>
+        <button class="profile-link-btn" id="profileLogoutBtn" type="button">Logga ut</button>
+      </div>`
+    : `<div class="profile-section">
+        <div class="setting-label">Konto</div>
+        <p class="profile-account-hint">Logga in för att synka mellan enheter</p>
+        <button class="login-google" id="profileGoogleBtn" type="button">
+          ${googleIcon}
+          <span>Koppla Google-konto</span>
+        </button>
+        <details class="profile-email-details">
+          <summary class="profile-email-toggle">Eller koppla med e-post</summary>
+          <form class="login-form profile-email-form" id="profileEmailForm" novalidate>
+            <div class="login-field">
+              <input class="login-input" type="email" id="profileEmailInput" autocomplete="email" placeholder="din@epost.se" required />
+            </div>
+            <div class="login-field">
+              <input class="login-input" type="password" id="profilePasswordInput" autocomplete="new-password" placeholder="Lösenord (minst 6 tecken)" required />
+            </div>
+            <div class="login-error" id="profileLinkError"></div>
+            <button class="btn-primary login-submit" id="profileEmailSubmitBtn" type="submit">Koppla konto</button>
+          </form>
+        </details>
+      </div>`;
+
+  return `
+    <div class="settings-screen">
+      <div class="settings-header">
+        <button class="settings-back" id="profileBackBtn" type="button" aria-label="Tillbaka">${backArrow}</button>
+        <span class="settings-title">Profil</span>
+      </div>
+      <div class="settings-body">
+        <div class="profile-section">
+          <div class="setting-label">Namn</div>
+          <div class="profile-name-row">
+            <input class="login-input" type="text" id="profileNameInput" value="${name}" maxlength="20" autocomplete="off" placeholder="Ditt namn" />
+            <button class="profile-save-btn" id="profileSaveNameBtn" type="button" style="display:none">Spara</button>
+          </div>
+        </div>
+
+        ${accountSection}
+
+        <details class="profile-collapsible" id="profileFriendsSection">
+          <summary class="profile-collapsible-title">Vänner</summary>
+          <div class="profile-friends-content" id="profileFriendsContent">
+            <div class="profile-loading">Laddar...</div>
+          </div>
+        </details>
+
+        <details class="profile-collapsible" id="profileHistorySection">
+          <summary class="profile-collapsible-title">Historik</summary>
+          <div class="profile-history-content" id="profileHistoryContent">
+            <div class="profile-loading">Laddar...</div>
+          </div>
+        </details>
+
+        <div class="profile-section profile-danger">
+          <button class="profile-danger-btn" id="profileDeleteBtn" type="button">Radera mitt konto och data</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+export function renderFriendsSection(friends, pendingInvites) {
+  let html = '';
+
+  // Search / add friend
+  html += `
+    <div class="friends-search">
+      <div class="friends-search-row">
+        <input class="login-input friends-search-input" type="text" id="friendSearchInput" placeholder="Sök spelare..." maxlength="20" autocomplete="off" />
+        <button class="profile-save-btn" id="friendSearchBtn" type="button">Sök</button>
+      </div>
+      <div class="friends-search-results" id="friendSearchResults"></div>
+    </div>`;
+
+  // Pending invites
+  if (pendingInvites.length > 0) {
+    html += `<div class="friends-group-label">Förfrågningar</div>`;
+    for (const inv of pendingInvites) {
+      html += `
+        <div class="friend-row friend-invite">
+          <div class="friend-avatar">${(inv.fromName || 'S')[0].toUpperCase()}</div>
+          <div class="friend-name">${inv.fromName || 'Spelare'}</div>
+          <button class="friend-action-btn friend-accept" data-id="${inv.id}" type="button">Acceptera</button>
+          <button class="friend-action-btn friend-ignore" data-id="${inv.id}" type="button">Ignorera</button>
+        </div>`;
+    }
+  }
+
+  // Friends list
+  if (friends.length > 0) {
+    html += `<div class="friends-group-label">Vänner</div>`;
+    for (const f of friends) {
+      html += `
+        <div class="friend-row">
+          <div class="friend-avatar">${(f.name || 'S')[0].toUpperCase()}</div>
+          <div class="friend-name">${f.name || 'Spelare'}</div>
+          <button class="friend-action-btn friend-remove" data-id="${f.id}" type="button">Ta bort</button>
+        </div>`;
+    }
+  } else if (pendingInvites.length === 0) {
+    html += '<div class="profile-empty">Inga vänner än. Sök efter spelare ovan!</div>';
+  }
+
+  return html;
+}
+
+export function renderSearchResults(results) {
+  if (results.length === 0) return '<div class="profile-empty">Inga spelare hittades.</div>';
+  return results.map(r => `
+    <div class="friend-row">
+      <div class="friend-avatar">${(r.name || 'S')[0].toUpperCase()}</div>
+      <div class="friend-name">${r.name || 'Spelare'}</div>
+      <button class="friend-action-btn friend-add" data-uid="${r.uid}" data-name="${(r.name || '').replace(/"/g, '&quot;')}" type="button">Lägg till</button>
+    </div>`).join('');
+}
+
+export function renderHistoryItems(sessions) {
+  if (sessions.length === 0) {
+    return '<div class="profile-empty">Ingen historik än. Spela ett spel!</div>';
+  }
+
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const yesterday = new Date(today.getTime() - 86400000);
+
+  let currentGroup = '';
+  let html = '';
+
+  for (const s of sessions) {
+    const ts = s.timestamp?.toDate ? s.timestamp.toDate() : (s.timestamp ? new Date(s.timestamp) : new Date());
+    const day = new Date(ts.getFullYear(), ts.getMonth(), ts.getDate());
+
+    let groupLabel;
+    if (day.getTime() === today.getTime()) groupLabel = 'Idag';
+    else if (day.getTime() === yesterday.getTime()) groupLabel = 'Igår';
+    else groupLabel = ts.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
+
+    if (groupLabel !== currentGroup) {
+      currentGroup = groupLabel;
+      html += `<div class="history-date-label">${groupLabel}</div>`;
+    }
+
+    const time = ts.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' });
+    const pct = s.total > 0 ? Math.round((s.score / s.total) * 100) : 0;
+    const dots = (s.answers || []).map(a =>
+      `<span class="result-summary-dot ${a.isCorrect ? 'correct' : 'wrong'}">${a.isCorrect ? '●' : '○'}</span>`
+    ).join('');
+
+    const diffLabel = { all: 'Blandad', easy: 'Lätt', medium: 'Medel', hard: 'Svår' }[s.difficulty] || '';
+
+    let cls = 'history-pct-ok';
+    if (pct === 100) cls = 'history-pct-perfect';
+    else if (pct >= 80) cls = 'history-pct-good';
+    else if (pct < 50) cls = 'history-pct-bad';
+
+    html += `
+      <div class="history-card">
+        <div class="history-card-top">
+          <span class="history-score ${cls}">${s.score}/${s.total}</span>
+          <span class="history-meta">${diffLabel}${diffLabel ? ' · ' : ''}${time}</span>
+        </div>
+        <div class="history-dots">${dots}</div>
+      </div>`;
+  }
+  return html;
+}
+
 export function renderLogin(mode = 'login') {
   const isRegister = mode === 'register';
   return `

@@ -1,8 +1,8 @@
 import './style.css';
 import { state, settings, loadWords, initQuiz, selectQuestions, initQuizWithQuestions, updateSetting, recordAnswer, recordTimeout, advanceQuestion, toggleDetail } from './game.js';
-import { renderStart, renderQuiz, renderQuizContent, renderResult, renderSettings, renderLogin, renderMultiplayerMenu, renderLobby } from './render.js';
-import { loginWithEmail, registerWithEmail, loginWithGoogle, ensureAnonymousAuth, logout, onAuthChange } from './auth.js';
-import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings } from './db.js';
+import { renderStart, renderQuiz, renderQuizContent, renderResult, renderSettings, renderLogin, renderProfile, renderHistoryItems, renderFriendsSection, renderSearchResults, renderMultiplayerMenu, renderLobby } from './render.js';
+import { loginWithEmail, registerWithEmail, loginWithGoogle, linkGoogle, linkEmail, ensureAnonymousAuth, updateDisplayName, deleteAccount, logout, onAuthChange, getSavedName } from './auth.js';
+import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings, loadSessionHistory, deleteUserData, savePublicProfile, searchPlayers, sendFriendRequest, getPendingInvites, acceptFriendRequest, ignoreFriendRequest, getFriends, removeFriend } from './db.js';
 import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished, findOrCreateMatchmaking } from './room.js';
 import QRCode from 'qrcode';
 
@@ -289,6 +289,238 @@ function attachLoginListeners(overlay) {
   });
 }
 
+// ── Profile ──────────────────────────────────────────────────────────────────
+
+function openProfile() {
+  const overlay = openOverlay('profileOverlay', renderProfile());
+
+  overlay.querySelector('#profileBackBtn').addEventListener('click', () => closeOverlay('profileOverlay'));
+
+  // ── Name editing ──
+  const nameInput = overlay.querySelector('#profileNameInput');
+  const saveBtn = overlay.querySelector('#profileSaveNameBtn');
+  const originalName = nameInput.value;
+
+  nameInput.addEventListener('input', () => {
+    saveBtn.style.display = nameInput.value.trim() !== originalName ? '' : 'none';
+  });
+
+  saveBtn.addEventListener('click', async () => {
+    const newName = nameInput.value.trim();
+    if (!newName) return;
+    saveBtn.disabled = true;
+    try {
+      await updateDisplayName(newName);
+      if (state.user) savePublicProfile(state.user.uid, newName).catch(() => {});
+      saveBtn.style.display = 'none';
+      nameInput.defaultValue = newName;
+    } catch {
+      // silently fail
+    } finally {
+      saveBtn.disabled = false;
+    }
+  });
+
+  // ── Account linking (anonymous users) ──
+  const googleBtn = overlay.querySelector('#profileGoogleBtn');
+  if (googleBtn) {
+    googleBtn.addEventListener('click', async () => {
+      googleBtn.disabled = true;
+      try {
+        const result = await linkGoogle();
+        if (result) {
+          closeOverlay('profileOverlay');
+          openProfile(); // re-open with updated state
+        }
+      } catch (err) {
+        const errorEl = overlay.querySelector('#profileLinkError');
+        if (errorEl) errorEl.textContent = err.message;
+      } finally {
+        googleBtn.disabled = false;
+      }
+    });
+  }
+
+  const emailForm = overlay.querySelector('#profileEmailForm');
+  if (emailForm) {
+    emailForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = overlay.querySelector('#profileEmailInput').value.trim();
+      const password = overlay.querySelector('#profilePasswordInput').value;
+      const errorEl = overlay.querySelector('#profileLinkError');
+      const submitBtn = overlay.querySelector('#profileEmailSubmitBtn');
+      if (!email || !password) { errorEl.textContent = 'Fyll i alla fält.'; return; }
+      submitBtn.disabled = true;
+      errorEl.textContent = '';
+      try {
+        await linkEmail(email, password);
+        closeOverlay('profileOverlay');
+        openProfile();
+      } catch (err) {
+        errorEl.textContent = err.message;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  // ── Logout (managed users) ──
+  const logoutBtn = overlay.querySelector('#profileLogoutBtn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', async () => {
+      await logout();
+      closeOverlay('profileOverlay');
+      render();
+    });
+  }
+
+  // ── History (lazy load) ──
+  const historySection = overlay.querySelector('#profileHistorySection');
+  let historyLoaded = false;
+  async function loadHistory() {
+    if (historyLoaded) return;
+    historyLoaded = true;
+    const content = overlay.querySelector('#profileHistoryContent');
+    if (!state.user) { content.innerHTML = '<div class="profile-empty">Ingen historik tillgänglig.</div>'; return; }
+    try {
+      const sessions = await loadSessionHistory(state.user.uid);
+      content.innerHTML = renderHistoryItems(sessions);
+    } catch (err) {
+      console.error('[History] Load failed:', err);
+      content.innerHTML = '<div class="profile-empty">Kunde inte ladda historik.</div>';
+    }
+  }
+  if (historySection) {
+    historySection.addEventListener('toggle', () => {
+      if (historySection.open) loadHistory();
+    });
+  }
+
+  // ── Friends (lazy load) ──
+  const friendsSection = overlay.querySelector('#profileFriendsSection');
+  let friendsLoaded = false;
+
+  async function loadFriends() {
+    if (friendsLoaded) return;
+    friendsLoaded = true;
+    const content = overlay.querySelector('#profileFriendsContent');
+    if (!state.user) { content.innerHTML = '<div class="profile-empty">Inte tillgänglig.</div>'; return; }
+    try {
+      const [friends, pending] = await Promise.all([
+        getFriends(state.user.uid),
+        getPendingInvites(state.user.uid),
+      ]);
+      content.innerHTML = renderFriendsSection(friends, pending);
+      attachFriendsListeners(overlay, content);
+    } catch (err) {
+      console.error('[Friends] Load failed:', err);
+      content.innerHTML = '<div class="profile-empty">Kunde inte ladda vänner.</div>';
+    }
+  }
+
+  function attachFriendsListeners(overlay, content) {
+    // Search
+    const searchBtn = content.querySelector('#friendSearchBtn');
+    const searchInput = content.querySelector('#friendSearchInput');
+    const searchResults = content.querySelector('#friendSearchResults');
+
+    if (searchBtn && searchInput) {
+      const doSearch = async () => {
+        const term = searchInput.value.trim();
+        if (!term) return;
+        searchBtn.disabled = true;
+        try {
+          const results = await searchPlayers(term, state.user.uid);
+          searchResults.innerHTML = renderSearchResults(results);
+          // Attach add buttons
+          searchResults.querySelectorAll('.friend-add').forEach(btn => {
+            btn.addEventListener('click', async () => {
+              btn.disabled = true;
+              try {
+                await sendFriendRequest(state.user.uid, btn.dataset.uid, getUserName(), btn.dataset.name);
+                btn.textContent = 'Skickad';
+              } catch (err) {
+                btn.textContent = err.message;
+              }
+            });
+          });
+        } catch {
+          searchResults.innerHTML = '<div class="profile-empty">Sökning misslyckades.</div>';
+        } finally {
+          searchBtn.disabled = false;
+        }
+      };
+      searchBtn.addEventListener('click', doSearch);
+      searchInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); doSearch(); } });
+    }
+
+    // Accept invite
+    content.querySelectorAll('.friend-accept').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        try {
+          await acceptFriendRequest(btn.dataset.id);
+          friendsLoaded = false;
+          loadFriends();
+        } catch { btn.disabled = false; }
+      });
+    });
+
+    // Ignore invite
+    content.querySelectorAll('.friend-ignore').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        try {
+          await ignoreFriendRequest(btn.dataset.id);
+          btn.closest('.friend-row').remove();
+        } catch { btn.disabled = false; }
+      });
+    });
+
+    // Remove friend
+    content.querySelectorAll('.friend-remove').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        if (!confirm('Ta bort vän?')) return;
+        btn.disabled = true;
+        try {
+          await removeFriend(btn.dataset.id);
+          btn.closest('.friend-row').remove();
+        } catch { btn.disabled = false; }
+      });
+    });
+  }
+
+  if (friendsSection) {
+    friendsSection.addEventListener('toggle', () => {
+      if (friendsSection.open) loadFriends();
+    });
+  }
+
+  // ── Delete account ──
+  const deleteBtn = overlay.querySelector('#profileDeleteBtn');
+  if (deleteBtn) {
+    deleteBtn.addEventListener('click', async () => {
+      if (!confirm('Är du säker? All data raderas permanent.')) return;
+      deleteBtn.disabled = true;
+      try {
+        if (state.user) {
+          await deleteUserData(state.user.uid);
+          await deleteAccount();
+        }
+        state.user = null;
+        state.wordStats = {};
+        closeOverlay('profileOverlay');
+        // Re-create anonymous user
+        await ensureAnonymousAuth();
+        render();
+      } catch (err) {
+        alert('Kunde inte radera: ' + err.message);
+        deleteBtn.disabled = false;
+      }
+    });
+  }
+}
+
 // ── Multiplayer ──────────────────────────────────────────────────────────────
 
 let prevOpStates = {};
@@ -338,8 +570,8 @@ function updateLobbySettingsDisplay(room) {
 }
 
 function getUserName() {
-  if (!state.user) return 'Spelare';
-  return state.user.displayName || state.user.email?.split('@')[0] || 'Spelare';
+  if (!state.user) return getSavedName() || 'Spelare';
+  return state.user.displayName || state.user.email?.split('@')[0] || getSavedName() || 'Spelare';
 }
 
 async function ensureAuthForMultiplayer() {
@@ -695,6 +927,10 @@ async function onUserLogin(user) {
       updateSetting('difficulty', settings.difficulty);
       updateSetting('questionCount', settings.questionCount);
     }
+    // Keep public profile in sync
+    if (user.displayName) {
+      savePublicProfile(user.uid, user.displayName).catch(() => {});
+    }
   } catch {
     // Continue with local data
   }
@@ -824,11 +1060,7 @@ function render() {
         openMultiplayerMenu();
       });
       document.getElementById('profileBtn').addEventListener('click', () => {
-        if (state.user && !state.user.isAnonymous) {
-          logout().then(() => render());
-        } else {
-          openLogin();
-        }
+        openProfile();
       });
       document.getElementById('startSettingsBtn').addEventListener('click', () => {
         openSettings();
@@ -888,7 +1120,7 @@ async function init() {
       state.wordStats = {};
     }
     // Re-render to update menu (login/logout) only if no overlay is open
-    if (!document.getElementById('loginOverlay') && !document.getElementById('settingsOverlay') && !document.getElementById('mpMenuOverlay')) {
+    if (!document.getElementById('loginOverlay') && !document.getElementById('settingsOverlay') && !document.getElementById('mpMenuOverlay') && !document.getElementById('profileOverlay')) {
       render();
     }
   });
@@ -900,6 +1132,9 @@ async function init() {
     state.phase = 'error';
   }
   render();
+
+  // Auto-create anonymous user on startup
+  ensureAnonymousAuth().catch(() => {});
 
   const params = new URLSearchParams(location.search);
   const code = params.get('code');
