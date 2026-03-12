@@ -812,6 +812,20 @@ body {
   margin: 0 auto;
 }
 
+.settings-install-btn {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
 .setting-group {
   display: flex;
   flex-direction: column;

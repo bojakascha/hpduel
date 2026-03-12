@@ -256,6 +256,7 @@ export function renderSettings() {
             <span class="toggle-track"><span class="toggle-thumb"></span></span>
           </label>
         </div>
+        <button class="settings-install-btn" id="settingsInstallBtn" style="display:none" type="button">Lägg till på hemskärmen</button>
       </div>
     </div>
   `;

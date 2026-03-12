@@ -6,6 +6,14 @@ import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSetti
 import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished, findOrCreateMatchmaking } from './room.js';
 import QRCode from 'qrcode';
 
+// ── PWA install prompt ────────────────────────────────────────────────────────
+
+let installPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  installPrompt = e;
+});
+
 const SELECTED_PAUSE = 400;
 const EXIT_DURATION = 220;
 const ADVANCE_DELAY = SELECTED_PAUSE + EXIT_DURATION;
@@ -203,6 +211,17 @@ function openSettings() {
     toggle.addEventListener('change', () => {
       updateSetting('showInstantFeedback', toggle.checked);
       syncSettings();
+    });
+  }
+
+  const installBtn = overlay.querySelector('#settingsInstallBtn');
+  if (installBtn && installPrompt) {
+    installBtn.style.display = '';
+    installBtn.addEventListener('click', async () => {
+      installPrompt.prompt();
+      const { outcome } = await installPrompt.userChoice;
+      if (outcome === 'accepted') installPrompt = null;
+      installBtn.style.display = 'none';
     });
   }
 }
