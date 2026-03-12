@@ -33,8 +33,8 @@ export function renderStart() {
         </div>
         <div class="start-buttons">
           <button class="start-btn" id="startBtn">Starta</button>
-          <button class="start-btn-secondary" id="multiplayerBtn">Duell mot vän</button>
-          <button class="start-btn-secondary" id="matchmakingBtn">Duell online</button>
+          <button class="start-btn-secondary" id="multiplayerBtn">Mot vän</button>
+          <button class="start-btn-secondary" id="matchmakingBtn">Online</button>
         </div>
       </div>
     </div>
@@ -498,7 +498,7 @@ export function renderProfile() {
         </details>
 
         <details class="profile-collapsible" id="profileWorstSection">
-          <summary class="profile-collapsible-title">Sämsta ord</summary>
+          <summary class="profile-collapsible-title">Missade ord</summary>
           <div id="profileWorstContent">${renderWorstWords()}</div>
         </details>
 

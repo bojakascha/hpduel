@@ -185,7 +185,7 @@ body {
 .start-buttons {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 10px;
   width: var(--card-width);
 }
 
