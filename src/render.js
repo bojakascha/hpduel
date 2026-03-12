@@ -34,6 +34,7 @@ export function renderStart() {
         <div class="start-buttons">
           <button class="start-btn" id="startBtn">Starta</button>
           <button class="start-btn-secondary" id="multiplayerBtn">Duell mot vän</button>
+          <button class="start-btn-secondary" id="matchmakingBtn">Duell online</button>
         </div>
       </div>
     </div>
@@ -165,7 +166,7 @@ export function renderResult() {
     const placementLabel = myRank === 1 ? '1:a plats' : myRank === 2 ? '2:a plats' : `${myRank}:e plats`;
     const placementClass = myRank === 1 ? 'plats-1' : myRank === 2 ? 'plats-2' : 'plats-other';
 
-    const lbHtml = allPlayers.slice(0, 3).map((p, i) => `
+    const lbHtml = allPlayers.map((p, i) => `
       <div class="mp-lb-row${p.isMe ? ' mp-lb-me' : ''}">
         <span class="mp-lb-rank">${i + 1}.</span>
         <span class="mp-lb-name">${p.isMe ? 'Du' : p.name}</span>
@@ -305,12 +306,23 @@ export function renderLobby() {
   const playerCount = players.length;
   const rs = room.settings || {};
 
-  const playersHtml = players.map(([, p]) =>
+  const MAX_VISIBLE = 4;
+  const visiblePlayers = players.slice(0, MAX_VISIBLE);
+  const overflowPlayers = players.slice(MAX_VISIBLE);
+
+  const playerCard = ([, p]) =>
     `<div class="lobby-player">
       <div class="lobby-player-avatar">${(p.name || 'S')[0].toUpperCase()}</div>
       <div class="lobby-player-name">${p.name || 'Spelare'}</div>
-    </div>`
-  ).join('');
+    </div>`;
+
+  const visibleHtml = visiblePlayers.map(playerCard).join('');
+  const overflowHtml = overflowPlayers.length > 0
+    ? `<details class="lobby-players-overflow">
+        <summary class="lobby-players-more">+${overflowPlayers.length} till</summary>
+        <div class="lobby-players lobby-players-extra">${overflowPlayers.map(playerCard).join('')}</div>
+      </details>`
+    : '';
 
   const chevron = `<svg class="lobby-settings-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -324,6 +336,29 @@ export function renderLobby() {
     timePerWordLabel,
     rs.showInstantFeedback ? 'Visa svar' : null,
   ].filter(Boolean).join(' · ');
+
+  const isMatchmaking = room.mode === 'matchmaking';
+
+  if (isMatchmaking) {
+    return `
+      <div class="screen lobby-screen">
+        ${gameHeaderHtml()}
+        <div class="lobby-content">
+          <div class="lobby-players-section">
+            <div class="lobby-players">${visibleHtml}</div>
+          </div>
+          <div class="lobby-actions">
+            ${playerCount >= 2
+              ? '<div class="lobby-waiting">Startar...</div>'
+              : '<div class="lobby-waiting">Söker motståndare...</div>'
+            }
+            <button class="lobby-leave-btn" id="lobbyLeaveBtn">Avbryt</button>
+          </div>
+          <div class="lobby-settings-summary">${settingsSummary}</div>
+        </div>
+      </div>
+    `;
+  }
 
   return `
     <div class="screen lobby-screen">
@@ -343,13 +378,14 @@ export function renderLobby() {
           </div>
         </div>
         <div class="lobby-players-section">
-          <div class="lobby-label">Spelare</div>
-          <div class="lobby-players">${playersHtml}</div>
+          <div class="lobby-label">Spelare <span class="lobby-player-count">${playerCount}</span></div>
+          <div class="lobby-players">${visibleHtml}</div>
+          ${overflowHtml}
         </div>
         <div class="lobby-actions">
           ${isHost && playerCount >= 2
             ? '<button class="btn-primary lobby-start-btn" id="lobbyStartBtn">Starta</button>'
-            : `<div class="lobby-waiting">${isHost ? 'Väntar på motståndare...' : 'Väntar på att värden startar...'}</div>`
+            : `<div class="lobby-waiting">${isHost ? 'Väntar på spelare...' : 'Väntar på att värden startar...'}</div>`
           }
           <button class="lobby-leave-btn" id="lobbyLeaveBtn">Lämna</button>
         </div>

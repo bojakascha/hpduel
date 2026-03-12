@@ -3,7 +3,7 @@ import { state, settings, loadWords, initQuiz, selectQuestions, initQuizWithQues
 import { renderStart, renderQuiz, renderQuizContent, renderResult, renderSettings, renderLogin, renderMultiplayerMenu, renderLobby } from './render.js';
 import { loginWithEmail, registerWithEmail, loginWithGoogle, ensureAnonymousAuth, logout, onAuthChange } from './auth.js';
 import { ensureUser, saveSession, loadWordStats, saveUserSettings, loadUserSettings } from './db.js';
-import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished } from './room.js';
+import { createRoom, joinRoom, listenRoom, startRoom, updateRoomSettings, updatePlayerProgress, markPlayerFinished, findOrCreateMatchmaking } from './room.js';
 import QRCode from 'qrcode';
 
 const SELECTED_PAUSE = 400;
@@ -291,7 +291,7 @@ function attachLoginListeners(overlay) {
 
 // ── Multiplayer ──────────────────────────────────────────────────────────────
 
-let prevOpState = null;
+let prevOpStates = {};
 let prevLobbyPlayers = null;
 
 function cleanupRoom() {
@@ -301,7 +301,7 @@ function cleanupRoom() {
   }
   state.room = null;
   state.roomId = null;
-  prevOpState = null;
+  prevOpStates = {};
   prevLobbyPlayers = null;
 }
 
@@ -436,6 +436,19 @@ function openMultiplayerMenu(prefillCode = null) {
   }
 }
 
+async function startMatchmaking() {
+  try {
+    await ensureAuthForMultiplayer();
+    const name = getUserName();
+    const result = await findOrCreateMatchmaking(state.user.uid, name);
+    state.roomId = result.id;
+    state.phase = 'mp-lobby';
+    startRoomListener(result.id);
+  } catch (err) {
+    alert(err.message);
+  }
+}
+
 function startRoomListener(roomId) {
   if (state.roomUnsub) state.roomUnsub();
   state.roomUnsub = listenRoom(roomId, (room) => {
@@ -451,6 +464,20 @@ function startRoomListener(roomId) {
         render();
       }
       prevLobbyPlayers = playersKey;
+
+      // Auto-start matchmaking when 2 players are present (host only)
+      if (room.mode === 'matchmaking' && room.hostUid === state.user?.uid) {
+        const playerCount = Object.keys(room.players).length;
+        if (playerCount >= 2) {
+          const rs = room.settings;
+          settings.difficulty = rs.difficulty || 'all';
+          settings.questionCount = rs.questionCount || 10;
+          settings.timeLimit = rs.timeLimit || 0;
+          settings.timePerWord = rs.timePerWord || 0;
+          const questions = selectQuestions();
+          startRoom(state.roomId, questions).catch(() => {});
+        }
+      }
       return;
     }
 
@@ -459,23 +486,23 @@ function startRoomListener(roomId) {
       settings.timeLimit = room.settings.timeLimit ?? 0;
       settings.timePerWord = room.settings.timePerWord ?? 0;
       settings.showInstantFeedback = room.settings.showInstantFeedback ?? false;
-      prevOpState = null;
+      prevOpStates = {};
       initQuizWithQuestions(room.questions);
       render();
       startTimers();
       return;
     }
 
-    // Show toast when opponent answers
+    // Show toast when any opponent answers
     if ((room.status === 'playing' || room.status === 'finished') && (state.phase === 'quiz' || state.phase === 'selected')) {
       if (state.user) {
-        const opUid = Object.keys(room.players).find(id => id !== state.user.uid);
-        if (opUid) {
-          const op = room.players[opUid];
-          if (prevOpState && op.current > prevOpState.current) {
-            showOpponentToast(op.name, op.score > prevOpState.score);
+        for (const [uid, p] of Object.entries(room.players)) {
+          if (uid === state.user.uid) continue;
+          const prev = prevOpStates[uid];
+          if (prev && p.current > prev.current) {
+            showOpponentToast(p.name, p.score > prev.score);
           }
-          prevOpState = { current: op.current, score: op.score };
+          prevOpStates[uid] = { current: p.current, score: p.score };
         }
       }
       return;
@@ -681,18 +708,34 @@ function haptic(pattern) {
 
 // ── Opponent Toast ────────────────────────────────────────────────────────────
 
-function showOpponentToast(name, isCorrect) {
-  const existing = document.getElementById('opponentToast');
-  if (existing) existing.remove();
-
+function ensureToastContainer() {
+  let container = document.getElementById('toastContainer');
+  if (container) return container;
   const screen = document.querySelector('.quiz-screen');
-  if (!screen) return;
+  if (!screen) return null;
+  container = document.createElement('div');
+  container.id = 'toastContainer';
+  container.className = 'toast-container';
+  screen.appendChild(container);
+  return container;
+}
+
+function showOpponentToast(name, isCorrect) {
+  const container = ensureToastContainer();
+  if (!container) return;
 
   const toast = document.createElement('div');
-  toast.id = 'opponentToast';
   toast.className = `opponent-toast ${isCorrect ? 'toast-correct' : 'toast-wrong'}`;
   toast.innerHTML = `<span class="toast-name">${name}</span><span class="toast-icon">${isCorrect ? '✓' : '✗'}</span>`;
-  screen.appendChild(toast);
+
+  // Insert at top (newest first)
+  container.prepend(toast);
+
+  // Limit visible toasts to 3, remove extras
+  const toasts = container.children;
+  while (toasts.length > 3) {
+    toasts[toasts.length - 1].remove();
+  }
 
   requestAnimationFrame(() => requestAnimationFrame(() => toast.classList.add('toast-visible')));
 
@@ -773,6 +816,9 @@ function render() {
       app.innerHTML = renderStart();
       document.getElementById('startBtn').addEventListener('click', () => {
         transitionOut(() => { cleanupRoom(); initQuiz(); render(); startTimers(); });
+      });
+      document.getElementById('matchmakingBtn').addEventListener('click', () => {
+        startMatchmaking();
       });
       document.getElementById('multiplayerBtn').addEventListener('click', () => {
         openMultiplayerMenu();

@@ -1222,6 +1222,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .lobby-player {
@@ -1249,6 +1250,41 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: var(--text);
+}
+
+.lobby-player-count {
+  font-weight: 500;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.lobby-players-overflow {
+  width: 100%;
+}
+
+.lobby-players-overflow summary {
+  list-style: none;
+}
+
+.lobby-players-overflow summary::-webkit-details-marker {
+  display: none;
+}
+
+.lobby-players-more {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 8px 0 4px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lobby-players-extra {
+  margin-top: 8px;
+  flex-wrap: wrap;
 }
 
 .lobby-actions {
@@ -1377,13 +1413,22 @@ details[open] .lobby-settings-chevron {
   padding-top: 18px;
 }
 
-/* ── Opponent Toast ───────────────────────────── */
+/* ── Opponent Toasts ──────────────────────────── */
 
-.opponent-toast {
+.toast-container {
   position: absolute;
   top: max(58px, calc(env(safe-area-inset-top, 0px) + 50px));
   left: 50%;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.opponent-toast {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -1392,15 +1437,14 @@ details[open] .lobby-settings-chevron {
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
-  pointer-events: none;
-  z-index: 10;
   opacity: 0;
+  transform: translateY(-6px);
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .opponent-toast.toast-visible {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
 .opponent-toast.toast-correct {
@@ -1430,6 +1474,9 @@ details[open] .lobby-settings-chevron {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  max-height: 240px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mp-lb-row {

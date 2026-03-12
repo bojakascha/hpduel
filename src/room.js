@@ -23,7 +23,7 @@ function generateCode(len = 5) {
   return code;
 }
 
-export async function createRoom(uid, name, gameSettings) {
+export async function createRoom(uid, name, gameSettings, mode = 'private') {
   if (!db) throw new Error('Firebase är inte konfigurerat.');
 
   const code = generateCode();
@@ -33,6 +33,7 @@ export async function createRoom(uid, name, gameSettings) {
   console.log('[createRoom] projectId:', projectId, '| code:', code);
   await setDoc(roomRef, {
     code,
+    mode,
     hostUid: uid,
     status: 'waiting',
     settings: {
@@ -50,6 +51,45 @@ export async function createRoom(uid, name, gameSettings) {
   });
 
   return { id: roomRef.id, code };
+}
+
+export async function findOrCreateMatchmaking(uid, name) {
+  if (!db) throw new Error('Firebase är inte konfigurerat.');
+
+  const matchSettings = {
+    difficulty: 'all',
+    questionCount: 10,
+    timeLimit: 120,
+    timePerWord: 0,
+    showInstantFeedback: false,
+  };
+
+  // Look for an existing matchmaking room that is waiting and not ours
+  const q = query(
+    collection(db, 'rooms'),
+    where('mode', '==', 'matchmaking'),
+    where('status', '==', 'waiting'),
+  );
+
+  const snap = await getDocs(q);
+
+  for (const roomDoc of snap.docs) {
+    const data = roomDoc.data();
+    // Skip rooms we already belong to or that are full
+    if (data.players[uid]) continue;
+    const playerCount = Object.keys(data.players || {}).length;
+    if (playerCount >= 2) continue;
+
+    // Join this room
+    await updateDoc(doc(db, 'rooms', roomDoc.id), {
+      [`players.${uid}`]: { name: name || 'Spelare', score: 0, current: 0, finished: false, finishedAt: null },
+    });
+    return { id: roomDoc.id, code: data.code, joined: true };
+  }
+
+  // No room found — create one
+  const result = await createRoom(uid, name, matchSettings, 'matchmaking');
+  return { ...result, joined: false };
 }
 
 export async function joinRoom(code, uid, name) {
@@ -85,7 +125,7 @@ export async function joinRoom(code, uid, name) {
 
   if (roomData.players[uid]) throw new Error('Du är redan med i spelet.');
   const playerCount = Object.keys(roomData.players || {}).length;
-  if (playerCount >= 2) throw new Error('Spelet är redan fullt.');
+  if (playerCount >= 30) throw new Error('Spelet är fullt (max 30 spelare).');
 
   await updateDoc(doc(db, 'rooms', roomDoc.id), {
     [`players.${uid}`]: { name: name || 'Spelare', score: 0, current: 0, finished: false, finishedAt: null },
