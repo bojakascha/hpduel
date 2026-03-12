@@ -33,6 +33,8 @@ export const state = {
   room: null,
   roomId: null,
   roomUnsub: null,
+  quizStartTime: 0,
+  quizEndTime: 0,
 };
 
 export function shuffle(arr) {
@@ -141,6 +143,8 @@ export function initQuiz() {
   state.results = [];
   state.chosenOption = null;
   state.currentOptions = shuffleOptions(state.questions[0]);
+  state.quizStartTime = Date.now();
+  state.quizEndTime = 0;
   state.phase = 'quiz';
 }
 
@@ -151,6 +155,8 @@ export function initQuizWithQuestions(questions) {
   state.results = [];
   state.chosenOption = null;
   state.currentOptions = shuffleOptions(questions[0]);
+  state.quizStartTime = Date.now();
+  state.quizEndTime = 0;
   state.phase = 'quiz';
 }
 
@@ -176,6 +182,7 @@ export function advanceQuestion() {
   state.chosenOption = null;
 
   if (state.current >= state.questions.length) {
+    state.quizEndTime = Date.now();
     state.phase = 'result';
   } else {
     state.phase = 'quiz';

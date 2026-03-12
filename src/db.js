@@ -33,7 +33,7 @@ export async function ensureUser(uid) {
 
 // ── Sessions ──────────────────────────────────────────────────────────────────
 
-export async function saveSession(uid, results, score, difficulty) {
+export async function saveSession(uid, results, score, difficulty, elapsedSeconds) {
   if (!db) return;
 
   const answers = results.map(r => ({
@@ -43,14 +43,17 @@ export async function saveSession(uid, results, score, difficulty) {
     isCorrect: r.isCorrect,
   }));
 
-  // Save session document
-  await addDoc(collection(db, 'users', uid, 'sessions'), {
+  const sessionData = {
     timestamp: serverTimestamp(),
     score,
     total: results.length,
     difficulty,
     answers,
-  });
+  };
+  if (elapsedSeconds > 0) sessionData.elapsedSeconds = elapsedSeconds;
+
+  // Save session document
+  await addDoc(collection(db, 'users', uid, 'sessions'), sessionData);
 
   // Update aggregated word stats on user doc
   const snap = await getDoc(userRef(uid));

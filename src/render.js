@@ -184,9 +184,12 @@ export function renderResult() {
     else if (pct >= 50) { chipLabel = 'Okej';      chipClass = 'okej'; }
     else                { chipLabel = 'Svagt';     chipClass = 'svagt'; }
 
+    const elapsed = state.quizEndTime && state.quizStartTime ? Math.round((state.quizEndTime - state.quizStartTime) / 1000) : 0;
+    const timeStr = settings.timeLimit > 0 && elapsed > 0 ? ` · ${elapsed}s` : '';
+
     headerInner = `
       <span class="result-chip ${chipClass}">${chipLabel}</span>
-      <div class="result-score">${score}<span>/${total}</span></div>`;
+      <div class="result-score">${score}<span>/${total}${timeStr}</span></div>`;
   }
 
   return `
@@ -197,7 +200,6 @@ export function renderResult() {
         <div class="result-underline"></div>
       </div>
       <div class="result-list">
-        <div class="result-list-title">Dina svar</div>
         <div class="result-summary" aria-hidden="true">${summaryHtml}</div>
         ${itemsHtml}
       </div>
@@ -495,6 +497,11 @@ export function renderProfile() {
           </div>
         </details>
 
+        <details class="profile-collapsible" id="profileWorstSection">
+          <summary class="profile-collapsible-title">Sämsta ord</summary>
+          <div id="profileWorstContent">${renderWorstWords()}</div>
+        </details>
+
         <div class="profile-section profile-danger">
           <button class="profile-danger-btn" id="profileDeleteBtn" type="button">Radera mitt konto och data</button>
         </div>
@@ -600,13 +607,29 @@ export function renderHistoryItems(sessions) {
     html += `
       <div class="history-card">
         <div class="history-card-top">
-          <span class="history-score ${cls}">${s.score}/${s.total}</span>
+          <span class="history-score ${cls}">${s.score}/${s.total}${s.elapsedSeconds > 0 ? `<span class="history-elapsed"> · ${s.elapsedSeconds}s</span>` : ''}</span>
           <span class="history-meta">${diffLabel}${diffLabel ? ' · ' : ''}${time}</span>
         </div>
         <div class="history-dots">${dots}</div>
       </div>`;
   }
   return html;
+}
+
+function renderWorstWords() {
+  const stats = state.wordStats;
+  const words = Object.entries(stats)
+    .map(([word, s]) => ({ word, missed: s.seen - s.correct }))
+    .filter(w => w.missed > 0)
+    .sort((a, b) => b.missed - a.missed);
+
+  if (words.length === 0) return '<div class="profile-empty">Inga missade ord än.</div>';
+
+  return `<div class="worst-words-list">${words.map(w => `
+    <div class="worst-word-card">
+      <span class="worst-word-name">${capitalizeFirst(w.word)}</span>
+      <span class="worst-word-count">${w.missed}×</span>
+    </div>`).join('')}</div>`;
 }
 
 export function renderLogin(mode = 'login') {

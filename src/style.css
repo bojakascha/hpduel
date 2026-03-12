@@ -441,12 +441,14 @@ body {
   letter-spacing: -2px;
   line-height: 1;
   margin-top: 14px;
+  text-align: center;
 }
 
 .result-score span {
   color: var(--text-muted);
   font-weight: 400;
   font-size: 28px;
+  letter-spacing: 0;
 }
 
 .result-chip {
@@ -1744,6 +1746,41 @@ details[open] > .profile-collapsible-title::after {
 .history-pct-good { color: #3F6F3B; }
 .history-pct-ok { color: var(--text); }
 .history-pct-bad { color: var(--wrong); }
+
+.history-elapsed {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.worst-words-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0 4px;
+}
+
+.worst-word-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.worst-word-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.worst-word-count {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--wrong);
+}
 
 .history-meta {
   font-size: 12px;

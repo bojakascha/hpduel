@@ -129,6 +129,7 @@ function handleTotalTimeout() {
 }
 
 function advanceToEnd() {
+  state.quizEndTime = Date.now();
   state.phase = 'result';
 }
 
@@ -902,11 +903,13 @@ function fallbackCopy(text) {
 async function onQuizComplete() {
   if (!state.user) return;
   try {
+    const elapsed = state.quizEndTime && state.quizStartTime ? Math.round((state.quizEndTime - state.quizStartTime) / 1000) : 0;
     const updatedStats = await saveSession(
       state.user.uid,
       state.results,
       state.score,
       settings.difficulty,
+      settings.timeLimit > 0 ? elapsed : 0,
     );
     if (updatedStats) state.wordStats = updatedStats;
   } catch {
